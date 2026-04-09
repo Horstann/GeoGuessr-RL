@@ -1,0 +1,6 @@
+model: "Phi-3.5-vision-instruct"
+temperature: 0.0
+max_tokens: 8000
+base_url: "http://0.0.0.0:16838/v1/"
+model_type: "open_source"
+model_path: "/path/to/your/model"

@@ -1,0 +1,3 @@
+input_graphs_folder: '/path/to/your/data'
+pano_folder: '/path/to/your/data'
+max_workers: 4  # Fewer workers for testing
