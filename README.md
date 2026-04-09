@@ -9,7 +9,7 @@
   <a href="https://huggingface.co/datasets/Yushuo-Zheng/WanderBench"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow.svg" alt="Dataset"></a>
 </p>
 
-> **WanderBench** is a geolocation benchmark containing over 32K panoramas across six continents, organized as navigable graphs that enable interactive exploration. We propose **GeoAoT** (Geolocation with Action of Thought), a framework that couples reasoning with embodied actions -- such as approaching landmarks or adjusting viewpoints -- to reduce uncertainty. Experiments across 19 large multimodal models demonstrate that GeoAoT achieves improved localization accuracy and stronger performance in dynamic environments.
+> **WanderBench** is a geolocation benchmark containing over 32K panoramas across six continents, organized as navigable graphs that enable interactive exploration. We propose **GeoAoT** (Geolocation with Action of Thought), a framework that couples reasoning with embodied actions such as approaching landmarks or adjusting viewpoints to reduce uncertainty. Experiments across 19 large multimodal models demonstrate that GeoAoT achieves improved localization accuracy and stronger performance in dynamic environments.
 
 ## Table of Contents
 
