@@ -396,7 +396,7 @@ class GeoAoTGuesser:
     def create_composite_view(self):
         """Create the complete view with panorama, arrows, and header"""
         # Load current panorama
-        pano_path = os.path.join(self.pano_folder, f"{self.current_node_id}.png")
+        pano_path = os.path.join(self.pano_folder, f"{self.current_node_id}.jpg")
         if not os.path.exists(pano_path):
             print(f"Panorama not found: {pano_path}")
             return None

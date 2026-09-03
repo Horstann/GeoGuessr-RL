@@ -1,0 +1,289 @@
+{
+  "center_pano_id": "A9zenq0_jIogJ9MibgU0Gw",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "A9zenq0_jIogJ9MibgU0Gw",
+      "coordinate": {
+        "lat": 55.68094047358162,
+        "lon": 12.59422554479812,
+        "heading": 5.079642623132143,
+        "roll": 6.269793867954231,
+        "pitch": 0.010598315874079337
+      },
+      "matrix_id": 0,
+      "address": "31 Sankt Annæ Pl., Copenhagen, Capital Region of Denmark"
+    },
+    {
+      "pano_id": "ULtlwDWdsmkRZZDkq7sVKA",
+      "coordinate": {
+        "lat": 55.68098161623109,
+        "lon": 12.59406597835678,
+        "heading": 5.175796054289454,
+        "roll": 6.261517828550701,
+        "pitch": 0.013226323237769528
+      },
+      "matrix_id": 1,
+      "address": "31 Sankt Annæ Pl., Copenhagen, Capital Region of Denmark"
+    },
+    {
+      "pano_id": "fKVtzpm7WG1kXqQu78OW3w",
+      "coordinate": {
+        "lat": 55.68102758506444,
+        "lon": 12.5939237552939,
+        "heading": 5.294107518348443,
+        "roll": 6.249538397335307,
+        "pitch": -0.00023009711818284618
+      },
+      "matrix_id": 2,
+      "address": "31 Sankt Annæ Pl., Copenhagen, Capital Region of Denmark"
+    },
+    {
+      "pano_id": "wuOrrKZtYvMbGgNNId0RAQ",
+      "coordinate": {
+        "lat": 55.68107934033507,
+        "lon": 12.59379047364829,
+        "heading": 5.30400542285583,
+        "roll": 6.253593326411061,
+        "pitch": 0.01345122719182672
+      },
+      "matrix_id": 3,
+      "address": "31 Sankt Annæ Pl., Copenhagen, Capital Region of Denmark"
+    },
+    {
+      "pano_id": "xzlAiNWqdBNzIxcB8PmUuw",
+      "coordinate": {
+        "lat": 55.68112062388904,
+        "lon": 12.59365024102627,
+        "heading": 5.112915625159375,
+        "roll": 6.24880762593219,
+        "pitch": 0.011865447920739038
+      },
+      "matrix_id": 4,
+      "address": "31 Sankt Annæ Pl., Copenhagen, Capital Region of Denmark"
+    },
+    {
+      "pano_id": "AMYhxHQea-LuXxnnEk_NPg",
+      "coordinate": {
+        "lat": 55.68114350302543,
+        "lon": 12.59367367702978,
+        "heading": 2.9028732850617063,
+        "roll": 6.270375502336306,
+        "pitch": 0.011664778732601567
+      },
+      "matrix_id": 5,
+      "address": "1 Larsens Plads, Copenhagen, Capital Region of Denmark"
+    },
+    {
+      "pano_id": "aUGGZst2sCj1wiuDhyXrRg",
+      "coordinate": {
+        "lat": 55.68119075739151,
+        "lon": 12.59369789028077,
+        "heading": 3.659692267853187,
+        "roll": 6.209492976656004,
+        "pitch": -0.009974204072619267,
+        "lat_old": 55.68121841910229,
+        "lon_old": 12.59372336410367
+      },
+      "matrix_id": 6,
+      "pano_id_old": "2dua0YQroMxxr4GJv3bEnA",
+      "address": "1 Larsens Plads, Copenhagen, Capital Region of Denmark"
+    },
+    {
+      "pano_id": "DT9td1gLH9osQaXXvsNosA",
+      "coordinate": {
+        "lat": 55.68127656655174,
+        "lon": 12.59378607077804,
+        "heading": 3.636657256004547,
+        "roll": 6.256612285822777,
+        "pitch": -0.0006628607953207224
+      },
+      "matrix_id": 7,
+      "address": "1 Larsens Plads, Copenhagen, Capital Region of Denmark"
+    },
+    {
+      "pano_id": "lgYhJjokjp7aV21U0DhBIQ",
+      "coordinate": {
+        "lat": 55.68136241529506,
+        "lon": 12.59384986639263,
+        "heading": 0.5155692450431691,
+        "roll": 6.24767738036556,
+        "pitch": -0.0076170401917901335
+      },
+      "matrix_id": 8,
+      "address": "1 Larsens Plads, Copenhagen, Capital Region of Denmark"
+    },
+    {
+      "pano_id": "ysm1Qy9Q9_rrqt6Ma798cQ",
+      "coordinate": {
+        "lat": 55.68144502855704,
+        "lon": 12.59391827533259,
+        "heading": 3.626012601127501,
+        "roll": 6.272180592923161,
+        "pitch": -0.021519273714221774
+      },
+      "matrix_id": 9,
+      "address": "1 Larsens Plads, Copenhagen, Capital Region of Denmark"
+    },
+    {
+      "pano_id": "Ybf3k9xHK7rdeZY3CFE_zw",
+      "coordinate": {
+        "lat": 55.68155828316133,
+        "lon": 12.59400421214646,
+        "heading": 3.287702459423138,
+        "roll": 0.024486906937708133,
+        "pitch": -0.023612917805187567,
+        "lat_old": 55.68152682305723,
+        "lon_old": 12.59399952166327
+      },
+      "matrix_id": 10,
+      "pano_id_old": "_9LUxEJ9ji_49tmVrgRUPQ",
+      "address": "1 Larsens Plads, Copenhagen, Capital Region of Denmark"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      5.137756526543199,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      1.9961638729534057,
+      -1,
+      5.136758906398854,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      1.9951663859671163,
+      -1,
+      5.138268918736929,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      1.996676265147136,
+      -1,
+      5.13733468182653,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      1.995742161394791,
+      -1,
+      0.2914210628138283,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.28123418289469,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.4228271855144783,
+      -1,
+      0.5251169433076968,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.6667108679951035,
+      -1,
+      0.4423156037301497,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.5839082906094566,
+      -1,
+      0.4423175678114537,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.583910154822219,
+      -1,
+      0.4042409870338318
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.5458348793919434,
+      -1
+    ]
+  ]
+}

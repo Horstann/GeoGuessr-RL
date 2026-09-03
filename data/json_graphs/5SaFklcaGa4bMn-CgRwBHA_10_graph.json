@@ -1,0 +1,357 @@
+{
+  "center_pano_id": "5SaFklcaGa4bMn-CgRwBHA",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "5SaFklcaGa4bMn-CgRwBHA",
+      "coordinate": {
+        "lat": 1.305461270969361,
+        "lon": 103.8307652055546,
+        "heading": 5.2292707310815905,
+        "roll": 6.256022129325213,
+        "pitch": 0.0259431837590069,
+        "lat_old": 1.305481566441605,
+        "lon_old": 103.8307512303025
+      },
+      "matrix_id": 0,
+      "pano_id_old": "0HFm9zVtFYSZ0f5PSHwJfw",
+      "address": "Singapore"
+    },
+    {
+      "pano_id": "amBAmAmjXddWjd7e7njFeA",
+      "coordinate": {
+        "lat": 1.305418356907855,
+        "lon": 103.830850737667,
+        "heading": 5.1805620473762595,
+        "roll": 6.274329231290637,
+        "pitch": 0.03170440014517532,
+        "lat_old": 1.305426565843059,
+        "lon_old": 103.8308264136378
+      },
+      "matrix_id": 1,
+      "pano_id_old": "9u8dYsPFnoX--eJQwB6tDA",
+      "address": "Singapore"
+    },
+    {
+      "pano_id": "qGkWh4yzcbZ7mGVRz_6b7Q",
+      "coordinate": {
+        "lat": 1.305517389359052,
+        "lon": 103.8306945332502,
+        "heading": 2.041325359244805,
+        "roll": 6.25811217814871,
+        "pitch": -0.0630247724611612,
+        "lat_old": 1.305502234406292,
+        "lon_old": 103.8306580914756
+      },
+      "matrix_id": 2,
+      "pano_id_old": "AkTwg6QgX0DUABfQgBSc7g",
+      "address": "Singapore"
+    },
+    {
+      "pano_id": "pgz57L_vqWb42MtZG5_D2A",
+      "coordinate": {
+        "lat": 1.305352848082387,
+        "lon": 103.8309398963276,
+        "heading": 5.104831865986548,
+        "roll": 0.005406709073484139,
+        "pitch": 0.03297193166599853,
+        "lat_old": 1.305369865213057,
+        "lon_old": 103.8308990319342
+      },
+      "matrix_id": 3,
+      "pano_id_old": "j-KZmlDIiykQod0MxLVpeQ",
+      "address": "Singapore"
+    },
+    {
+      "pano_id": "StbWAgnHp7scqn_pIHSBNQ",
+      "coordinate": {
+        "lat": 1.30556243931483,
+        "lon": 103.8306230649248,
+        "heading": 2.0906175415449733,
+        "roll": 6.279998568619198,
+        "pitch": 0.04706311646777129,
+        "lat_old": 1.305562990463737,
+        "lon_old": 103.8306012175605
+      },
+      "matrix_id": 4,
+      "pano_id_old": "449lS_tJbm7cVv4DiN5JgQ",
+      "address": "Singapore"
+    },
+    {
+      "pano_id": "UZ5Op16n_JgyDnFx55WyvQ",
+      "coordinate": {
+        "lat": 1.305313156354012,
+        "lon": 103.8310241017831,
+        "heading": 5.325675032013587,
+        "roll": 0.051871199983367956,
+        "pitch": 0.06039143877529085,
+        "lat_old": 1.305286029267515,
+        "lon_old": 103.8310588630841
+      },
+      "matrix_id": 5,
+      "pano_id_old": "WAHsuXyBPtGwyj-Nq_cJOw",
+      "address": "Singapore"
+    },
+    {
+      "pano_id": "25fcCX9es47qXCtOopxFLA",
+      "coordinate": {
+        "lat": 1.305275344891486,
+        "lon": 103.8311042385362,
+        "heading": 4.988747337231086,
+        "roll": 0.009564972960723063,
+        "pitch": 0.018233066087118496,
+        "lat_old": 1.30525411992472,
+        "lon_old": 103.8311438646744
+      },
+      "matrix_id": 6,
+      "pano_id_old": "St0ioRcCPXYo6FaS7sS2eg",
+      "address": "Singapore"
+    },
+    {
+      "pano_id": "TCcnDW-S_7Bw-Yg-_JkPRw",
+      "coordinate": {
+        "lat": 1.305222968566506,
+        "lon": 103.8311828716656,
+        "heading": 5.17855136075325,
+        "roll": 6.255433570724307,
+        "pitch": 0.04808949875188783,
+        "lat_old": 1.305208604658108,
+        "lon_old": 103.8312219671192
+      },
+      "matrix_id": 7,
+      "pano_id_old": "LzicUfWinBLAnJ0vDWMX-Q",
+      "address": "Singapore"
+    },
+    {
+      "pano_id": "BF_x7bMNiSH1wO-tW1qgnA",
+      "coordinate": {
+        "lat": 1.305187862453685,
+        "lon": 103.8312646890871,
+        "heading": 5.178239238273492,
+        "roll": 6.278953011575234,
+        "pitch": 0.023695608957034524,
+        "lat_old": 1.305164587183797,
+        "lon_old": 103.8313005118655
+      },
+      "matrix_id": 8,
+      "pano_id_old": "bUshDGSCxUy_AI2KXybYXg",
+      "address": "Singapore"
+    },
+    {
+      "pano_id": "pKbvYCIkBgjneJQ4FQYTFw",
+      "coordinate": {
+        "lat": 1.305143758204256,
+        "lon": 103.8313459758499,
+        "heading": 5.311210338868931,
+        "roll": 0.010804020101152738,
+        "pitch": 0.03430630853018273,
+        "lat_old": 1.305122408816162,
+        "lon_old": 103.8313823293581
+      },
+      "matrix_id": 9,
+      "pano_id_old": "jKU4uoNmypUgt-govtGVRQ",
+      "address": "Singapore"
+    },
+    {
+      "pano_id": "4X32bGMpImqroalii4fW6Q",
+      "coordinate": {
+        "lat": 1.305113406297828,
+        "lon": 103.8314335427109,
+        "heading": 1.9639289711190866,
+        "roll": 6.264374335135921,
+        "pitch": 0.03881770341677696,
+        "lat_old": 1.305099592044404,
+        "lon_old": 103.8314383190868
+      },
+      "matrix_id": 10,
+      "pano_id_old": "kfw5G0DEGE1bdEt1gIBi5Q",
+      "address": "Singapore"
+    },
+    {
+      "pano_id": "FEEYM9IV2g0ZdQLW507TEw",
+      "coordinate": {
+        "lat": 1.305132617273626,
+        "lon": 103.8315110261624,
+        "heading": 0.5853230599201471,
+        "roll": 6.277724761680488,
+        "pitch": 0.04448118179093947,
+        "lat_old": 1.305128743272406,
+        "lon_old": 103.8315139450604
+      },
+      "matrix_id": 11,
+      "pano_id_old": "KXEyBzBFksxPxnR4gJ0FtA",
+      "address": "Singapore"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      2.0359313417046967,
+      5.383626852533693,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      5.177524029304693,
+      -1,
+      -1,
+      2.204585975117581,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      2.2420341708423255,
+      -1,
+      -1,
+      -1,
+      5.274942344924366,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      5.346178664157663,
+      -1,
+      -1,
+      -1,
+      2.011376919080152,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      2.133349662916794,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      5.152969606148898,
+      -1,
+      -1,
+      2.0117606943420467,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.15335337979098,
+      -1,
+      2.158515649679068,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.300108334532456,
+      -1,
+      1.976210612849268,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.117803298965511,
+      -1,
+      2.0680306509044635,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.20962333680965,
+      -1,
+      1.9045318294053428,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.0461245178047545,
+      -1,
+      1.3277000962367072
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.46929278062591,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "0HFm9zVtFYSZ0f5PSHwJfw"
+}

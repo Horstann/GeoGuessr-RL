@@ -92,7 +92,7 @@ The WanderBench dataset is available on Hugging Face:
 ```bash
 # Download via huggingface-cli
 pip install huggingface_hub
-huggingface-cli download Yushuo-Zheng/WanderBench --repo-type dataset --local-dir ./data
+hf download Yushuo-Zheng/WanderBench --repo-type dataset --local-dir ./data
 ```
 
 The dataset provides **graph JSON files** that define navigable graphs with node coordinates and adjacency matrices. Each node references a Google Street View panorama by its pano ID. Due to Google's Terms of Service, panorama images are **not** included in the dataset -- they must be fetched locally using the provided pano IDs via the [Google Street View API](https://developers.google.com/maps/documentation/streetview).
@@ -107,7 +107,10 @@ huggingface-cli download Yushuo-Zheng/WanderBench --repo-type dataset --local-di
 
 **Step 2: Fetch panorama images**
 
-Use the `streetview` Python package (or the Google Street View Static API) to download panoramas by pano ID. The code will automatically fetch and cache panorama images at runtime via `utils.py`.
+Fetch + upload panorama images to a chosen Hugging Face dataset in batches:
+```bash
+python batch_download_streetviews.py
+```
 
 **Step 3: Update config paths**
 
