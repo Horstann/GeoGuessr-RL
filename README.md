@@ -105,9 +105,11 @@ pip install huggingface_hub
 huggingface-cli download Yushuo-Zheng/WanderBench --repo-type dataset --local-dir ./data
 ```
 
+Then rename the folder `json_graphs` to `json_graphs_old_`.
+
 **Step 2: Fetch panorama images**
 
-Fetch + upload panorama images to a chosen Hugging Face dataset in batches:
+Fetch + upload panorama images to a chosen Hugging Face dataset in batches, and update json_graphs' metadata:
 ```bash
 python batch_download_streetviews.py
 ```
