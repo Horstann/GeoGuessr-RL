@@ -5,6 +5,6 @@ defaults:
   - _self_
 
 # Main configuration
-output_folder: 'output'
+output_folder: 'outputs'
 max_steps: 4
 debug: false

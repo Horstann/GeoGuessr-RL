@@ -763,11 +763,7 @@ def commit_batch(batch):
     graph_collisions = batch.remote_graph_paths & collisions
     if graph_collisions:
         collision_list = ", ".join(sorted(graph_collisions))
-        raise FileExistsError(
-            f"The following graph(s) appeared on Hugging Face while this "
-            f"batch was processing: {collision_list}. The commit was "
-            "cancelled to prevent an overwrite."
-        )
+        raise FileExistsError(f"The following graph(s) appeared on Hugging Face while this batch was processing: {collision_list}. The commit was cancelled to prevent an overwrite.")
 
     # Images uploaded by another process can safely be reused. Graph JSONs
     # remain append-only and were rejected above if they collided.
@@ -829,10 +825,7 @@ async def finish_upload(batch, upload_task, known_files):
 
         known_files.update(result["latest_remote_files"])
         known_files.update(result["committed_paths"])
-        print(
-            f"Uploaded and archived {len(batch.source_graphs)} graph(s): "
-            f"{result['commit_url']}"
-        )
+        print(f"Uploaded and archived {len(batch.source_graphs)} graph(s): {result['commit_url']}")
         if cancellation_error is not None:
             raise cancellation_error
     finally:

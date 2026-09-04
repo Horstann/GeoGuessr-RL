@@ -1,0 +1,243 @@
+{
+  "center_pano_id": "EBh68bGaqIzStIQCxreN-g",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "EBh68bGaqIzStIQCxreN-g",
+      "coordinate": {
+        "lat": -23.55543435131171,
+        "lon": -46.66280009337243,
+        "heading": 4.010010336596609,
+        "roll": 0.0371047665260164,
+        "pitch": 0.0020837903949324998,
+        "lat_old": -23.55546322366827,
+        "lon_old": -46.66283648400214
+      },
+      "matrix_id": 0,
+      "pano_id_old": "utOkPwN9Wy28SAm8s658sw",
+      "address": "2442 R. da Consolação, São Paulo, State of São Paulo"
+    },
+    {
+      "pano_id": "jBVVNzB4pxPRuj2MDaAHWQ",
+      "coordinate": {
+        "lat": -23.55558011449773,
+        "lon": -46.66289666856328,
+        "heading": 3.9742150547009634,
+        "roll": 0.0074787102992551835,
+        "pitch": -0.01104679220164868,
+        "lat_old": -23.55555053899079,
+        "lon_old": -46.66289401661047
+      },
+      "matrix_id": 1,
+      "pano_id_old": "W1coSSaXzeQrDejlpssMFA",
+      "address": "2454 R. da Consolação, São Paulo, State of São Paulo"
+    },
+    {
+      "pano_id": "3ZkaaED3ImLtH-o8jUvIsA",
+      "coordinate": {
+        "lat": -23.5553122171756,
+        "lon": -46.66265151085377,
+        "heading": 3.973967913351804,
+        "roll": 0.05541428198117698,
+        "pitch": -0.006791593411920073,
+        "lat_old": -23.55534402801053,
+        "lon_old": -46.66268672273445
+      },
+      "matrix_id": 2,
+      "pano_id_old": "EIDHhuBld6H_G8ZMHguMgg",
+      "address": "2418 R. da Consolação, São Paulo, State of São Paulo"
+    },
+    {
+      "pano_id": "WvfCzrcvFn-7ZJsSZtWMhg",
+      "coordinate": {
+        "lat": -23.55524612912886,
+        "lon": -46.66257268936984,
+        "heading": 3.9810756239851157,
+        "roll": 0.0613333073066894,
+        "pitch": -0.005786782732633177,
+        "lat_old": -23.55528113320162,
+        "lon_old": -46.66260893250401
+      },
+      "matrix_id": 3,
+      "pano_id_old": "qooPTkdAOvAU0YtNKgi-yg",
+      "address": "2404 R. da Consolação, São Paulo, State of São Paulo"
+    },
+    {
+      "pano_id": "iRACjRZe-3b2BL-kKifqJQ",
+      "coordinate": {
+        "lat": -23.55518905395967,
+        "lon": -46.66250226579405,
+        "heading": 3.9784036744634403,
+        "roll": 0.06606710111144047,
+        "pitch": -0.004634566087010394,
+        "lat_old": -23.55520671977305,
+        "lon_old": -46.66252222895243
+      },
+      "matrix_id": 4,
+      "pano_id_old": "geGmzpYIK2MYZiOcragGow",
+      "address": "2396 R. da Consolação, São Paulo, State of São Paulo"
+    },
+    {
+      "pano_id": "ZVNcZ_1P_ceIN8GycGA4fQ",
+      "coordinate": {
+        "lat": -23.55510580198533,
+        "lon": -46.66240156614636,
+        "heading": 3.9888262217055743,
+        "roll": 0.06383352454994783,
+        "pitch": 0.003031076794673685,
+        "lat_old": -23.55513517596193,
+        "lon_old": -46.66243604120407
+      },
+      "matrix_id": 5,
+      "pano_id_old": "raNk_UpPDBjnAx9oXP0KcQ",
+      "address": "2388 R. da Consolação, São Paulo, State of São Paulo"
+    },
+    {
+      "pano_id": "gLXFim6HBkg9jHGyUQF3gg",
+      "coordinate": {
+        "lat": -23.55498407947605,
+        "lon": -46.66225438443686,
+        "heading": 3.9808231563137766,
+        "roll": 0.06801642267727,
+        "pitch": -0.008641158788980105,
+        "lat_old": -23.5550140971892,
+        "lon_old": -46.66228966970208
+      },
+      "matrix_id": 6,
+      "pano_id_old": "DxUF_6ikotLmnNKF1yRx2g",
+      "address": "2370 R. da Consolação, São Paulo, State of São Paulo"
+    },
+    {
+      "pano_id": "myIJDoHZix1zCezTt4svZw",
+      "coordinate": {
+        "lat": -23.55492532048745,
+        "lon": -46.66218182504497,
+        "heading": 3.9923804764963937,
+        "roll": 0.05755351189986436,
+        "pitch": 0.010513627351414817,
+        "lat_old": -23.55489666645346,
+        "lon_old": -46.66214396160719
+      },
+      "matrix_id": 7,
+      "pano_id_old": "BRG3OD2nPmdYk1lXsOkgyw",
+      "address": "2352 R. da Consolação, São Paulo, State of São Paulo"
+    },
+    {
+      "pano_id": "2-8JfrWDDmq9gN-E0szvcQ",
+      "coordinate": {
+        "lat": -23.5548658340661,
+        "lon": -46.66210779247456,
+        "heading": 3.995923812326743,
+        "roll": 0.06344634670053154,
+        "pitch": 0.011372097328801858,
+        "lat_old": -23.55483903845996,
+        "lon_old": -46.66206941344393
+      },
+      "matrix_id": 8,
+      "pano_id_old": "Acl360ViTk-3KRR_Iuyflw",
+      "address": "2336 R. da Consolação, São Paulo, State of São Paulo"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      3.6873918524270435,
+      0.8397997766982187,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      0.5457998724542109,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      3.9813913939342687,
+      -1,
+      -1,
+      0.8299370929450681,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      3.971529196746376,
+      -1,
+      0.8468218512454526,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      3.988414013632368,
+      -1,
+      0.8369415324202141,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      3.9785334836561637,
+      -1,
+      0.8367697717288243,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.9783613987575928,
+      -1,
+      0.8472209844808934,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.9888131319711153,
+      -1,
+      0.8510874459456921
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.9926795831647963,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "utOkPwN9Wy28SAm8s658sw"
+}

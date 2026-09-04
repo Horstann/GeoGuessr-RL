@@ -1,0 +1,314 @@
+{
+  "center_pano_id": "L1ridtCO38QN2211GY0CBQ",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "L1ridtCO38QN2211GY0CBQ",
+      "coordinate": {
+        "lat": -32.88954864444479,
+        "lon": -68.84586912425269,
+        "heading": 0.21460983775862663,
+        "roll": 6.256458355111769,
+        "pitch": 0.03820877163353034,
+        "lat_old": -32.88952477148727,
+        "lon_old": -68.84586366630818
+      },
+      "matrix_id": 0,
+      "pano_id_old": "vr-CWyg_HNUaewnAg-dSVg",
+      "address": "1081 Pl. Independencia, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "om3pA4yORgYUXglIxtH2Bw",
+      "coordinate": {
+        "lat": -32.88945611988205,
+        "lon": -68.84584456350228,
+        "heading": 0.20682303769210075,
+        "roll": 6.281668903254896,
+        "pitch": 0.05624782643523656
+      },
+      "matrix_id": 1,
+      "address": "1099 Pl. Independencia, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "GIVoBoT8oMr0R3CxBXBKHA",
+      "coordinate": {
+        "lat": -32.88963888578731,
+        "lon": -68.84589377596859,
+        "heading": 0.22403446525079443,
+        "roll": 6.25003427793028,
+        "pitch": 0.05638484607332114,
+        "lat_old": -32.88961685146457,
+        "lon_old": -68.84588849995562
+      },
+      "matrix_id": 2,
+      "pano_id_old": "auosu4DfpCORBIJo_RmoSA",
+      "address": "1081 Pl. Independencia, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "IqKYS2oMjSnGbrvBfsI6bw",
+      "coordinate": {
+        "lat": -32.88972618886233,
+        "lon": -68.84591806382127,
+        "heading": 0.21945279620093566,
+        "roll": 6.247728513058489,
+        "pitch": 0.054262839316746005,
+        "lat_old": -32.88970901348866,
+        "lon_old": -68.8459133336028
+      },
+      "matrix_id": 3,
+      "pano_id_old": "nzNjBfXyUoYORNWM-xXdfA",
+      "address": "1081 Pl. Independencia, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "sevMX2cgy5SRSgSBStLj2A",
+      "coordinate": {
+        "lat": -32.88981010053912,
+        "lon": -68.84594035042745,
+        "heading": 0.21533826225103378,
+        "roll": 6.239331566141469,
+        "pitch": 0.05358945903511947,
+        "lat_old": -32.88979915841333,
+        "lon_old": -68.8459374395238
+      },
+      "matrix_id": 4,
+      "pano_id_old": "DgznE1Sfx1OnksMacr35Dg",
+      "address": "1049 Pl. Independencia, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "7Apo8FTsWLwtewVuLRrn0g",
+      "coordinate": {
+        "lat": -32.88989512965751,
+        "lon": -68.84596245510194,
+        "heading": 0.21400461775614926,
+        "roll": 6.247009992196385,
+        "pitch": 0.05750057741200984,
+        "lat_old": -32.88988879639936,
+        "lon_old": -68.84596099965013
+      },
+      "matrix_id": 5,
+      "pano_id_old": "nQGDH-7gpGJuyhX5Jl2zqA",
+      "address": "1049 Pl. Independencia, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "rVVK4Ss1ZQRMok43_yposg",
+      "coordinate": {
+        "lat": -32.88998375010424,
+        "lon": -68.84598583329654,
+        "heading": 0.21248127296786723,
+        "roll": 6.245247512186972,
+        "pitch": 0.05495366330351256,
+        "lat_old": -32.88998246837907,
+        "lon_old": -68.84598601522802
+      },
+      "matrix_id": 6,
+      "pano_id_old": "ghieAbox36Blupbly6QUBQ",
+      "address": "1049 Pl. Independencia, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "sbSUX6ZcZbvJy9X_gVrZAg",
+      "coordinate": {
+        "lat": -32.89007263846594,
+        "lon": -68.84600793797061,
+        "heading": 0.21283462451025015,
+        "roll": 6.24578706862382,
+        "pitch": 0.04988806459407284,
+        "lat_old": -32.89003033693249,
+        "lon_old": -68.84599902332843
+      },
+      "matrix_id": 7,
+      "pano_id_old": "_aXvM-wJD9JegcxYwXT_pg",
+      "address": "1047 Chile, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "DvZnaDVNVWKjL8LS1DZ7QA",
+      "coordinate": {
+        "lat": -32.89016271520375,
+        "lon": -68.84603258968505,
+        "heading": 0.21446978877480213,
+        "roll": 6.246489610519385,
+        "pitch": 0.056667274306924045,
+        "lat_old": -32.89012927270866,
+        "lon_old": -68.84602594918637
+      },
+      "matrix_id": 8,
+      "pano_id_old": "PeyvzvWvMNFOGZmJSEESlA",
+      "address": "1050 Chile, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "AS8WhB39gpKqh7qJTaBICw",
+      "coordinate": {
+        "lat": -32.89025330433422,
+        "lon": -68.84605642270765,
+        "heading": 0.21558715129965847,
+        "roll": 6.251575715569219,
+        "pitch": 0.052485845079390636,
+        "lat_old": -32.89022056878844,
+        "lon_old": -68.84604960027754
+      },
+      "matrix_id": 9,
+      "pano_id_old": "iAR0Z6qoZzpXN5T7Jofnkg",
+      "address": "1050 Chile, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "IIV6ZigguhcJnsS-tP3TlA",
+      "coordinate": {
+        "lat": -32.89034444842297,
+        "lon": -68.8460810744216,
+        "heading": 0.22228185558217003,
+        "roll": 6.242841612458194,
+        "pitch": 0.055048338680264874,
+        "lat_old": -32.89030989592926,
+        "lon_old": -68.84607279653983
+      },
+      "matrix_id": 10,
+      "pano_id_old": "hZx4jDMuw9ceDgxHT9nULg",
+      "address": "1023 Chile, Mendoza, Mendoza Province"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      0.2193191023779199,
+      3.367081920948297,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      3.3609115231889812,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      0.22548950100627654,
+      -1,
+      -1,
+      3.371087570581364,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      0.22949514718025724,
+      -1,
+      3.3610267842473274,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      0.21943434187355215,
+      -1,
+      3.3565184389322718,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      0.21492599483653343,
+      -1,
+      3.3595903266093785,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.21799789459223098,
+      -1,
+      3.347453723889353,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.20586127979498064,
+      -1,
+      3.3674788102849664,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.2258863903461777,
+      -1,
+      3.3590195786815147,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.2174271509637659,
+      -1,
+      3.3649206746560383
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.22332825471812134,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "vr-CWyg_HNUaewnAg-dSVg"
+}

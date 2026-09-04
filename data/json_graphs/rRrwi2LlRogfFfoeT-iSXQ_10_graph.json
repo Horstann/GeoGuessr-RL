@@ -1,0 +1,535 @@
+{
+  "center_pano_id": "rRrwi2LlRogfFfoeT-iSXQ",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "rRrwi2LlRogfFfoeT-iSXQ",
+      "coordinate": {
+        "lat": -32.92540686217178,
+        "lon": 151.7773658722782,
+        "heading": 4.738949218568267,
+        "roll": 0.10365880999802105,
+        "pitch": 0.08068219627865908
+      },
+      "matrix_id": 0,
+      "address": "Foreshore Footpath, Newcastle, New South Wales"
+    },
+    {
+      "pano_id": "uPGbr5qxFWW1kMlrZVrbLw",
+      "coordinate": {
+        "lat": -32.92541589509753,
+        "lon": 151.777476707982,
+        "heading": 4.886047323482142,
+        "roll": 0.06861961201941613,
+        "pitch": 0.047367515780367346
+      },
+      "matrix_id": 1,
+      "address": "Foreshore Footpath, Newcastle, New South Wales"
+    },
+    {
+      "pano_id": "X-48p0qJoIMRq6dKlzJlTg",
+      "coordinate": {
+        "lat": -32.92540694084174,
+        "lon": 151.7772541442497,
+        "heading": 4.667055054412707,
+        "roll": 0.11385469726425419,
+        "pitch": 0.1201072335820286
+      },
+      "matrix_id": 2,
+      "address": "Foreshore Footpath, Newcastle, New South Wales"
+    },
+    {
+      "pano_id": "0Sq-Aa8yhUyDntxuFtKr4Q",
+      "coordinate": {
+        "lat": -32.92543492608046,
+        "lon": 151.7775873652776,
+        "heading": 4.884224123399872,
+        "roll": 0.09103039971448794,
+        "pitch": 0.04969871384056821
+      },
+      "matrix_id": 3,
+      "address": "Foreshore Footpath, Newcastle, New South Wales"
+    },
+    {
+      "pano_id": "pBTgal3KwzbhfYZjGjJXGg",
+      "coordinate": {
+        "lat": -32.92540918042965,
+        "lon": 151.7771460751155,
+        "heading": 4.47728352145584,
+        "roll": 0.10392779759049746,
+        "pitch": 0.11337036813050966
+      },
+      "matrix_id": 4,
+      "address": "Foreshore Footpath, Newcastle, New South Wales"
+    },
+    {
+      "pano_id": "O1-E4pryWMY1AeYVLrFeuw",
+      "coordinate": {
+        "lat": -32.92544788726887,
+        "lon": 151.7776971302461,
+        "heading": 4.875003194441582,
+        "roll": 0.1289095385840937,
+        "pitch": 0.06759728689477275
+      },
+      "matrix_id": 5,
+      "address": "Foreshore Footpath, Newcastle, New South Wales"
+    },
+    {
+      "pano_id": "mh8psM2sDy4p1Crmey4ETg",
+      "coordinate": {
+        "lat": -32.9254314932303,
+        "lon": 151.7770392554022,
+        "heading": 4.093557162101812,
+        "roll": 0.11290490582861265,
+        "pitch": 0.06320919636664919
+      },
+      "matrix_id": 6,
+      "address": "Foreshore Footpath, Newcastle, New South Wales"
+    },
+    {
+      "pano_id": "dlAKlIBRCog6ugjx8Jamvg",
+      "coordinate": {
+        "lat": -32.92545995988396,
+        "lon": 151.7778077876836,
+        "heading": 4.794623133788592,
+        "roll": 0.11341992789392036,
+        "pitch": 0.09980369290542801
+      },
+      "matrix_id": 7,
+      "address": "Foreshore Footpath, Newcastle, New South Wales"
+    },
+    {
+      "pano_id": "X3HxSohp63FKMI_QuRGr2Q",
+      "coordinate": {
+        "lat": -32.9254432073269,
+        "lon": 151.7769069132764,
+        "heading": 5.1183207769078,
+        "roll": 0.13922296280056182,
+        "pitch": 0.0714070719921856
+      },
+      "matrix_id": 8,
+      "address": "Foreshore Footpath, Newcastle, New South Wales"
+    },
+    {
+      "pano_id": "mwoMMoWMrFglWcfoH7aydQ",
+      "coordinate": {
+        "lat": -32.92546980151855,
+        "lon": 151.7779109490362,
+        "heading": 4.811899592412154,
+        "roll": 0.11598553406431862,
+        "pitch": 0.08244614102667305
+      },
+      "matrix_id": 9,
+      "address": "Foreshore Footpath, Newcastle, New South Wales"
+    },
+    {
+      "pano_id": "YM-Rdz3PMPqnULQ9b_M_FA",
+      "coordinate": {
+        "lat": -32.92541066942658,
+        "lon": 151.7767985766423,
+        "heading": 4.744292584979402,
+        "roll": 0.12105639251691125,
+        "pitch": 0.03466117474543579
+      },
+      "matrix_id": 10,
+      "address": "Foreshore Footpath, Newcastle, New South Wales"
+    },
+    {
+      "pano_id": "-lPPkPqjc460GYBN1u2EHA",
+      "coordinate": {
+        "lat": -32.92547662195205,
+        "lon": 151.7780201787712,
+        "heading": 4.795446050565427,
+        "roll": 0.1253513556306661,
+        "pitch": 0.11943891330647322
+      },
+      "matrix_id": 11,
+      "address": "Foreshore Footpath, Newcastle, New South Wales"
+    },
+    {
+      "pano_id": "CUsJvIZeeKtjidttUhIYwg",
+      "coordinate": {
+        "lat": -32.92539593474226,
+        "lon": 151.7766941666065,
+        "heading": 5.06948266357349,
+        "roll": 0.12800349789173515,
+        "pitch": 0.056519335708370144
+      },
+      "matrix_id": 12,
+      "address": "Foreshore Footpath, Newcastle, New South Wales"
+    },
+    {
+      "pano_id": "1ZNuAJCCSRPAsv3gNFvJog",
+      "coordinate": {
+        "lat": -32.92548472518781,
+        "lon": 151.7781327104579,
+        "heading": 4.762017519930534,
+        "roll": 0.14715225030778534,
+        "pitch": 0.10993275979543538
+      },
+      "matrix_id": 13,
+      "address": "Foreshore Footpath, Newcastle, New South Wales"
+    },
+    {
+      "pano_id": "IQer9Za5WJDGEwpd9a3W8g",
+      "coordinate": {
+        "lat": -32.9254939364079,
+        "lon": 151.7782478301819,
+        "heading": 4.744918960467789,
+        "roll": 0.1587050764060627,
+        "pitch": 0.1283409287242266
+      },
+      "matrix_id": 14,
+      "address": "Foreshore Footpath, Newcastle, New South Wales"
+    },
+    {
+      "pano_id": "-mJY0U3OBKH6XSAbdbgyCQ",
+      "coordinate": {
+        "lat": -32.92549905363957,
+        "lon": 151.7783662518698,
+        "heading": 4.715591165279401,
+        "roll": 0.11756324062835201,
+        "pitch": 0.1185073395571635
+      },
+      "matrix_id": 15,
+      "address": "Foreshore Footpath, Newcastle, New South Wales"
+    },
+    {
+      "pano_id": "ugAZSlnoD1AqKpqamJ1PLA",
+      "coordinate": {
+        "lat": -32.92551252626337,
+        "lon": 151.7784877970481,
+        "heading": 4.878315634205421,
+        "roll": 0.1037843946881751,
+        "pitch": 0.10965925315148424
+      },
+      "matrix_id": 16,
+      "address": "Foreshore Footpath, Newcastle, New South Wales"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      1.6502474768596664,
+      4.7391681304098725,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      4.79184013044946,
+      -1,
+      -1,
+      1.6697518028931344,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      1.5975757431361883,
+      -1,
+      -1,
+      -1,
+      4.730220974411642,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      4.811344589640981,
+      -1,
+      -1,
+      -1,
+      1.6876104285309876,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      1.5886285871379582,
+      -1,
+      -1,
+      -1,
+      4.435569630353603,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      4.829203215278835,
+      -1,
+      -1,
+      -1,
+      1.6870624831367038,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      1.2939769767638092,
+      -1,
+      -1,
+      -1,
+      4.498784818832704,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.828655136726498,
+      -1,
+      -1,
+      -1,
+      1.686978194088203,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.357192165242911,
+      -1,
+      -1,
+      -1,
+      5.132015283865205,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.828570980836051,
+      -1,
+      -1,
+      -1,
+      1.6837567012755885,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.9904227634334664,
+      -1,
+      -1,
+      -1,
+      4.828126232934007,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.82534962118149,
+      -1,
+      -1,
+      -1,
+      1.6788452995932643,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.6865335793442142,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.820437686866947,
+      -1,
+      -1,
+      1.6779355637648934,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.819528483670796,
+      -1,
+      1.6792746011609851,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.820867521066887,
+      -1,
+      1.6786777867606983
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.820270440350492,
+      -1
+    ]
+  ]
+}

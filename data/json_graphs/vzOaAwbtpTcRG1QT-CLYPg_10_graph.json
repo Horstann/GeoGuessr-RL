@@ -1,0 +1,292 @@
+{
+  "center_pano_id": "vzOaAwbtpTcRG1QT-CLYPg",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "vzOaAwbtpTcRG1QT-CLYPg",
+      "coordinate": {
+        "lat": 48.42295058765103,
+        "lon": -123.3696743055858,
+        "heading": 5.4572133519425625,
+        "roll": 0.01193209144642367,
+        "pitch": 0.020273846430446215
+      },
+      "matrix_id": 0,
+      "address": "Victoria, British Columbia"
+    },
+    {
+      "pano_id": "fZun7HNzcfeUaBwV_hxYYA",
+      "coordinate": {
+        "lat": 48.42304924392968,
+        "lon": -123.3698502641996,
+        "heading": 2.782861126330593,
+        "roll": 6.247723719368528,
+        "pitch": -0.03500285831329296,
+        "lat_old": 48.42303631703507,
+        "lon_old": -123.3698233159175
+      },
+      "matrix_id": 1,
+      "pano_id_old": "3qS_O4Ldj1HtrryKpTOqmg",
+      "address": "Victoria, British Columbia"
+    },
+    {
+      "pano_id": "aXhwmkVt4XWdPkErZ89hcg",
+      "coordinate": {
+        "lat": 48.4231321489298,
+        "lon": -123.3699097570482,
+        "heading": 2.9555442198368578,
+        "roll": 6.243031229527808,
+        "pitch": -0.029227793489456127,
+        "lat_old": 48.42311304810106,
+        "lon_old": -123.3698844157908
+      },
+      "matrix_id": 2,
+      "pano_id_old": "HAcyWVe_S9dmGL4TQKG-ZQ",
+      "address": "Victoria, British Columbia"
+    },
+    {
+      "pano_id": "1__PfQsuKVhEh4a-9Fe1Jg",
+      "coordinate": {
+        "lat": 48.4232317041973,
+        "lon": -123.3699209441834,
+        "heading": 3.7458196964546766,
+        "roll": 6.273984618245581,
+        "pitch": -0.15578107533196703,
+        "lat_old": 48.42323764367984,
+        "lon_old": -123.3698732008316
+      },
+      "matrix_id": 3,
+      "pano_id_old": "iCMtdIRe0zZ6Ta_QWb2Ydg",
+      "address": "Victoria, British Columbia"
+    },
+    {
+      "pano_id": "JOIyTh0SFPhA-PU2Kpirmw",
+      "coordinate": {
+        "lat": 48.42330823794502,
+        "lon": -123.3700211259379,
+        "heading": 2.775501214342051,
+        "roll": 0.03681434880914326,
+        "pitch": 0.018452111086777512
+      },
+      "matrix_id": 4,
+      "address": "Victoria, British Columbia"
+    },
+    {
+      "pano_id": "wrBdvGSHaVFPI8rJwmcvaQ",
+      "coordinate": {
+        "lat": 48.42338484857752,
+        "lon": -123.3700731727148,
+        "heading": 2.8103681182816955,
+        "roll": 6.277847799722849,
+        "pitch": -0.004266783540470451
+      },
+      "matrix_id": 5,
+      "address": "Victoria, British Columbia"
+    },
+    {
+      "pano_id": "u4E2hoQhkNy-iBEVMUsANg",
+      "coordinate": {
+        "lat": 48.42346806605078,
+        "lon": -123.3701157452193,
+        "heading": 2.8034793194899876,
+        "roll": 6.280760232690961,
+        "pitch": -0.0019286612614353843
+      },
+      "matrix_id": 6,
+      "address": "Victoria, British Columbia"
+    },
+    {
+      "pano_id": "aB_3UB8i-WybxKhGYJwQow",
+      "coordinate": {
+        "lat": 48.42355754234387,
+        "lon": -123.3701619484582,
+        "heading": 2.8205589705089924,
+        "roll": 0.018253443430646797,
+        "pitch": -0.00021837920938649752
+      },
+      "matrix_id": 7,
+      "address": "Victoria, British Columbia"
+    },
+    {
+      "pano_id": "THZukvyfYMeFP0IW6X120w",
+      "coordinate": {
+        "lat": 48.42364564056384,
+        "lon": -123.3702045144784,
+        "heading": 2.8310313188635114,
+        "roll": 0.024006870070626744,
+        "pitch": -0.0014173343321401705
+      },
+      "matrix_id": 8,
+      "address": "Victoria, British Columbia"
+    },
+    {
+      "pano_id": "8E6uR7OFtjalgCevrz5axQ",
+      "coordinate": {
+        "lat": 48.42373505771195,
+        "lon": -123.3702456647547,
+        "heading": 2.8412195079297184,
+        "roll": 0.0375501011557373,
+        "pitch": -0.010863167244487716
+      },
+      "matrix_id": 9,
+      "address": "Victoria, British Columbia"
+    },
+    {
+      "pano_id": "plK7f2wMMmOSqc-poWjyjw",
+      "coordinate": {
+        "lat": 48.42382479875968,
+        "lon": -123.3702873955005,
+        "heading": 2.836384805286789,
+        "roll": 0.01640690843962404,
+        "pitch": 0.023886158133029696
+      },
+      "matrix_id": 10,
+      "address": "Victoria, British Columbia"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      5.413899472450635,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      2.2723045215236533,
+      -1,
+      5.838743304459333,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      2.6971498741182827,
+      -1,
+      6.2087510370100105,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      3.0671582373559323,
+      -1,
+      5.567950196538192,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      2.4263562349295307,
+      -1,
+      5.974487652584142,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      2.8328949989943495,
+      -1,
+      5.974869549884459,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      2.833276896294666,
+      -1,
+      5.974594711659963,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      2.83300205807017,
+      -1,
+      5.9745670147846255,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      2.8329743611948333,
+      -1,
+      5.793358077364583,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      2.6517651574586805,
+      -1,
+      6.154866216376298
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.013273562786505,
+      -1
+    ]
+  ]
+}
