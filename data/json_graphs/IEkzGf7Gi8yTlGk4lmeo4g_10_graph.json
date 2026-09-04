@@ -1,0 +1,80 @@
+{
+  "center_pano_id": "IEkzGf7Gi8yTlGk4lmeo4g",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "IEkzGf7Gi8yTlGk4lmeo4g",
+      "coordinate": {
+        "lat": 16.07177962043553,
+        "lon": 108.2227202309805,
+        "heading": 2.9666370847253645,
+        "roll": 6.269855653291523,
+        "pitch": 0.09374446879327972
+      },
+      "matrix_id": 0,
+      "address": "2 Yên Bái, Da Nang"
+    },
+    {
+      "pano_id": "DNX2fOfIcDCNCo_rCNRsvw",
+      "coordinate": {
+        "lat": 16.07186865587621,
+        "lon": 108.2227129005953,
+        "heading": 3.0544412395491682,
+        "roll": 6.262005187030186,
+        "pitch": 0.04830867690960135
+      },
+      "matrix_id": 1,
+      "address": "2 Yên Bái, Da Nang"
+    },
+    {
+      "pano_id": "4C0nANbTqLRb65fNECVxOw",
+      "coordinate": {
+        "lat": 16.07195780361995,
+        "lon": 108.2227111811222,
+        "heading": 6.146045826845956,
+        "roll": 0.03448502120348925,
+        "pitch": 0.0409330522706269
+      },
+      "matrix_id": 2,
+      "address": "2 Yên Bái, Da Nang"
+    },
+    {
+      "pano_id": "pIV0bFY2PNStVWTeodleNA",
+      "coordinate": {
+        "lat": 16.07204614322765,
+        "lon": 108.2227019502671,
+        "heading": 6.169766602675292,
+        "roll": 0.03569920003694301,
+        "pitch": 0.04330446406328796
+      },
+      "matrix_id": 3,
+      "address": "2 Yên Bái, Da Nang"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      6.184343148585731,
+      -1,
+      -1
+    ],
+    [
+      3.0427504949959387,
+      -1,
+      6.189970940601287,
+      -1
+    ],
+    [
+      -1,
+      3.0483782870114933,
+      -1,
+      6.190669221439106
+    ],
+    [
+      -1,
+      -1,
+      3.049076301533203,
+      -1
+    ]
+  ]
+}

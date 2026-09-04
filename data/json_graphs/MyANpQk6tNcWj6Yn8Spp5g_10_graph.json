@@ -1,0 +1,443 @@
+{
+  "center_pano_id": "MyANpQk6tNcWj6Yn8Spp5g",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "MyANpQk6tNcWj6Yn8Spp5g",
+      "coordinate": {
+        "lat": 44.08165877687757,
+        "lon": -103.2249277528573,
+        "heading": 3.3601556210915056,
+        "roll": 6.277718370093872,
+        "pitch": 0.035721379175396334,
+        "lat_old": 44.08165984214038,
+        "lon_old": -103.2247911148856
+      },
+      "matrix_id": 0,
+      "pano_id_old": "Ghou9hxaLXrupitCrxz7ww",
+      "address": "406 5th St, Rapid City, South Dakota"
+    },
+    {
+      "pano_id": "W2Z_NkEH0y1_n0RMpdCwqA",
+      "coordinate": {
+        "lat": 44.08157280642464,
+        "lon": -103.2249539007336,
+        "heading": 3.3528039649023422,
+        "roll": 6.271717735525706,
+        "pitch": 0.00579597063839395,
+        "lat_old": 44.0815750669397,
+        "lon_old": -103.2248155899752
+      },
+      "matrix_id": 1,
+      "pano_id_old": "68NB-KLFWAmgZQl3S-2nMg",
+      "address": "429 5th St, Rapid City, South Dakota"
+    },
+    {
+      "pano_id": "8smygcoJSa5E4hwi5yJpqg",
+      "coordinate": {
+        "lat": 44.08174588142038,
+        "lon": -103.2248998441873,
+        "heading": 3.362612653513214,
+        "roll": 6.272713225141176,
+        "pitch": 0.024138226330205695,
+        "lat_old": 44.08174411987231,
+        "lon_old": -103.2247654072426
+      },
+      "matrix_id": 2,
+      "pano_id_old": "ejnwH8V4ql_b8D09NmOAdw",
+      "address": "405 5th St, Rapid City, South Dakota"
+    },
+    {
+      "pano_id": "56WSk-Ku8rVugS-0vo3yKA",
+      "coordinate": {
+        "lat": 44.08148573570472,
+        "lon": -103.2249796964553,
+        "heading": 3.354472967957495,
+        "roll": 0.006658979953053087,
+        "pitch": 0.0004880242697570204,
+        "lat_old": 44.08148907980956,
+        "lon_old": -103.2248394487902
+      },
+      "matrix_id": 3,
+      "pano_id_old": "SzV2LQJTvUEFDtYqT7QeZw",
+      "address": "437 5th St, Rapid City, South Dakota"
+    },
+    {
+      "pano_id": "qeDeSqC-sWBNTYRTs-s0cg",
+      "coordinate": {
+        "lat": 44.08187535460331,
+        "lon": -103.2248586414934,
+        "heading": 3.3647346602697894,
+        "roll": 6.274723379131968,
+        "pitch": -0.044134171900902144,
+        "lat_old": 44.0818226466928,
+        "lon_old": -103.2247352095729
+      },
+      "matrix_id": 4,
+      "pano_id_old": "LlZ7bTlmhZQcuPMsbIrZUg",
+      "address": "400 5th St, Rapid City, South Dakota"
+    },
+    {
+      "pano_id": "hD7yEafcgZIuM1ZuLVD6Bw",
+      "coordinate": {
+        "lat": 44.08140548268727,
+        "lon": -103.2250057563025,
+        "heading": 3.371437304101301,
+        "roll": 0.014969769967768309,
+        "pitch": 0.020399680791952462,
+        "lat_old": 44.08140004651887,
+        "lon_old": -103.2248625152504
+      },
+      "matrix_id": 5,
+      "pano_id_old": "oI3P1CDk1WsciyRlWmHCaQ",
+      "address": "412 5th St, Rapid City, South Dakota"
+    },
+    {
+      "pano_id": "e46093hMiyMz6e30OLD9Gg",
+      "coordinate": {
+        "lat": 44.08195819480397,
+        "lon": -103.2248330218765,
+        "heading": 3.353611701660964,
+        "roll": 6.273094057177059,
+        "pitch": 0.012933109201751804,
+        "lat_old": 44.08192784252281,
+        "lon_old": -103.2248399770297
+      },
+      "matrix_id": 6,
+      "pano_id_old": "edBD2wN_V-RS9ZVMRwUkDg",
+      "address": "400 5th St, Rapid City, South Dakota"
+    },
+    {
+      "pano_id": "9QxS1te5-3JfYBqAoM49kA",
+      "coordinate": {
+        "lat": 44.08133191816727,
+        "lon": -103.2250301433941,
+        "heading": 3.369443928025375,
+        "roll": 0.012965774536997307,
+        "pitch": 0.01209408030032234,
+        "lat_old": 44.08131192501792,
+        "lon_old": -103.2248826763965
+      },
+      "matrix_id": 7,
+      "pano_id_old": "7ZXIaa-lv-0Eaxd4bT5KNg",
+      "address": "451 5th St, Rapid City, South Dakota"
+    },
+    {
+      "pano_id": "evX1mz4kMjJubSk07dABvg",
+      "coordinate": {
+        "lat": 44.08123579475441,
+        "lon": -103.2250631584174,
+        "heading": 3.3683682772610926,
+        "roll": 0.01890987518864851,
+        "pitch": -0.0025836657315403727,
+        "lat_old": 44.08122530155806,
+        "lon_old": -103.2249028375459
+      },
+      "matrix_id": 8,
+      "pano_id_old": "wWfWiDWlfzk6j79SyG-dKg",
+      "address": "451 5th St, Rapid City, South Dakota"
+    },
+    {
+      "pano_id": "n3ZmA6uk-s3xyqKHM-QC2A",
+      "coordinate": {
+        "lat": 44.08114212474218,
+        "lon": -103.2250916834045,
+        "heading": 3.345163089418796,
+        "roll": 0.019449204840686986,
+        "pitch": 0.006197575330777899,
+        "lat_old": 44.08113859419507,
+        "lon_old": -103.2249243192982
+      },
+      "matrix_id": 9,
+      "pano_id_old": "DIbqrfAMkZCx345sWwYGkQ",
+      "address": "481 5th St, Rapid City, South Dakota"
+    },
+    {
+      "pano_id": "_iRIl2dt8-At_axb8iWllw",
+      "coordinate": {
+        "lat": 44.08105182008341,
+        "lon": -103.2251188877965,
+        "heading": 3.356277525912133,
+        "roll": 0.022483186145424546,
+        "pitch": 0.00615762791442671,
+        "lat_old": 44.08105265697428,
+        "lon_old": -103.224948354214
+      },
+      "matrix_id": 10,
+      "pano_id_old": "mgysSYGc6NOCAygmUddUPA",
+      "address": "481 5th St, Rapid City, South Dakota"
+    },
+    {
+      "pano_id": "4Yt5RFscyZCUyVKb-EAoXA",
+      "coordinate": {
+        "lat": 44.0809656955537,
+        "lon": -103.2251451237529,
+        "heading": 3.3565835231213828,
+        "roll": 0.016635200641989978,
+        "pitch": 0.00973771536782023,
+        "lat_old": 44.08096652211534,
+        "lon_old": -103.2249746781746
+      },
+      "matrix_id": 11,
+      "pano_id_old": "IT0IRbOUYmbgIvFdfZmTrw",
+      "address": "481 5th St, Rapid City, South Dakota"
+    },
+    {
+      "pano_id": "5WAhzgrQ-oN1ldsejdS62A",
+      "coordinate": {
+        "lat": 44.08087746263494,
+        "lon": -103.2251704793133,
+        "heading": 3.3504912758117182,
+        "roll": 0.002519548047702113,
+        "pitch": 0.0019909792309432384,
+        "lat_old": 44.08087977396736,
+        "lon_old": -103.2250019705811
+      },
+      "matrix_id": 12,
+      "pano_id_old": "GBo3sx23I_Mdf7NNuV-InQ",
+      "address": "499 5th St, Rapid City, South Dakota"
+    },
+    {
+      "pano_id": "Wt28jUUlIn2T7sRpHlVItw",
+      "coordinate": {
+        "lat": 44.08077021959883,
+        "lon": -103.2250150885464,
+        "heading": 4.930101334234231,
+        "roll": 0.009716230107666556,
+        "pitch": -0.0036442696356644294,
+        "lat_old": 44.0807938218193,
+        "lon_old": -103.2250285586732
+      },
+      "matrix_id": 13,
+      "pano_id_old": "GyF0k390W7mhnnZ_bmCrjg",
+      "address": "499 I-90BL, Rapid City, South Dakota"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      3.3566982756721138,
+      0.2262220254148093,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      0.2151053045882311,
+      -1,
+      -1,
+      3.351284156322373,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      3.367815017870796,
+      -1,
+      -1,
+      -1,
+      0.2247400508463131,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0.20969118951389096,
+      -1,
+      -1,
+      -1,
+      3.370758915168331,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      3.3663332047211116,
+      -1,
+      -1,
+      -1,
+      0.21860912485330256,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      0.22916594514788627,
+      -1,
+      -1,
+      -1,
+      3.3753767316244954,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      3.360202089517018,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.2337837819190282,
+      -1,
+      -1,
+      3.3834908304206235,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.24189777597522547,
+      -1,
+      3.356958111070689,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.21536511114439522,
+      -1,
+      3.354712090921633,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.21311910703189582,
+      -1,
+      3.3570285215411193,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.21543554939628706,
+      -1,
+      3.345168213673646,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.20357525221512476,
+      -1,
+      2.336169002253815
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.477763542573851,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "Ghou9hxaLXrupitCrxz7ww"
+}

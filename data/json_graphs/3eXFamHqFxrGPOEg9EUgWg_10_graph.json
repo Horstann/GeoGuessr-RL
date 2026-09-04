@@ -1,0 +1,113 @@
+{
+  "center_pano_id": "3eXFamHqFxrGPOEg9EUgWg",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "3eXFamHqFxrGPOEg9EUgWg",
+      "coordinate": {
+        "lat": 7.887083807575206,
+        "lon": -72.5028503544499,
+        "heading": 4.576823428255296,
+        "roll": 0.004102398621813686,
+        "pitch": 0.013224858499169986,
+        "lat_old": 7.887094124723751,
+        "lon_old": -72.50281000262089
+      },
+      "matrix_id": 0,
+      "pano_id_old": "ZJL54nu0o3-6OIZ7lRVBow",
+      "address": "42 Cl. 10, Cúcuta, North Santander"
+    },
+    {
+      "pano_id": "SwBqZIGYGQfVPWWwOKSlVA",
+      "coordinate": {
+        "lat": 7.887188516840897,
+        "lon": -72.50282715440578,
+        "heading": 2.9330418402062337,
+        "roll": 6.252288910109141,
+        "pitch": -0.007907457908663275
+      },
+      "matrix_id": 1,
+      "address": "9126 Av. 4, Cúcuta, North Santander"
+    },
+    {
+      "pano_id": "X_CWvxFuJOcg7gqHZr8CLw",
+      "coordinate": {
+        "lat": 7.887300495204265,
+        "lon": -72.50285071554006,
+        "heading": 2.9472772351810343,
+        "roll": 6.251106466585146,
+        "pitch": -0.01071509548787931
+      },
+      "matrix_id": 2,
+      "address": "9126 Av. 4, Cúcuta, North Santander"
+    },
+    {
+      "pano_id": "jSZGDH-BOU-2zNtuIHgh_w",
+      "coordinate": {
+        "lat": 7.887420279810029,
+        "lon": -72.50288330392537,
+        "heading": 2.9608886515124295,
+        "roll": 6.265551984969955,
+        "pitch": -0.008230765664998894,
+        "lat_old": 7.887380691802703,
+        "lon_old": -72.50287355449197
+      },
+      "matrix_id": 3,
+      "pano_id_old": "esTHDmzM6aOW0TZ9toMh9g",
+      "address": "9126 Av. 4, Cúcuta, North Santander"
+    },
+    {
+      "pano_id": "lAQVi41DB3Bc2xK2JQvfww",
+      "coordinate": {
+        "lat": 7.887509325943984,
+        "lon": -72.5028985599825,
+        "heading": 2.9716845739393922,
+        "roll": 6.276864028016174,
+        "pitch": -0.014680808667116305,
+        "lat_old": 7.887553444373359,
+        "lon_old": -72.50290605260194
+      },
+      "matrix_id": 4,
+      "pano_id_old": "KJ_pE4ioUZdr6p-rp2DIKw",
+      "address": "9126 Av. 4, Cúcuta, North Santander"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      0.216045017315391,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      3.3576377264658275,
+      -1,
+      6.128106773743182,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      2.9865141201533887,
+      -1,
+      6.019954072680628,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      2.878361341041165,
+      -1,
+      6.115080224111746
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      2.973487533986102,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "ZJL54nu0o3-6OIZ7lRVBow"
+}

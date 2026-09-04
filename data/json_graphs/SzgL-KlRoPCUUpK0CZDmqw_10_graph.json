@@ -1,0 +1,369 @@
+{
+  "center_pano_id": "SzgL-KlRoPCUUpK0CZDmqw",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "SzgL-KlRoPCUUpK0CZDmqw",
+      "coordinate": {
+        "lat": -37.56331391357747,
+        "lon": 143.858335280595,
+        "heading": 5.828732313491887,
+        "roll": 0.030065727998125142,
+        "pitch": -0.04805714134464337,
+        "lat_old": -37.5633534619317,
+        "lon_old": 143.858361555058
+      },
+      "matrix_id": 0,
+      "pano_id_old": "HWbw3sbPiJ6Qq4CnDUwcTQ",
+      "address": "124 Lewis St, Ballarat Central, Victoria"
+    },
+    {
+      "pano_id": "a_SxU9ISO7FFLh1FI1IMzA",
+      "coordinate": {
+        "lat": -37.5632311012596,
+        "lon": 143.8583499511931,
+        "heading": 0.02910030921643079,
+        "roll": 0.05634407890269692,
+        "pitch": -0.0319692515155837
+      },
+      "matrix_id": 1,
+      "address": "122 Lewis St, Ballarat Central, Victoria"
+    },
+    {
+      "pano_id": "62tGz-X31lJejyQMVuBL9Q",
+      "coordinate": {
+        "lat": -37.56323532851128,
+        "lon": 143.8583593171697,
+        "heading": 3.695251593676252,
+        "roll": 6.192969659988716,
+        "pitch": -0.02132153400328339
+      },
+      "matrix_id": 2,
+      "address": "Ballarat Central, Victoria"
+    },
+    {
+      "pano_id": "Xux4v-CXZyEm_eKsZBA2IA",
+      "coordinate": {
+        "lat": -37.56320708976592,
+        "lon": 143.8583733246942,
+        "heading": 3.308815201596959,
+        "roll": 6.227312720141942,
+        "pitch": 0.02999931125725208,
+        "lat_old": -37.56319459543249,
+        "lon_old": 143.8583811158628
+      },
+      "matrix_id": 3,
+      "pano_id_old": "YtfgQn8pTcRCQB2HsK-pZw",
+      "address": "124 Lewis St, Ballarat Central, Victoria"
+    },
+    {
+      "pano_id": "wNTJ-w5sKyXlbFYcsIUJhA",
+      "coordinate": {
+        "lat": -37.56328014658668,
+        "lon": 143.8583402536788,
+        "heading": 0.06933636021491892,
+        "roll": 0.07172124177703088,
+        "pitch": -0.036075712758431376
+      },
+      "matrix_id": 4,
+      "address": "124 Lewis St, Ballarat Central, Victoria"
+    },
+    {
+      "pano_id": "U6XVLq2IE0Clfv0Dp1HiVw",
+      "coordinate": {
+        "lat": -37.56310008010485,
+        "lon": 143.858390150304,
+        "heading": 3.3020039007929727,
+        "roll": 6.195944943558553,
+        "pitch": 0.0012423646485219646
+      },
+      "matrix_id": 5,
+      "address": "122 Lewis St, Ballarat Central, Victoria"
+    },
+    {
+      "pano_id": "8PqQWaZAg-TNUQbX6srfqw",
+      "coordinate": {
+        "lat": -37.56299256133735,
+        "lon": 143.8583886583778,
+        "heading": 0.1397608797288658,
+        "roll": 0.06813446313139855,
+        "pitch": 0.008472580691978088
+      },
+      "matrix_id": 6,
+      "address": "120 Lewis St, Ballarat Central, Victoria"
+    },
+    {
+      "pano_id": "bhDKR4S-WG7syCbRbbDnFw",
+      "coordinate": {
+        "lat": -37.56290769218023,
+        "lon": 143.858445517361,
+        "heading": 3.5691503834287834,
+        "roll": 6.213938325147564,
+        "pitch": -0.04030840783694881
+      },
+      "matrix_id": 7,
+      "address": "118 Lewis St, Ballarat Central, Victoria"
+    },
+    {
+      "pano_id": "D5a5_5QP0R2JTbO2u5CBcg",
+      "coordinate": {
+        "lat": -37.56280837099525,
+        "lon": 143.858502210616,
+        "heading": 1.0596442340252465,
+        "roll": 0.027928755524580514,
+        "pitch": 0.06803857268739888
+      },
+      "matrix_id": 8,
+      "address": "118 Lewis St, Ballarat Central, Victoria"
+    },
+    {
+      "pano_id": "T02sB_AwWjV4FCuQZ2ManQ",
+      "coordinate": {
+        "lat": -37.56280141637198,
+        "lon": 143.8586639192367,
+        "heading": 4.669893451502514,
+        "roll": 6.245117549925776,
+        "pitch": -0.09223219276827822
+      },
+      "matrix_id": 9,
+      "address": "108 Lewis St, Ballarat Central, Victoria"
+    },
+    {
+      "pano_id": "P2smAQMicGzyNtAI85Nl-w",
+      "coordinate": {
+        "lat": -37.56280352892404,
+        "lon": 143.8587892415778,
+        "heading": 4.841879329435393,
+        "roll": 6.262636356208535,
+        "pitch": -0.09535395019806911
+      },
+      "matrix_id": 10,
+      "address": "108 Lewis St, Ballarat Central, Victoria"
+    },
+    {
+      "pano_id": "P2ApBYs7iniVHiUWSEm8DQ",
+      "coordinate": {
+        "lat": -37.56280302808975,
+        "lon": 143.8589234328545,
+        "heading": 1.7059524179066905,
+        "roll": 6.274541751545625,
+        "pitch": 0.051312456303101724,
+        "lat_old": -37.56280996955424,
+        "lon_old": 143.8589069386702
+      },
+      "matrix_id": 11,
+      "pano_id_old": "XeHT6AFOphk8DdH2tgpihg",
+      "address": "108 Lewis St, Ballarat Central, Victoria"
+    },
+    {
+      "pano_id": "dkGu6wwmJFbX01blcDcO1A",
+      "coordinate": {
+        "lat": -37.56286554878258,
+        "lon": 143.8589918961896,
+        "heading": 5.465439856549818,
+        "roll": 0.01455170777208551,
+        "pitch": -0.03861250685478636
+      },
+      "matrix_id": 12,
+      "address": "108 Lewis St, Ballarat Central, Victoria"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      0.1395149411149421,
+      0.23786490715325043,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      3.281107438610916,
+      -1,
+      -1,
+      0.6571946738786868,
+      3.3302573767976225,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      3.3794573049906496,
+      -1,
+      -1,
+      0.37463146450442497,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      3.798787078818249,
+      3.516223969063968,
+      -1,
+      -1,
+      0.1239975836857734,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0.18866462333928852,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      3.265590058251276,
+      -1,
+      -1,
+      0.2149604762056491,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.356553163084956,
+      -1,
+      0.42084453323165844,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.56243708695291,
+      -1,
+      0.7202951931796439,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.861887979927491,
+      -1,
+      1.1610006830042452,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.302593469752094,
+      -1,
+      1.6454318158185308,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.78702460256638,
+      -1,
+      1.5660887247845368,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.707679950568383,
+      -1,
+      2.4267239326329486
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.568315857758962,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "HWbw3sbPiJ6Qq4CnDUwcTQ"
+}

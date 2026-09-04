@@ -1,0 +1,372 @@
+{
+  "center_pano_id": "cibo-i4ZaZglQTF4Dml1Wg",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "cibo-i4ZaZglQTF4Dml1Wg",
+      "coordinate": {
+        "lat": -32.88675111867668,
+        "lon": -68.84105312010303,
+        "heading": 0.2053904068284495,
+        "roll": 0.00433015689158998,
+        "pitch": 0.05281527810623344,
+        "lat_old": -32.88670293714161,
+        "lon_old": -68.8410643998778
+      },
+      "matrix_id": 0,
+      "pano_id_old": "KAy_IlFBLBCcP9SXksjPZQ",
+      "address": "1418 Av. España, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "ktt5FVTorcltLI1AU1d1pg",
+      "coordinate": {
+        "lat": -32.88666224656849,
+        "lon": -68.84103065151922,
+        "heading": 0.2013395224286004,
+        "roll": 0.00755191966135389,
+        "pitch": 0.056745837559081386,
+        "lat_old": -32.88661855105765,
+        "lon_old": -68.84104129453262
+      },
+      "matrix_id": 1,
+      "pano_id_old": "cIV7eS30fMbOGQKelH0txA",
+      "address": "1430 Av. España, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "mnj-lhO5iRF3d0Xwwqkx_w",
+      "coordinate": {
+        "lat": -32.88650530231944,
+        "lon": -68.84101191253824,
+        "heading": 0.20359743362455365,
+        "roll": 6.251772256857666,
+        "pitch": 0.010422946716297619
+      },
+      "matrix_id": 2,
+      "address": "1433 Av. España, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "WcTrctCl_T5rGKEpu-yIDw",
+      "coordinate": {
+        "lat": -32.88684117059081,
+        "lon": -68.84107622544808,
+        "heading": 0.20178189013041936,
+        "roll": 0.024045619064487385,
+        "pitch": 0.054297993043135054,
+        "lat_old": -32.886882491462,
+        "lon_old": -68.84110842738532
+      },
+      "matrix_id": 3,
+      "pano_id_old": "zgAN43ppNesC0HIMSu0B3g",
+      "address": "1418 Av. España, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "tPNDnMu_nx-UvktQPCxTCQ",
+      "coordinate": {
+        "lat": -32.88641045722079,
+        "lon": -68.84098817043105,
+        "heading": 0.20720681584993803,
+        "roll": 6.2554341033565235,
+        "pitch": 0.001947170231011435
+      },
+      "matrix_id": 4,
+      "address": "1463 Av. España, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "_VH5PJQiCH4Idetdmj8G8g",
+      "coordinate": {
+        "lat": -32.88695458878648,
+        "lon": -68.84110424295282,
+        "heading": 0.20317525601274883,
+        "roll": 0.010974967995406005,
+        "pitch": 0.012279702628300863
+      },
+      "matrix_id": 5,
+      "address": "1401 Av. España, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "7obqRujrVdVWDkjJDWCjgg",
+      "coordinate": {
+        "lat": -32.88631341653247,
+        "lon": -68.84096315480062,
+        "heading": 0.21004954057651584,
+        "roll": 6.261707978252534,
+        "pitch": 0.0013720605936088236
+      },
+      "matrix_id": 6,
+      "address": "1450 Av. España, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "ylJ9RVx3xCOefG3ETJrILQ",
+      "coordinate": {
+        "lat": -32.88621852681935,
+        "lon": -68.84093823013585,
+        "heading": 0.21920773544637792,
+        "roll": 6.273186202550775,
+        "pitch": 0.00677468233899807
+      },
+      "matrix_id": 7,
+      "address": "1471 Av. España, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "8JQYm13w2FdBRE3pv2r2zQ",
+      "coordinate": {
+        "lat": -32.88612985805219,
+        "lon": -68.84091412416421,
+        "heading": 0.224226662257714,
+        "roll": 6.273847199133333,
+        "pitch": 0.014042848427987822
+      },
+      "matrix_id": 8,
+      "address": "1470 Av. España, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "Oz0bJkorxHOIuxoL6pYFhw",
+      "coordinate": {
+        "lat": -32.88604008592183,
+        "lon": -68.8408907459198,
+        "heading": 0.21463706858077267,
+        "roll": 6.255379242238069,
+        "pitch": 0.003761448723627916
+      },
+      "matrix_id": 9,
+      "address": "1489 Av. España, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "xb5idJ2XKA-CN1gHxrae3A",
+      "coordinate": {
+        "lat": -32.88594762366436,
+        "lon": -68.84086654898175,
+        "heading": 0.21281172132487558,
+        "roll": 6.271688440753715,
+        "pitch": -0.0032325449311381795
+      },
+      "matrix_id": 10,
+      "address": "1495 Av. España, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "PXueNCNr8KhyrSJ_z4rJyA",
+      "coordinate": {
+        "lat": -32.88585358053604,
+        "lon": -68.84082315823132,
+        "heading": 0.23166355624651713,
+        "roll": 0.00013598954057370615,
+        "pitch": 0.060625131160945304,
+        "lat_old": -32.88585195016674,
+        "lon_old": -68.84084044175884
+      },
+      "matrix_id": 11,
+      "pano_id_old": "WLUXnOYmT7os_MNthVfrsw",
+      "address": "1501 Av. España, Mendoza, Mendoza Province"
+    },
+    {
+      "pano_id": "UP4uae_Txn0bP3Hs7cAdqw",
+      "coordinate": {
+        "lat": -32.88582815611935,
+        "lon": -68.84081542612685,
+        "heading": 0.21637637908870347,
+        "roll": 6.279442500583589,
+        "pitch": 0.014658038639796128
+      },
+      "matrix_id": 12,
+      "address": "1501 Av. España, Mendoza, Mendoza Province"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      0.20919792030190498,
+      -1,
+      3.3538084760205993,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      3.3507903609556897,
+      -1,
+      0.09993103804595191,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      3.2415235140482968,
+      -1,
+      -1,
+      0.21801437296191345,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      0.2122160413973397,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.3461321125518175,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      3.3596070099069504,
+      -1,
+      -1,
+      -1,
+      0.20337466019936837,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      0.2045397244785682,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      3.344967347078675,
+      -1,
+      -1,
+      0.21472192355100533,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.3563145438512847,
+      -1,
+      0.2137116201019701,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.3553044068498172,
+      -1,
+      0.21472555210799063,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.3563182722768117,
+      -1,
+      0.21426262813150762,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.3558551485632466,
+      -1,
+      0.3696458719754297,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.5112381143785947,
+      -1,
+      0.2500423808994311
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.3916349612030947,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "KAy_IlFBLBCcP9SXksjPZQ"
+}

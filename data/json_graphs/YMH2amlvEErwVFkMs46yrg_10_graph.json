@@ -1,0 +1,317 @@
+{
+  "center_pano_id": "YMH2amlvEErwVFkMs46yrg",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "YMH2amlvEErwVFkMs46yrg",
+      "coordinate": {
+        "lat": -42.86684416701245,
+        "lon": 147.3164882330282,
+        "heading": 0.9877410151219792,
+        "roll": 0.03543734056157177,
+        "pitch": 0.007300789812343223,
+        "lat_old": -42.8668189849261,
+        "lon_old": 147.3165394859104
+      },
+      "matrix_id": 0,
+      "pano_id_old": "PdqqiDmOC7IrNVeD8cANXQ",
+      "address": "North Hobart, Tasmania"
+    },
+    {
+      "pano_id": "PfdIIZcY1yeTv8cllrtJ8A",
+      "coordinate": {
+        "lat": -42.86679199719127,
+        "lon": 147.3165898120186,
+        "heading": 0.9357340729856121,
+        "roll": 0.039645642748979776,
+        "pitch": 0.04919497692037972,
+        "lat_old": -42.86676959717525,
+        "lon_old": 147.3166426850441
+      },
+      "matrix_id": 1,
+      "pano_id_old": "QDCO_OdhdQ0pKp2uSs-FmA",
+      "address": "North Hobart, Tasmania"
+    },
+    {
+      "pano_id": "AdDok3QAtc73f7Vh8Fe8gw",
+      "coordinate": {
+        "lat": -42.86694004229008,
+        "lon": 147.3162798449573,
+        "heading": 1.0476202614406205,
+        "roll": 0.03787727049565354,
+        "pitch": 0.014009292598252825,
+        "lat_old": -42.86691696052502,
+        "lon_old": 147.3163329457635
+      },
+      "matrix_id": 2,
+      "pano_id_old": "SLCsnR13IfXiwlhYpRirBQ",
+      "address": "North Hobart, Tasmania"
+    },
+    {
+      "pano_id": "IG_KZ4xg-2FEmDGwh1-EJQ",
+      "coordinate": {
+        "lat": -42.866743327404,
+        "lon": 147.3166957272006,
+        "heading": 4.114480553522129,
+        "roll": 6.277489870872343,
+        "pitch": -0.1975274569995034,
+        "lat_old": -42.86672034119027,
+        "lon_old": 147.3167418142132
+      },
+      "matrix_id": 3,
+      "pano_id_old": "DXodef19VdTgSetE876ZJg",
+      "address": "North Hobart, Tasmania"
+    },
+    {
+      "pano_id": "xc1gHkMVynQ4VJU52NBPqw",
+      "coordinate": {
+        "lat": -42.86698370062663,
+        "lon": 147.3161695863842,
+        "heading": 1.1317429289525258,
+        "roll": 0.04668218872453828,
+        "pitch": 0.005721402127871731,
+        "lat_old": -42.86696240390062,
+        "lon_old": 147.3162252006384
+      },
+      "matrix_id": 4,
+      "pano_id_old": "MD7i813uSlQQN-8OOet9nw",
+      "address": "North Hobart, Tasmania"
+    },
+    {
+      "pano_id": "GImZLHH3QF3YnrroBGzGCw",
+      "coordinate": {
+        "lat": -42.86668306781159,
+        "lon": 147.3167979645803,
+        "heading": 0.978971958021648,
+        "roll": 0.038811906880216844,
+        "pitch": 0.04799881811677063,
+        "lat_old": -42.86667186659174,
+        "lon_old": 147.3168478676883
+      },
+      "matrix_id": 5,
+      "pano_id_old": "8jDSgZ6Ym5RF2rEFer7CEw",
+      "address": "North Hobart, Tasmania"
+    },
+    {
+      "pano_id": "GHqPYVuMfQ5A90S339tNtQ",
+      "coordinate": {
+        "lat": -42.86665555694456,
+        "lon": 147.3169143538641,
+        "heading": 4.814102559265868,
+        "roll": 0.04486276700206658,
+        "pitch": -0.09340864417982073,
+        "lat_old": -42.86661439633981,
+        "lon_old": 147.3169444354341
+      },
+      "matrix_id": 6,
+      "pano_id_old": "FGe-zycqHy7PMREHyLag9g",
+      "address": "North Hobart, Tasmania"
+    },
+    {
+      "pano_id": "WzmDZTT8GxY0yO1xSJwVMg",
+      "coordinate": {
+        "lat": -42.86704283790611,
+        "lon": 147.3159341061808,
+        "heading": 1.30703924927843,
+        "roll": 0.055441263131970855,
+        "pitch": 0.015454856437947835,
+        "lat_old": -42.86703173463179,
+        "lon_old": 147.3159923349275
+      },
+      "matrix_id": 7,
+      "pano_id_old": "ZwxsO2MYTHCNdzTouDwylA",
+      "address": "North Hobart, Tasmania"
+    },
+    {
+      "pano_id": "1BNqMuoHA07HOMLuwXa9WQ",
+      "coordinate": {
+        "lat": -42.86707069788617,
+        "lon": 147.3158173940553,
+        "heading": 1.2075685846673163,
+        "roll": 0.05738366047896616,
+        "pitch": 0.011134676517621294,
+        "lat_old": -42.86708742848513,
+        "lon_old": 147.3157602443113
+      },
+      "matrix_id": 8,
+      "pano_id_old": "mHhV2dZGKfEZjX326JuCbg",
+      "address": "North Hobart, Tasmania"
+    },
+    {
+      "pano_id": "senYLaJKgA_lABNDwiq47w",
+      "coordinate": {
+        "lat": -42.86714888591895,
+        "lon": 147.315591458927,
+        "heading": 1.078888169483132,
+        "roll": 0.05686348686142484,
+        "pitch": 0.014702380271945946,
+        "lat_old": -42.8671274421736,
+        "lon_old": 147.3156466133645
+      },
+      "matrix_id": 9,
+      "pano_id_old": "F8-MnfiQEwWHQUv7hXgwqQ",
+      "address": "North Hobart, Tasmania"
+    },
+    {
+      "pano_id": "U4p5hiWPkv8wwlwMug_8ow",
+      "coordinate": {
+        "lat": -42.86723464971483,
+        "lon": 147.3153703345315,
+        "heading": 1.078555540662981,
+        "roll": 0.04708410550611248,
+        "pitch": 0.018081132746929476,
+        "lat_old": -42.86721362612578,
+        "lon_old": 147.3154258587709
+      },
+      "matrix_id": 10,
+      "pano_id_old": "6aMRuXdhnWnyBLRZ0nwWYQ",
+      "address": "North Hobart, Tasmania"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      0.9595832607614703,
+      4.151833115192611,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      4.101174708272158,
+      -1,
+      -1,
+      1.0107952530204385,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      1.0102429358720577,
+      -1,
+      -1,
+      -1,
+      4.217066912910589,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      4.152386649041358,
+      -1,
+      -1,
+      -1,
+      0.8935170976632067,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      1.075475568493778,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.38228199936713,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      4.035108537387751,
+      -1,
+      -1,
+      1.2588320669906305,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.40042333864963,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      1.240692141742354,
+      -1,
+      -1,
+      -1,
+      4.397535532669378,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.2559442648219183,
+      -1,
+      4.271256603046091,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.129666632102982,
+      -1,
+      4.2256695809216405
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.0840795528401557,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "PdqqiDmOC7IrNVeD8cANXQ"
+}

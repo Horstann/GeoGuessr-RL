@@ -1,0 +1,164 @@
+{
+  "center_pano_id": "DlCqV46BFoVYqlmzdfpFkA",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "DlCqV46BFoVYqlmzdfpFkA",
+      "coordinate": {
+        "lat": 45.76349849401166,
+        "lon": 4.836677952685767,
+        "heading": 1.4990161459339908,
+        "roll": 0.029207203925278456,
+        "pitch": -0.0013976269400735842
+      },
+      "matrix_id": 0,
+      "address": "7 Pl. des Cordeliers, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "cfivy2fx_V6it3PB5hOgRw",
+      "coordinate": {
+        "lat": 45.76349438904394,
+        "lon": 4.836541935562207,
+        "heading": 1.5523138556716922,
+        "roll": 0.013596517193452754,
+        "pitch": -0.008588694515505544,
+        "lat_old": 45.76348601230575,
+        "lon_old": 4.836549768153028
+      },
+      "matrix_id": 1,
+      "pano_id_old": "jv5wEKk-9pmOmYFd5rrQdA",
+      "address": "87 Pl. des Cordeliers, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "eFfO9fseNlDXdg3hkFF-1Q",
+      "coordinate": {
+        "lat": 45.76350601285296,
+        "lon": 4.836808653935111,
+        "heading": 1.486444427692163,
+        "roll": 0.028718478495140688,
+        "pitch": 0.003380084055528569
+      },
+      "matrix_id": 2,
+      "address": "7 Pl. des Cordeliers, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "l0jbTZHCIe9Bs-_lMbSdpw",
+      "coordinate": {
+        "lat": 45.76331838636455,
+        "lon": 4.836487499216422,
+        "heading": 6.038942009918458,
+        "roll": 0.010357274828291945,
+        "pitch": 0.001416269067704139,
+        "lat_old": 45.76333993700877,
+        "lon_old": 4.836476657549041
+      },
+      "matrix_id": 3,
+      "pano_id_old": "oupAEKcL4HPH_-DFEcgsTQ",
+      "address": "2 Rue Grolée, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "ZpqKs-PaFfmcSEkBY5PS_A",
+      "coordinate": {
+        "lat": 45.76322314020448,
+        "lon": 4.836528761715435,
+        "heading": 5.968248398782304,
+        "roll": 0.03058541059534048,
+        "pitch": 0.012431635968489884,
+        "lat_old": 45.76324870761069,
+        "lon_old": 4.836515489276916
+      },
+      "matrix_id": 4,
+      "pano_id_old": "s2CyNb4ofAaZX0dUC0n0kQ",
+      "address": "2 Rue Grolée, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "Sb6JP04UY_q7dGyPM1jiRw",
+      "coordinate": {
+        "lat": 45.76313744828826,
+        "lon": 4.836573769852914,
+        "heading": 5.943458630091412,
+        "roll": 0.026441261461878966,
+        "pitch": 0.0018337195685740595
+      },
+      "matrix_id": 5,
+      "address": "2 Rue Grolée, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "v9GAMXrzepWsA1hvtRe4fg",
+      "coordinate": {
+        "lat": 45.76305180486179,
+        "lon": 4.836615920741474,
+        "heading": 5.968575434964165,
+        "roll": 0.026277198255162483,
+        "pitch": -0.002443982932365717
+      },
+      "matrix_id": 6,
+      "address": "2 Rue Grolée, Lyon, Auvergne-Rhône-Alpes"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      4.669155826448824,
+      1.5196511170082518,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      1.5275614719778448,
+      -1,
+      -1,
+      3.354104690018224,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      4.661243504281936,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0.21251135571844915,
+      -1,
+      -1,
+      2.8480959454879335,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      5.989689115052285,
+      -1,
+      2.790369146440946,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      5.931962362839214,
+      -1,
+      2.990839093763677
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      6.132431747353471,
+      -1
+    ]
+  ]
+}

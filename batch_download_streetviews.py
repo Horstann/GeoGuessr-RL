@@ -9,6 +9,7 @@ import yaml
 import tempfile
 import asyncio
 import math
+import random
 from dataclasses import dataclass
 from streetlevel import streetview
 from huggingface_hub import CommitOperationAdd, HfApi
@@ -26,7 +27,10 @@ HF_REPO_TYPE = "dataset"
 ZOOM = 5
 JPEG_QUALITY = 80
 
-LOOKUP_CONCURRENCY = 12
+LOOKUP_CONCURRENCY = 10
+LOOKUP_MAX_ATTEMPTS = 4
+LOOKUP_RETRY_BASE_DELAY = 1.0
+LOOKUP_RETRY_JITTER = 0.5
 PANORAMA_CONCURRENCY = 7
 HTTP_CONNECTION_LIMIT = 36
 GRAPH_BATCH_SIZE = 8
@@ -34,6 +38,8 @@ GRAPH_BATCH_SIZE = 8
 SOURCE_GRAPH_DIR = Path("data/json_graphs_old_")
 REFRESHED_GRAPH_DIR = Path("data/json_graphs")
 PROCESSED_GRAPH_DIR = Path("data/json_graphs_old")
+REMOTE_IMAGE_DIR = "pano_images_01"
+REMOTE_GRAPH_DIR = "json_graphs"
 
 REFRESHED_GRAPH_DIR.mkdir(parents=True, exist_ok=True)
 PROCESSED_GRAPH_DIR.mkdir(parents=True, exist_ok=True)
@@ -213,8 +219,11 @@ def remove_unresolved_nodes(graph, unresolved_matrix_ids):
 
     components = find_connected_components(graph["adjacency_matrix"])
     if len(components) > 1:
-        component_sizes = [len(component) for component in components]
-        raise RuntimeError(f"Removing unresolved panoramas split the graph into {len(components)} components with sizes {component_sizes}")
+        graph["component_sizes"] = [
+            len(component) for component in components
+        ]
+    else:
+        graph.pop("component_sizes", None)
 
     return {
         "removed_pano_ids": removed_pano_ids,
@@ -371,6 +380,38 @@ async def gather_with_progress(coroutines, description, progress_after=None):
 # Metadata lookup
 # =====================================================================
 
+async def lookup_with_retries(operation, description, lookup_semaphore):
+    """Run one metadata lookup with exponential backoff on transient errors."""
+    transient_errors = (
+        aiohttp.ClientError,
+        asyncio.TimeoutError,
+        json.JSONDecodeError,
+    )
+
+    for attempt in range(1, LOOKUP_MAX_ATTEMPTS + 1):
+        try:
+            async with lookup_semaphore:
+                return await operation()
+        except transient_errors as error:
+            if attempt == LOOKUP_MAX_ATTEMPTS:
+                raise RuntimeError(
+                    f"{description} failed after {LOOKUP_MAX_ATTEMPTS} "
+                    f"attempts: {error}"
+                ) from error
+
+            delay = (
+                LOOKUP_RETRY_BASE_DELAY * (2 ** (attempt - 1))
+                + random.uniform(0, LOOKUP_RETRY_JITTER)
+            )
+            tqdm.write(
+                f"Retrying {description} after attempt {attempt}/"
+                f"{LOOKUP_MAX_ATTEMPTS} failed ({error}); waiting "
+                f"{delay:.1f}s."
+            )
+            # Sleep after releasing the semaphore so another lookup can run.
+            await asyncio.sleep(delay)
+
+
 async def resolve_node(index, node, session, lookup_semaphore):
     """
     Resolve the panorama metadata for one graph node.
@@ -382,11 +423,28 @@ async def resolve_node(index, node, session, lookup_semaphore):
     old_lat = node["coordinate"]["lat"]
     old_lon = node["coordinate"]["lon"]
 
-    async with lookup_semaphore:
-        pano = await streetview.find_panorama_by_id_async(panoid=old_pano_id, session=session)
-        used_coordinate_fallback = pano is None
-        if used_coordinate_fallback:
-            pano = await streetview.find_panorama_async(lat=old_lat, lon=old_lon, session=session)
+    pano = await lookup_with_retries(
+        operation=lambda: streetview.find_panorama_by_id_async(
+            panoid=old_pano_id,
+            session=session,
+        ),
+        description=f"panorama ID lookup for {old_pano_id}",
+        lookup_semaphore=lookup_semaphore,
+    )
+    used_coordinate_fallback = pano is None
+    if used_coordinate_fallback:
+        pano = await lookup_with_retries(
+            operation=lambda: streetview.find_panorama_async(
+                lat=old_lat,
+                lon=old_lon,
+                session=session,
+            ),
+            description=(
+                f"coordinate lookup for {old_pano_id} "
+                f"at ({old_lat}, {old_lon})"
+            ),
+            lookup_semaphore=lookup_semaphore,
+        )
 
     return {
         "index": index,
@@ -521,7 +579,7 @@ async def prepare_graph(graph_file, session, known_files, progress_after=None):
                 part.value for part in (pano.address or [])
             )
 
-            remote_image_path = f"pano_images/{pano.id}.jpg"
+            remote_image_path = f"{REMOTE_IMAGE_DIR}/{pano.id}.jpg"
 
             # Do not download images already present on Hugging Face.
             if remote_image_path in known_files:
@@ -565,7 +623,7 @@ async def prepare_graph(graph_file, session, known_files, progress_after=None):
         refreshed_graph_name = f"{graph['center_pano_id']}_10_graph.json"
         refreshed_graph_path = REFRESHED_GRAPH_DIR / refreshed_graph_name
         batch_graph_path = batch_graph_dir / refreshed_graph_name
-        remote_graph_path = f"json_graphs/{refreshed_graph_name}"
+        remote_graph_path = f"{REMOTE_GRAPH_DIR}/{refreshed_graph_name}"
 
         if remote_graph_path in known_files:
             raise FileExistsError(
@@ -719,7 +777,7 @@ def commit_batch(batch):
         if operation.path_in_repo not in collisions
     ]
     number_of_new_images = sum(
-        operation.path_in_repo.startswith("pano_images/")
+        operation.path_in_repo.startswith(f"{REMOTE_IMAGE_DIR}/")
         for operation in operations
     )
     graph_count = len(batch.remote_graph_paths)
@@ -729,10 +787,7 @@ def commit_batch(batch):
         repo_type=HF_REPO_TYPE,
         operations=operations,
         parent_commit=parent_commit,
-        commit_message=(
-            f"Add {graph_count} refreshed graph(s) with "
-            f"{number_of_new_images} new panoramas"
-        ),
+        commit_message=f"Add {graph_count} refreshed graph(s) with {number_of_new_images} new panoramas",
     )
     return {
         "commit_url": commit.commit_url,

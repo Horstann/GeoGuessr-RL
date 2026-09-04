@@ -1,0 +1,311 @@
+{
+  "center_pano_id": "xosX5Tq3r6MyFGaY3RzZlw",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "xosX5Tq3r6MyFGaY3RzZlw",
+      "coordinate": {
+        "lat": 49.22793829723089,
+        "lon": 18.74039929159159,
+        "heading": 5.116269077604002,
+        "roll": 0.06735043266766844,
+        "pitch": 0.029570808637858333,
+        "lat_old": 49.22796896775735,
+        "lon_old": 18.7403925072335
+      },
+      "matrix_id": 0,
+      "pano_id_old": "TkhtATVsDPgRUVSDiDzDpQ",
+      "address": "Sasinkova, Žilina, Žilina Region"
+    },
+    {
+      "pano_id": "eZC_mw6SMMD5UhOnp0l8rg",
+      "coordinate": {
+        "lat": 49.22805081669395,
+        "lon": 18.74035068096038,
+        "heading": 2.824812837718176,
+        "roll": 6.247619856086014,
+        "pitch": -0.05405311538090227
+      },
+      "matrix_id": 1,
+      "address": "27 Kysucká, Žilina, Žilina Region"
+    },
+    {
+      "pano_id": "i7eP4TDZnmiOq18uxSkpUA",
+      "coordinate": {
+        "lat": 49.22814292683328,
+        "lon": 18.74032497173784,
+        "heading": 3.1625368176666115,
+        "roll": 6.2523629459874455,
+        "pitch": -0.05326535233045683
+      },
+      "matrix_id": 2,
+      "address": "27 Kysucká, Žilina, Žilina Region"
+    },
+    {
+      "pano_id": "qe6akVJdnDELS6IRUwUH2g",
+      "coordinate": {
+        "lat": 49.22828384667392,
+        "lon": 18.74036658242651,
+        "heading": 3.4757240292277123,
+        "roll": 0.008212780485113803,
+        "pitch": 0.0012250541014364497,
+        "lat_old": 49.22823585046478,
+        "lon_old": 18.74034497580144
+      },
+      "matrix_id": 3,
+      "pano_id_old": "4msJAGO5xqGTH3Ub6Ox4sA",
+      "address": "27 Kysucká, Žilina, Žilina Region"
+    },
+    {
+      "pano_id": "caZ-N99BXEcB3iBHEH9LvQ",
+      "coordinate": {
+        "lat": 49.22836442920724,
+        "lon": 18.74041148628514,
+        "heading": 3.509227927321454,
+        "roll": 0.0225849625915522,
+        "pitch": 0.009309345906480986,
+        "lat_old": 49.22833455415011,
+        "lon_old": 18.74039111009062
+      },
+      "matrix_id": 4,
+      "pano_id_old": "XU7kHWitu5knp-NC9gzlQQ",
+      "address": "27 Kysucká, Žilina, Žilina Region"
+    },
+    {
+      "pano_id": "95sgDqMqepKG6xOgnCqQuQ",
+      "coordinate": {
+        "lat": 49.22844916175777,
+        "lon": 18.74046218468404,
+        "heading": 3.5102074379703856,
+        "roll": 0.013103234220840127,
+        "pitch": 0.016715330581882338,
+        "lat_old": 49.2284378466497,
+        "lon_old": 18.7404480559452
+      },
+      "matrix_id": 5,
+      "pano_id_old": "9WAFlLa4WRoK-Jmue_uumw",
+      "address": "27 Kysucká, Žilina, Žilina Region"
+    },
+    {
+      "pano_id": "rPSqmbDpT2SMYxjEw-4afA",
+      "coordinate": {
+        "lat": 49.22853326538176,
+        "lon": 18.74051186230713,
+        "heading": 3.508586638130963,
+        "roll": 0.020553852851932838,
+        "pitch": 0.021765349798945094,
+        "lat_old": 49.2285190777424,
+        "lon_old": 18.74049481976665
+      },
+      "matrix_id": 6,
+      "pano_id_old": "awhfBHHrSTM33pppr3EXOQ",
+      "address": "27 Kysucká, Žilina, Žilina Region"
+    },
+    {
+      "pano_id": "Wt6VQHVbLociQKiI-FSA0A",
+      "coordinate": {
+        "lat": 49.22861916260737,
+        "lon": 18.74056229890182,
+        "heading": 3.5119235789768335,
+        "roll": 0.004825196406195027,
+        "pitch": 0.05546285970393571,
+        "lat_old": 49.22860411287508,
+        "lon_old": 18.74054419330509
+      },
+      "matrix_id": 7,
+      "pano_id_old": "eTJlfzityH3mWVDGobaSgA",
+      "address": "27 Kysucká, Žilina, Žilina Region"
+    },
+    {
+      "pano_id": "RRm6iZuBarLYCU711N88sw",
+      "coordinate": {
+        "lat": 49.22870981548316,
+        "lon": 18.74061635176154,
+        "heading": 3.507719246563925,
+        "roll": 0.0016369464238652931,
+        "pitch": 0.054528755951590416,
+        "lat_old": 49.22868710379868,
+        "lon_old": 18.74059287208267
+      },
+      "matrix_id": 8,
+      "pano_id_old": "obN4a0A0L6ZTVjyJ8ReWMg",
+      "address": "27 Kysucká, Žilina, Žilina Region"
+    },
+    {
+      "pano_id": "ZcUBA8wEqkHcPCVWjYR_cg",
+      "coordinate": {
+        "lat": 49.22880237969172,
+        "lon": 18.74066664621546,
+        "heading": 3.441473647080421,
+        "roll": 0.01364965349898364,
+        "pitch": 0.04709773756194232,
+        "lat_old": 49.22877043108191,
+        "lon_old": 18.74063907002034
+      },
+      "matrix_id": 9,
+      "pano_id_old": "BB0q2OdHc4Mrzdt0-nIp3Q",
+      "address": "27 Kysucká, Žilina, Žilina Region"
+    },
+    {
+      "pano_id": "ObU2OSkz1GNScwPZLBm8PQ",
+      "coordinate": {
+        "lat": 49.2288958753923,
+        "lon": 18.74070614331892,
+        "heading": 3.3614978542809055,
+        "roll": 0.005578960980403972,
+        "pitch": 0.048046355542228546,
+        "lat_old": 49.22885541807766,
+        "lon_old": 18.74068110107572
+      },
+      "matrix_id": 10,
+      "pano_id_old": "Pshx6T5gJ7vlONB5Ejt6vA",
+      "address": "27 Kysucká, Žilina, Žilina Region"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      6.00820214108969,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      2.8666088449751985,
+      -1,
+      0.16301047578233932,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      3.30460314601689,
+      -1,
+      0.19049297520626185,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      3.332086178788158,
+      -1,
+      0.34900698617792797,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      3.490600233290232,
+      -1,
+      0.37249736962405167,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      3.5140906933348917,
+      -1,
+      0.36814813342608993,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.5097414436463867,
+      -1,
+      0.3661576194534763,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.5077509397037616,
+      -1,
+      0.3713209074093949,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.5129142754418203,
+      -1,
+      0.34096860142832824,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.4825619197890116,
+      -1,
+      0.26917961569052007
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.410772791347105,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "TkhtATVsDPgRUVSDiDzDpQ"
+}

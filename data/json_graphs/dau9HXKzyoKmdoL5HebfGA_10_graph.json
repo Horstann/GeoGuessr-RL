@@ -1,0 +1,289 @@
+{
+  "center_pano_id": "dau9HXKzyoKmdoL5HebfGA",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "dau9HXKzyoKmdoL5HebfGA",
+      "coordinate": {
+        "lat": -33.8664450534258,
+        "lon": 151.2043116686325,
+        "heading": 6.183737545753846,
+        "roll": 6.263720262772197,
+        "pitch": 0.014829413055942726
+      },
+      "matrix_id": 0,
+      "address": "242 Kent St, Sydney, New South Wales"
+    },
+    {
+      "pano_id": "DrOhZzklfY8EvgCYeZTzFg",
+      "coordinate": {
+        "lat": -33.86656831637956,
+        "lon": 151.204363248029,
+        "heading": 3.028443993620033,
+        "roll": 0.014166491923378556,
+        "pitch": -0.05701095524559877,
+        "lat_old": -33.86653844425371,
+        "lon_old": 151.2043231406003
+      },
+      "matrix_id": 1,
+      "pano_id_old": "uIYHGbEPJzyqKl1nuSpRHQ",
+      "address": "242 Kent St, Sydney, New South Wales"
+    },
+    {
+      "pano_id": "P_svehjIxWSB-p_hjQfjEg",
+      "coordinate": {
+        "lat": -33.86635389788123,
+        "lon": 151.2043016195451,
+        "heading": 6.1805385566524444,
+        "roll": 6.272436789020027,
+        "pitch": 0.02404221937290834
+      },
+      "matrix_id": 2,
+      "address": "289 Kent St, Sydney, New South Wales"
+    },
+    {
+      "pano_id": "92pX-EOpK6Yq82tnfAHj-Q",
+      "coordinate": {
+        "lat": -33.86663217067432,
+        "lon": 151.2043380808386,
+        "heading": 6.08374170577577,
+        "roll": 6.217599106381987,
+        "pitch": 0.042344927122532405
+      },
+      "matrix_id": 3,
+      "address": "248 Kent St, Sydney, New South Wales"
+    },
+    {
+      "pano_id": "nvE8XnUZ0-w7D27pZjdGVw",
+      "coordinate": {
+        "lat": -33.86625750333086,
+        "lon": 151.2043237631102,
+        "heading": 3.040914778056547,
+        "roll": 6.263478447745218,
+        "pitch": -0.011719639851057199
+      },
+      "matrix_id": 4,
+      "address": "275 Kent St, Sydney, New South Wales"
+    },
+    {
+      "pano_id": "Yn0bDLNqARW_k5ApqUM-_g",
+      "coordinate": {
+        "lat": -33.86672675591564,
+        "lon": 151.204362536589,
+        "heading": 6.067198149084198,
+        "roll": 6.1969564121405645,
+        "pitch": 0.028262131278193395
+      },
+      "matrix_id": 5,
+      "address": "248 Kent St, Sydney, New South Wales"
+    },
+    {
+      "pano_id": "-2enFp_Pd8aKbAGaYYDSkg",
+      "coordinate": {
+        "lat": -33.86617332794174,
+        "lon": 151.2042788534734,
+        "heading": 6.18254498221771,
+        "roll": 6.254833294214602,
+        "pitch": 0.010443053582527716,
+        "lat_old": -33.86616844727347,
+        "lon_old": 151.2043146033218
+      },
+      "matrix_id": 6,
+      "pano_id_old": "ldW_RrX0auz4sS9sAIDZ_Q",
+      "address": "232 Kent St, Sydney, New South Wales"
+    },
+    {
+      "pano_id": "LkUQqC8FXRLLIeRzvxZYWg",
+      "coordinate": {
+        "lat": -33.86607508894676,
+        "lon": 151.2043029534947,
+        "heading": 3.0392582918585176,
+        "roll": 6.279167662359093,
+        "pitch": -0.010868227250558866
+      },
+      "matrix_id": 7,
+      "address": "232 Kent St, Sydney, New South Wales"
+    },
+    {
+      "pano_id": "iJHM1t_cD2gu2sZ0njWHwQ",
+      "coordinate": {
+        "lat": -33.8659808266277,
+        "lon": 151.2042911258085,
+        "heading": 3.038092093617171,
+        "roll": 6.281434545078969,
+        "pitch": -0.008269780974968555
+      },
+      "matrix_id": 8,
+      "address": "222 Kent St, Sydney, New South Wales"
+    },
+    {
+      "pano_id": "uX6SaPBwV3YQeWS4FNbTTA",
+      "coordinate": {
+        "lat": -33.86588618632966,
+        "lon": 151.2042796538431,
+        "heading": 3.0324086415348335,
+        "roll": 6.276705303615205,
+        "pitch": -0.010998855302027254
+      },
+      "matrix_id": 9,
+      "address": "222 Kent St, Sydney, New South Wales"
+    },
+    {
+      "pano_id": "XGnR9x2M-A10U3Obqi3Taw",
+      "coordinate": {
+        "lat": -33.86578075879976,
+        "lon": 151.2042672036489,
+        "heading": 3.0265800471730855,
+        "roll": 6.281428153492352,
+        "pitch": -0.015217835100930784
+      },
+      "matrix_id": 10,
+      "address": "275 Kent St, Sydney, New South Wales"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      2.8071870496414806,
+      6.1843921507497885,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      5.948779201562898,
+      -1,
+      -1,
+      3.4578714034740505,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      3.0427992308438867,
+      -1,
+      -1,
+      -1,
+      6.186498711172041,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0.3162789946575296,
+      -1,
+      -1,
+      -1,
+      3.0424972283762712,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      3.0449060575822475,
+      -1,
+      -1,
+      -1,
+      5.86616147277426,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      6.184089615649956,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      2.724569255985505,
+      -1,
+      -1,
+      0.20095057329691066,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.342542992483894,
+      -1,
+      6.186142912850408,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.044550259260615,
+      -1,
+      6.187015364423517,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.0454227108337237,
+      -1,
+      6.203327226100252
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.0617345725104586,
+      -1
+    ]
+  ]
+}

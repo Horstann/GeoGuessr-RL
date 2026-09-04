@@ -1,0 +1,449 @@
+{
+  "center_pano_id": "R8f7aIp-40z2bwJbCbir3A",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "R8f7aIp-40z2bwJbCbir3A",
+      "coordinate": {
+        "lat": -27.59750093406625,
+        "lon": -48.54167250853137,
+        "heading": 4.478421756505742,
+        "roll": 6.280050233944344,
+        "pitch": 0.22182067930515242
+      },
+      "matrix_id": 0,
+      "address": "310 R. Clemente Rovere, Florianópolis, State of Santa Catarina"
+    },
+    {
+      "pano_id": "vrBB573Uu-Ik2Qv9eWbB4w",
+      "coordinate": {
+        "lat": -27.59752390632604,
+        "lon": -48.54177198965703,
+        "heading": 4.429152211074839,
+        "roll": 0.010073283027845922,
+        "pitch": 0.1032752565444008
+      },
+      "matrix_id": 1,
+      "address": "298 R. Clemente Rovere, Florianópolis, State of Santa Catarina"
+    },
+    {
+      "pano_id": "7v2lmDINVqhajirtXUVh9A",
+      "coordinate": {
+        "lat": -27.59747718627982,
+        "lon": -48.54155180296972,
+        "heading": 1.2715968362272194,
+        "roll": 6.276835265876403,
+        "pitch": -0.26428518236062987
+      },
+      "matrix_id": 2,
+      "address": "307 R. Clemente Rovere, Florianópolis, State of Santa Catarina"
+    },
+    {
+      "pano_id": "B5vPgL-vM0IPnAs8QadgLQ",
+      "coordinate": {
+        "lat": -27.59755340700463,
+        "lon": -48.54188277046097,
+        "heading": 4.419486534214505,
+        "roll": 6.2800459728866,
+        "pitch": 0.05651707202144358
+      },
+      "matrix_id": 3,
+      "address": "288 R. Clemente Rovere, Florianópolis, State of Santa Catarina"
+    },
+    {
+      "pano_id": "8edw9oUYNflL26PkoROeCw",
+      "coordinate": {
+        "lat": -27.59745187325074,
+        "lon": -48.54145926985215,
+        "heading": 1.2648443912833234,
+        "roll": 6.244499696552877,
+        "pitch": -0.29342389311162337
+      },
+      "matrix_id": 4,
+      "address": "339 R. Clemente Rovere, Florianópolis, State of Santa Catarina"
+    },
+    {
+      "pano_id": "z5mz4iXydrhcwXwDz0vqow",
+      "coordinate": {
+        "lat": -27.59757938326876,
+        "lon": -48.54198545858546,
+        "heading": 4.432933899822751,
+        "roll": 0.023672381198901995,
+        "pitch": 0.02986775109940217
+      },
+      "matrix_id": 5,
+      "address": "278 R. Clemente Rovere, Florianópolis, State of Santa Catarina"
+    },
+    {
+      "pano_id": "A1hPSUBMfvJZQwQ83X-lNA",
+      "coordinate": {
+        "lat": -27.59741912062865,
+        "lon": -48.54132734171443,
+        "heading": 1.3719475424205496,
+        "roll": 0.013828577352642233,
+        "pitch": -0.310383968197683,
+        "lat_old": -27.59742541610645,
+        "lon_old": -48.54137353179631
+      },
+      "matrix_id": 6,
+      "pano_id_old": "0frUNM-hl-W-8jJyqNHrZg",
+      "address": "349 R. Clemente Rovere, Florianópolis, State of Santa Catarina"
+    },
+    {
+      "pano_id": "Lwn7dMsB1zZHnCBhkUn7_Q",
+      "coordinate": {
+        "lat": -27.59759781943599,
+        "lon": -48.54207791623452,
+        "heading": 1.3757388185483865,
+        "roll": 6.26518553400396,
+        "pitch": -0.038293992788412876
+      },
+      "matrix_id": 7,
+      "address": "275 R. Clemente Rovere, Florianópolis, State of Santa Catarina"
+    },
+    {
+      "pano_id": "xe5-qkHlP7WhKSijMUjKPQ",
+      "coordinate": {
+        "lat": -27.59755554718868,
+        "lon": -48.54197293749539,
+        "heading": 3.139856538875171,
+        "roll": 0.039213673858979704,
+        "pitch": -0.03388006959771555
+      },
+      "matrix_id": 8,
+      "address": "288 R. Prof. Mario Nappi, Florianópolis, State of Santa Catarina"
+    },
+    {
+      "pano_id": "1x78QOrn9Fm3pChL3L20TQ",
+      "coordinate": {
+        "lat": -27.5976394983669,
+        "lon": -48.54217861966302,
+        "heading": 1.3512495875865083,
+        "roll": 0.027661467777893637,
+        "pitch": -0.07529941508339091
+      },
+      "matrix_id": 9,
+      "address": "265 R. Clemente Rovere, Florianópolis, State of Santa Catarina"
+    },
+    {
+      "pano_id": "g19spFHwQQ9Pf_xwfo4tqA",
+      "coordinate": {
+        "lat": -27.59765568094196,
+        "lon": -48.54228252991285,
+        "heading": 1.4725278130998447,
+        "roll": 0.031752035358579504,
+        "pitch": -0.0931722886330762
+      },
+      "matrix_id": 10,
+      "address": "256 R. Clemente Rovere, Florianópolis, State of Santa Catarina"
+    },
+    {
+      "pano_id": "Iet3CyOoa9jA4uVJdwEK-w",
+      "coordinate": {
+        "lat": -27.59768663302867,
+        "lon": -48.54239041048885,
+        "heading": 1.3877771056238717,
+        "roll": 0.02963100440087252,
+        "pitch": -0.12657125817986892
+      },
+      "matrix_id": 11,
+      "address": "238 R. Clemente Rovere, Florianópolis, State of Santa Catarina"
+    },
+    {
+      "pano_id": "E1xACuuZUS12PSDSCb4A3A",
+      "coordinate": {
+        "lat": -27.59770099084599,
+        "lon": -48.542492336067,
+        "heading": 1.3574456981786867,
+        "roll": 0.0174284481398053,
+        "pitch": -0.1768490763994756
+      },
+      "matrix_id": 12,
+      "address": "228 R. Clemente Rovere, Florianópolis, State of Santa Catarina"
+    },
+    {
+      "pano_id": "KTntGKUGcsF4iW7Qe7km8A",
+      "coordinate": {
+        "lat": -27.59772828179384,
+        "lon": -48.54259357469222,
+        "heading": 1.2230783022237197,
+        "roll": 0.021262613644759988,
+        "pitch": -0.1758388062399538
+      },
+      "matrix_id": 13,
+      "address": "214 R. Clemente Rovere, Florianópolis, State of Santa Catarina"
+    },
+    {
+      "pano_id": "A3Z4Wlswyp7jz-McEzU4Ug",
+      "coordinate": {
+        "lat": -27.59773300673474,
+        "lon": -48.54269168318972,
+        "heading": 4.494539740055118,
+        "roll": 0.04109171009256837,
+        "pitch": 0.1639575125107283,
+        "lat_old": -27.59775467305762,
+        "lon_old": -48.54268786573521
+      },
+      "matrix_id": 14,
+      "pano_id_old": "5oJK2MLB0bA1DdmWi9OwHg",
+      "address": "206 R. Clemente Rovere, Florianópolis, State of Santa Catarina"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      4.42792502644453,
+      1.2820241771593157,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      1.2863322396966823,
+      -1,
+      -1,
+      4.446743455339249,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      4.423616830749109,
+      -1,
+      -1,
+      -1,
+      1.2822631958671502,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      1.3051506685914003,
+      -1,
+      -1,
+      -1,
+      4.446593253053767,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      4.423855716298889,
+      -1,
+      -1,
+      -1,
+      1.2976644066908674,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      1.3050007326220288,
+      -1,
+      -1,
+      -1,
+      4.4440608531732115,
+      4.446127732495222,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      4.43925599358523,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.302468199583418,
+      -1,
+      -1,
+      -1,
+      4.4432224900620545,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.3045349457473738,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.301629836472261,
+      -1,
+      -1,
+      4.443291732250397,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.3016989455025485,
+      -1,
+      4.4446379601814305,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.303045306591638,
+      -1,
+      4.447176485332495,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.3055838317427015,
+      -1,
+      4.447133075806726,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.3055404222169333,
+      -1,
+      4.658098527866107
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.516506667568423,
+      -1
+    ]
+  ]
+}

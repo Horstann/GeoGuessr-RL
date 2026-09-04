@@ -1,0 +1,357 @@
+{
+  "center_pano_id": "Ns7z5HjwecDzviJuAGohNA",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "Ns7z5HjwecDzviJuAGohNA",
+      "coordinate": {
+        "lat": 47.60156053845978,
+        "lon": -122.3382406841476,
+        "heading": 4.621175713049477,
+        "roll": 0.06968724001091525,
+        "pitch": 0.019158248249812024,
+        "lat_old": 47.60155705976287,
+        "lon_old": -122.33821671272
+      },
+      "matrix_id": 0,
+      "pano_id_old": "Xp0MSKmSs_MawkcgttSUJw",
+      "address": "Seattle, Washington"
+    },
+    {
+      "pano_id": "hXDNBBJ1qQf9-rmknURRAA",
+      "coordinate": {
+        "lat": 47.60156088948337,
+        "lon": -122.3381077669211,
+        "heading": 4.637896636269647,
+        "roll": 0.059596493512280614,
+        "pitch": 0.011301257243805752,
+        "lat_old": 47.60155702556435,
+        "lon_old": -122.3380831609734
+      },
+      "matrix_id": 1,
+      "pano_id_old": "iurn8ul6GQAb_NTRd_RmCA",
+      "address": "Seattle, Washington"
+    },
+    {
+      "pano_id": "2uVW8_lUGI9ywcOO9I1svg",
+      "coordinate": {
+        "lat": 47.60156100555066,
+        "lon": -122.3383786964125,
+        "heading": 1.9135415638206237,
+        "roll": 0.012543380543353928,
+        "pitch": 0.10163381720653046,
+        "lat_old": 47.60156395313584,
+        "lon_old": -122.3383529042384
+      },
+      "matrix_id": 2,
+      "pano_id_old": "GrgN1tzma0XZUscNThJG0Q",
+      "address": "Seattle, Washington"
+    },
+    {
+      "pano_id": "RzBpBk4X_E4Y2Z-NfbJ9LQ",
+      "coordinate": {
+        "lat": 47.60156114364116,
+        "lon": -122.3379703828006,
+        "heading": 4.651931495214365,
+        "roll": 0.08131235844922066,
+        "pitch": -0.014373613035375665,
+        "lat_old": 47.60155437101452,
+        "lon_old": -122.3379443955174
+      },
+      "matrix_id": 3,
+      "pano_id_old": "6bmbd_Xv4LWnsaUVxZrMFQ",
+      "address": "Seattle, Washington"
+    },
+    {
+      "pano_id": "nGrbKRxZx9B2csVIIUejDg",
+      "coordinate": {
+        "lat": 47.60155297378638,
+        "lon": -122.3377409098143,
+        "heading": 1.4612033863545553,
+        "roll": 0.05486454311434659,
+        "pitch": -0.002484462980934921,
+        "lat_old": 47.60155985745103,
+        "lon_old": -122.3377800703052
+      },
+      "matrix_id": 4,
+      "pano_id_old": "IugWI0yaSmUunwCxqeYPHQ",
+      "address": "Seattle, Washington"
+    },
+    {
+      "pano_id": "VP6DDSV6ukX4eCVvDMIwLQ",
+      "coordinate": {
+        "lat": 47.60155231910301,
+        "lon": -122.3376361098903,
+        "heading": 1.5205063911923309,
+        "roll": 0.05271541788773388,
+        "pitch": 0.029855900032551317,
+        "lat_old": 47.60155098197347,
+        "lon_old": -122.3376451251362
+      },
+      "matrix_id": 5,
+      "pano_id_old": "tKOgwb_eCmWiy2vBEnLvNg",
+      "address": "Seattle, Washington"
+    },
+    {
+      "pano_id": "lRggMZfnt--ClPotrREtHw",
+      "coordinate": {
+        "lat": 47.60155204087107,
+        "lon": -122.3374977605501,
+        "heading": 1.4368136244593916,
+        "roll": 0.053925920310526565,
+        "pitch": 0.07015751680872043,
+        "lat_old": 47.60155116509954,
+        "lon_old": -122.3375066383508
+      },
+      "matrix_id": 6,
+      "pano_id_old": "jxxxRWnomPvMKkge1jSX2w",
+      "address": "Seattle, Washington"
+    },
+    {
+      "pano_id": "30eBBFaZ8eCcIOrjF9Yr-A",
+      "coordinate": {
+        "lat": 47.60155012797097,
+        "lon": -122.3373632700702,
+        "heading": 1.4535444013755965,
+        "roll": 0.0383917432839864,
+        "pitch": -0.020599417873708403,
+        "lat_old": 47.60154923060706,
+        "lon_old": -122.3373716859954
+      },
+      "matrix_id": 7,
+      "pano_id_old": "pIkaFi74tGjg-bxJGfYHHQ",
+      "address": "Seattle, Washington"
+    },
+    {
+      "pano_id": "78WCmhWV_qSeE-OGigYM-g",
+      "coordinate": {
+        "lat": 47.60155357158646,
+        "lon": -122.337228495042,
+        "heading": 1.467933061271131,
+        "roll": 0.050378847732271616,
+        "pitch": -0.0035361452954072127,
+        "lat_old": 47.601552245478,
+        "lon_old": -122.3372369450419
+      },
+      "matrix_id": 8,
+      "pano_id_old": "Z8fm9bTs3EZX9JXmgOVobQ",
+      "address": "Seattle, Washington"
+    },
+    {
+      "pano_id": "Z1fuTdLhRaksSCp4ufX_8Q",
+      "coordinate": {
+        "lat": 47.60155309240545,
+        "lon": -122.3370878641001,
+        "heading": 1.5201340812719377,
+        "roll": 0.04256429669494927,
+        "pitch": 0.011560515975924964,
+        "lat_old": 47.60155355025259,
+        "lon_old": -122.3371036502003
+      },
+      "matrix_id": 9,
+      "pano_id_old": "oPIVn9ULPQlR3Ka7-BXm3A",
+      "address": "Seattle, Washington"
+    },
+    {
+      "pano_id": "EVA8a9a7366_xNYM6M7ulg",
+      "coordinate": {
+        "lat": 47.60155495431857,
+        "lon": -122.3369620835546,
+        "heading": 4.615401447173966,
+        "roll": 0.07534264151683427,
+        "pitch": 0.043573177017276955,
+        "lat_old": 47.60155198970306,
+        "lon_old": -122.3369683055338
+      },
+      "matrix_id": 10,
+      "pano_id_old": "pfbw9RWcxduahulFyTnkzg",
+      "address": "Seattle, Washington"
+    },
+    {
+      "pano_id": "oTBdJjvZKSPkcpgA1Xxf8g",
+      "coordinate": {
+        "lat": 47.60155989553917,
+        "lon": -122.3368509334386,
+        "heading": 4.492025715986083,
+        "roll": 0.0791398598228533,
+        "pitch": -0.07269684090811099,
+        "lat_old": 47.60155963864895,
+        "lon_old": -122.3368342445157
+      },
+      "matrix_id": 11,
+      "pano_id_old": "aFtOvQ55ilFG_48oARz8yw",
+      "address": "Seattle, Washington"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      1.566878853455121,
+      4.717409113839238,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      4.708473220186038,
+      -1,
+      -1,
+      1.5680518208607772,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      1.5758146814343774,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      4.709646245124381,
+      -1,
+      -1,
+      1.6235467217125936,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      4.765142332920077,
+      -1,
+      1.5800600260278395,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      4.721654030339983,
+      -1,
+      1.573777978760084,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.715372415490733,
+      -1,
+      1.591886331552051,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.733480718576166,
+      -1,
+      1.5329201944680795,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.6745145851122265,
+      -1,
+      1.5758486986712121,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.717443164834055,
+      -1,
+      1.5488455232896075,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.690439798065337,
+      -1,
+      1.5049609684179612
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.64655505461737,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "Xp0MSKmSs_MawkcgttSUJw"
+}
