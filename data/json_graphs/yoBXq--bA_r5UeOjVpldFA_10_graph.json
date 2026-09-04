@@ -1,0 +1,344 @@
+{
+  "center_pano_id": "yoBXq--bA_r5UeOjVpldFA",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "yoBXq--bA_r5UeOjVpldFA",
+      "coordinate": {
+        "lat": -16.39353808616092,
+        "lon": -71.54233250580114,
+        "heading": 1.5641183172034685,
+        "roll": 6.272450104825477,
+        "pitch": -0.0070312779100272045
+      },
+      "matrix_id": 0,
+      "address": "104 Ronda Recoleta, Arequipa"
+    },
+    {
+      "pano_id": "i-vXyN_Z4sdElcaRBEwi_Q",
+      "coordinate": {
+        "lat": -16.39352879038442,
+        "lon": -71.54224683382337,
+        "heading": 1.4155225836505896,
+        "roll": 6.262542080305946,
+        "pitch": -0.023403859659616347
+      },
+      "matrix_id": 1,
+      "address": "104 Ronda Recoleta, Arequipa"
+    },
+    {
+      "pano_id": "PhUyNIn-35ZB0IA6TjYLyg",
+      "coordinate": {
+        "lat": -16.3935389350819,
+        "lon": -71.54242306812249,
+        "heading": 1.5638927474591386,
+        "roll": 6.280773548496411,
+        "pitch": -0.011550395963782665
+      },
+      "matrix_id": 2,
+      "address": "104 Ronda Recoleta, Arequipa"
+    },
+    {
+      "pano_id": "WHE1UR-nQkAAUMXkVE2rkA",
+      "coordinate": {
+        "lat": -16.39354110144673,
+        "lon": -71.54250720049778,
+        "heading": 1.5727185964697157,
+        "roll": 0.0022089480430445654,
+        "pitch": 0.015849803227606585
+      },
+      "matrix_id": 3,
+      "address": "104 Ronda Recoleta, Arequipa"
+    },
+    {
+      "pano_id": "h9iX8Pmpvk7KITvhMhCtfg",
+      "coordinate": {
+        "lat": -16.39353636516104,
+        "lon": -71.542566518791,
+        "heading": 1.5798259076288648,
+        "roll": 6.278069907357763,
+        "pitch": -0.00841985010239452,
+        "lat_old": -16.39353582945914,
+        "lon_old": -71.54255963605826
+      },
+      "matrix_id": 4,
+      "pano_id_old": "3C1nGpyYoVi469b_RWH2Vw",
+      "address": "106 Ronda Recoleta, Arequipa"
+    },
+    {
+      "pano_id": "jTgfhoea0MvZ8Dv1FLVdPg",
+      "coordinate": {
+        "lat": -16.39353572086396,
+        "lon": -71.5426606129788,
+        "heading": 1.5829636440251962,
+        "roll": 0.0017038276574831601,
+        "pitch": -0.014352307746655031,
+        "lat_old": -16.39353589192474,
+        "lon_old": -71.54265391137243
+      },
+      "matrix_id": 5,
+      "pano_id_old": "3Coxw_8rJw4O5lu_FbQAng",
+      "address": "106 Ronda Recoleta, Arequipa"
+    },
+    {
+      "pano_id": "yeFHYVih7Gh2K3zcQi2pkg",
+      "coordinate": {
+        "lat": -16.3935344270436,
+        "lon": -71.54275515995215,
+        "heading": 1.581157621331959,
+        "roll": 6.282874782596483,
+        "pitch": -0.019634421452718192,
+        "lat_old": -16.39353588886483,
+        "lon_old": -71.54274746216315
+      },
+      "matrix_id": 6,
+      "pano_id_old": "ZhFUVNE-kmt-PfpOuo4oCQ",
+      "address": "106 Ronda Recoleta, Arequipa"
+    },
+    {
+      "pano_id": "0LQkr6EirNouiCBBuJJDjA",
+      "coordinate": {
+        "lat": -16.3935339009432,
+        "lon": -71.54285151814364,
+        "heading": 1.5695797948089485,
+        "roll": 6.2802568952449365,
+        "pitch": -0.020862937663571744,
+        "lat_old": -16.39353602415037,
+        "lon_old": -71.54284445429215
+      },
+      "matrix_id": 7,
+      "pano_id_old": "RU-sJeEKAlG0cp7JTaDuQA",
+      "address": "195 Ronda Recoleta, Arequipa"
+    },
+    {
+      "pano_id": "VAI6himwivs-8oAwAsi9rg",
+      "coordinate": {
+        "lat": -16.39353409345648,
+        "lon": -71.5429491441787,
+        "heading": 1.5777390545986787,
+        "roll": 0.003207805360953238,
+        "pitch": -0.02331757324029778,
+        "lat_old": -16.3935380527654,
+        "lon_old": -71.54294425382139
+      },
+      "matrix_id": 8,
+      "pano_id_old": "CEuP8OlcLA6bbvEKd0r38Q",
+      "address": "144 Ronda Recoleta, Arequipa"
+    },
+    {
+      "pano_id": "yIE9JBuVwU8MfjVgHb6NnQ",
+      "coordinate": {
+        "lat": -16.3935342821888,
+        "lon": -71.54304577400264,
+        "heading": 1.5347999762369495,
+        "roll": 6.2724533006187855,
+        "pitch": -0.02066240163348878,
+        "lat_old": -16.39353892743494,
+        "lon_old": -71.54304178926816
+      },
+      "matrix_id": 9,
+      "pano_id_old": "hoid_bvaqgWF1PTWN_-OPw",
+      "address": "197 Ronda Recoleta, Arequipa"
+    },
+    {
+      "pano_id": "Z8DO08drO0Iji5gBr889uQ",
+      "coordinate": {
+        "lat": -16.39353818691931,
+        "lon": -71.54313959637382,
+        "heading": 1.5308437172795823,
+        "roll": 0.007161442509048079,
+        "pitch": -0.0219906532271658,
+        "lat_old": -16.39354601111923,
+        "lon_old": -71.54314023030868
+      },
+      "matrix_id": 10,
+      "pano_id_old": "rzp6MrlzZoZ7HAHHNKlnZg",
+      "address": "198 Ronda Recoleta, Arequipa"
+    },
+    {
+      "pano_id": "IBOmUrX2vUVvFwTZH-efnw",
+      "coordinate": {
+        "lat": -16.39354146893034,
+        "lon": -71.54323894300748,
+        "heading": 1.5510929294699454,
+        "roll": 6.2706732437461765,
+        "pitch": -0.02397630613592888,
+        "lat_old": -16.39354541708154,
+        "lon_old": -71.54323106410504
+      },
+      "matrix_id": 11,
+      "pano_id_old": "lWBqX27eN4lZzG2sbhg5Xw",
+      "address": "200 Ronda Recoleta, Arequipa"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      1.4117953565469692,
+      4.670123548620697,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      4.553388143294817,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      1.5285308950309031,
+      -1,
+      -1,
+      4.6645069418817195,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      1.5229144214499803,
+      -1,
+      4.795426334530969,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      1.6538339731374094,
+      -1,
+      4.719526161228716,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      1.5779339711100875,
+      -1,
+      4.726652103041039,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.5850599151912252,
+      -1,
+      4.718079894006138,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.5764877150868204,
+      -1,
+      4.710333231688171,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.568741058965712,
+      -1,
+      4.710352828981772,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.5687606514042807,
+      -1,
+      4.669033943245536,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.5274417517841459,
+      -1,
+      4.677966416944834
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.5363742527133843,
+      -1
+    ]
+  ]
+}

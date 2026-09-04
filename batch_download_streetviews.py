@@ -38,7 +38,7 @@ GRAPH_BATCH_SIZE = 8
 SOURCE_GRAPH_DIR = Path("data/json_graphs_old_")
 REFRESHED_GRAPH_DIR = Path("data/json_graphs")
 PROCESSED_GRAPH_DIR = Path("data/json_graphs_old")
-REMOTE_IMAGE_DIR = "pano_images_02"
+REMOTE_IMAGE_DIR = "pano_images"
 REMOTE_GRAPH_DIR = "json_graphs"
 
 REFRESHED_GRAPH_DIR.mkdir(parents=True, exist_ok=True)
@@ -765,8 +765,7 @@ def commit_batch(batch):
         collision_list = ", ".join(sorted(graph_collisions))
         raise FileExistsError(f"The following graph(s) appeared on Hugging Face while this batch was processing: {collision_list}. The commit was cancelled to prevent an overwrite.")
 
-    # Images uploaded by another process can safely be reused. Graph JSONs
-    # remain append-only and were rejected above if they collided.
+    # Images uploaded by another process can safely be reused. Graph JSONs remain append-only and were rejected above if they collided.
     operations = [
         operation
         for operation in batch.operations
