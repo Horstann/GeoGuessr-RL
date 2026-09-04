@@ -38,7 +38,7 @@ GRAPH_BATCH_SIZE = 8
 SOURCE_GRAPH_DIR = Path("data/json_graphs_old_")
 REFRESHED_GRAPH_DIR = Path("data/json_graphs")
 PROCESSED_GRAPH_DIR = Path("data/json_graphs_old")
-REMOTE_IMAGE_DIR = "pano_images_01"
+REMOTE_IMAGE_DIR = "pano_images_02"
 REMOTE_GRAPH_DIR = "json_graphs"
 
 REFRESHED_GRAPH_DIR.mkdir(parents=True, exist_ok=True)
@@ -844,7 +844,7 @@ async def finish_upload(batch, upload_task, known_files):
 # =====================================================================
 
 async def main():
-    source_graphs = sorted(SOURCE_GRAPH_DIR.glob("*.json"))
+    source_graphs = sorted(SOURCE_GRAPH_DIR.glob("*_graph.json"))
     if not source_graphs:
         print(f"No JSON files found in {SOURCE_GRAPH_DIR.resolve()}")
         return

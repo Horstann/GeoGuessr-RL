@@ -1,0 +1,155 @@
+{
+  "center_pano_id": "ey4s77UkQw47kaFwnITT4Q",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "ey4s77UkQw47kaFwnITT4Q",
+      "coordinate": {
+        "lat": 50.8439071368854,
+        "lon": 4.360943955336346,
+        "heading": 0.32980140860058693,
+        "roll": 0.03493648318431194,
+        "pitch": -0.0012522183445552578
+      },
+      "matrix_id": 0,
+      "address": "Rue Royale, Brussels"
+    },
+    {
+      "pano_id": "rKG8ZgW46oBicePBT0ZlAQ",
+      "coordinate": {
+        "lat": 50.8438120054834,
+        "lon": 4.3608932615432,
+        "heading": 0.32720539245949143,
+        "roll": 0.026345529143069035,
+        "pitch": -0.0036980654896840302
+      },
+      "matrix_id": 1,
+      "address": "Rue Royale, Brussels"
+    },
+    {
+      "pano_id": "z4hVA2RuVi5qkD6b-Z5chQ",
+      "coordinate": {
+        "lat": 50.84399962258472,
+        "lon": 4.360993092363375,
+        "heading": 0.32472945159404465,
+        "roll": 0.032656937965691,
+        "pitch": 0.0016265256357658948
+      },
+      "matrix_id": 2,
+      "address": "Rue Royale, Brussels"
+    },
+    {
+      "pano_id": "zTVLXOY6FDcP2_Dw3XlkMQ",
+      "coordinate": {
+        "lat": 50.84371695326567,
+        "lon": 4.360842580412909,
+        "heading": 0.32647804987627715,
+        "roll": 0.02642123573883834,
+        "pitch": 0.00627054594464607
+      },
+      "matrix_id": 3,
+      "address": "Rue Royale, Brussels"
+    },
+    {
+      "pano_id": "t1oYlZC6tsIYDlrEKqmyEg",
+      "coordinate": {
+        "lat": 50.84362171823313,
+        "lon": 4.360792539060095,
+        "heading": 0.31421852069323364,
+        "roll": 0.01321029017576941,
+        "pitch": 0.007590408580889341
+      },
+      "matrix_id": 4,
+      "address": "Rue Royale, Brussels"
+    },
+    {
+      "pano_id": "AYwO9-cpIZXLlrfZQ1cwrA",
+      "coordinate": {
+        "lat": 50.84351577259216,
+        "lon": 4.360739684941219,
+        "heading": 0.31612324679437187,
+        "roll": 0.011818323493309546,
+        "pitch": 0.011055713791300445
+      },
+      "matrix_id": 5,
+      "address": "Rue Royale, Brussels"
+    },
+    {
+      "pano_id": "CkKpex6iL8-oxdLZi45KZQ",
+      "coordinate": {
+        "lat": 50.84339650372512,
+        "lon": 4.360677313778378,
+        "heading": 0.3216648522591497,
+        "roll": 0.010751490288948225,
+        "pitch": 0.014827548843179671
+      },
+      "matrix_id": 6,
+      "address": "Rue Royale, Brussels"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      3.4389297956071774,
+      0.29744097201038433,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      0.2973371087278711,
+      -1,
+      -1,
+      3.4391961117161856,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      3.439033658889691,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0.29760355799493354,
+      -1,
+      -1,
+      3.439038452579653,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      0.2974458322793737,
+      -1,
+      3.439032327309146,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      0.2974396737193529,
+      -1,
+      3.4388485691939312
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.29725588231462374,
+      -1
+    ]
+  ]
+}
