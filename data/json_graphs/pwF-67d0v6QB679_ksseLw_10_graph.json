@@ -1,0 +1,23 @@
+{
+  "center_pano_id": "pwF-67d0v6QB679_ksseLw",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "pwF-67d0v6QB679_ksseLw",
+      "coordinate": {
+        "lat": -36.75710769750071,
+        "lon": 144.280606250835,
+        "heading": 0.9641709076313147,
+        "roll": 6.281456382999906,
+        "pitch": 0.05070898400008977
+      },
+      "matrix_id": 0,
+      "address": "Bendigo, Victoria"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1
+    ]
+  ]
+}

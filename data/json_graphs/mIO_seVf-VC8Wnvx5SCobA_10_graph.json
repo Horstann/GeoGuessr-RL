@@ -1,0 +1,215 @@
+{
+  "center_pano_id": "mIO_seVf-VC8Wnvx5SCobA",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "mIO_seVf-VC8Wnvx5SCobA",
+      "coordinate": {
+        "lat": -33.04819290219994,
+        "lon": -71.62018419394784,
+        "heading": 4.231889472287688,
+        "roll": 0.006639533155460354,
+        "pitch": -0.2446659409261254
+      },
+      "matrix_id": 0,
+      "address": "41 Ricardo de Ferrari, Valparaíso"
+    },
+    {
+      "pano_id": "Rmhn9Q1QMuOD9G9-RjRbXw",
+      "coordinate": {
+        "lat": -33.04827514817183,
+        "lon": -71.620309050957,
+        "heading": 4.098525022799244,
+        "roll": 0.052711327438747076,
+        "pitch": -0.2790127295048768
+      },
+      "matrix_id": 1,
+      "address": "68 Ricardo de Ferrari, Valparaíso"
+    },
+    {
+      "pano_id": "jgLc2S9z-Fbi8yfwdJro_w",
+      "coordinate": {
+        "lat": -33.04817096649982,
+        "lon": -71.62007690199229,
+        "heading": 4.741632087050414,
+        "roll": 0.06859813196074895,
+        "pitch": -0.2448805917099843
+      },
+      "matrix_id": 2,
+      "address": "39 Ricardo de Ferrari, Valparaíso"
+    },
+    {
+      "pano_id": "9rPvF6Q93DY5AtXNYcvyvw",
+      "coordinate": {
+        "lat": -33.04816858710581,
+        "lon": -71.61997386546619,
+        "heading": 3.9247921111912722,
+        "roll": 0.05355698927576652,
+        "pitch": -0.23800697293649029
+      },
+      "matrix_id": 3,
+      "address": "35 Ricardo de Ferrari, Valparaíso"
+    },
+    {
+      "pano_id": "bNBPiSs_qMtf79d_lT47vg",
+      "coordinate": {
+        "lat": -33.04808071424844,
+        "lon": -71.61993755821182,
+        "heading": 3.3648691499048375,
+        "roll": 0.009311936246760008,
+        "pitch": -0.15993201136501903
+      },
+      "matrix_id": 4,
+      "address": "35 Ricardo de Ferrari, Valparaíso"
+    },
+    {
+      "pano_id": "JN0mjLS2KfeIN_9f28Pzmw",
+      "coordinate": {
+        "lat": -33.04799932995081,
+        "lon": -71.61991175380172,
+        "heading": 3.459536537173884,
+        "roll": 0.04819809330652501,
+        "pitch": -0.15246836925201745
+      },
+      "matrix_id": 5,
+      "address": "35 Ricardo de Ferrari, Valparaíso"
+    },
+    {
+      "pano_id": "sBbRW0M3-DNvNdsntm9I4A",
+      "coordinate": {
+        "lat": -33.0479190783854,
+        "lon": -71.61988685480765,
+        "heading": 3.2653276452087283,
+        "roll": 6.268585325451554,
+        "pitch": -0.1042470440261707
+      },
+      "matrix_id": 6,
+      "address": "2 Ricardo de Ferrari, Valparaíso"
+    },
+    {
+      "pano_id": "mTCTS_e2xYeDXyEGN8Qwkg",
+      "coordinate": {
+        "lat": -33.04783210356597,
+        "lon": -71.61986847482176,
+        "heading": 3.532285309723251,
+        "roll": 6.207180287565379,
+        "pitch": -0.14301254948558212
+      },
+      "matrix_id": 7,
+      "address": "2 Ricardo de Ferrari, Valparaíso"
+    },
+    {
+      "pano_id": "5iSZdRTyvBPXebHsnwB5yA",
+      "coordinate": {
+        "lat": -33.04774038854283,
+        "lon": -71.61993629062681,
+        "heading": 2.4898862421787578,
+        "roll": 6.19070011410775,
+        "pitch": -0.013642575316148913
+      },
+      "matrix_id": 8,
+      "address": "2 Ricardo de Ferrari, Valparaíso"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      4.4570498887578545,
+      1.2828419007720244,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      1.3154572351680613,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      4.424434687519873,
+      -1,
+      -1,
+      1.1621805965252048,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      4.303773250114998,
+      -1,
+      0.4361865715079279,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      3.577779291676748,
+      -1,
+      0.2589368724567209,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      3.4005294095332164,
+      -1,
+      0.14953130204382356,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.291123822475562,
+      -1,
+      6.279663542954066,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.1380708893642724,
+      -1,
+      6.095214071119613
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      2.953621417529819,
+      -1
+    ]
+  ]
+}

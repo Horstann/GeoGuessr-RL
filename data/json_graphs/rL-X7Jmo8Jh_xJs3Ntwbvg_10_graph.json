@@ -1,0 +1,131 @@
+{
+  "center_pano_id": "rL-X7Jmo8Jh_xJs3Ntwbvg",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "rL-X7Jmo8Jh_xJs3Ntwbvg",
+      "coordinate": {
+        "lat": 6.200750172199721,
+        "lon": -75.56234569726243,
+        "heading": 3.1266520535583395,
+        "roll": 6.274835231897752,
+        "pitch": -0.06641843863824917
+      },
+      "matrix_id": 0,
+      "address": "Cra. 30, Medellín, Antioquia"
+    },
+    {
+      "pano_id": "wJJgFbVadHEq2vgEHBGjYw",
+      "coordinate": {
+        "lat": 6.200838822816165,
+        "lon": -75.5623202026852,
+        "heading": 3.6808436258628148,
+        "roll": 6.281424425066827,
+        "pitch": -0.13038117643533628
+      },
+      "matrix_id": 1,
+      "address": "Cra. 30, Medellín, Antioquia"
+    },
+    {
+      "pano_id": "jVsikbRNHX2A2qvgvWVBIg",
+      "coordinate": {
+        "lat": 6.200904718078625,
+        "lon": -75.5622604192169,
+        "heading": 3.6415425587081884,
+        "roll": 6.268175198643681,
+        "pitch": -0.14220361430447054
+      },
+      "matrix_id": 2,
+      "address": "Cra. 30, Medellín, Antioquia"
+    },
+    {
+      "pano_id": "0wzhXmlEOHhlLHgFdlylbQ",
+      "coordinate": {
+        "lat": 6.200977993006306,
+        "lon": -75.5622226658998,
+        "heading": 3.789440410897412,
+        "roll": 0.009203923218313977,
+        "pitch": -0.13408709825023604
+      },
+      "matrix_id": 3,
+      "address": "Cra. 30, Medellín, Antioquia"
+    },
+    {
+      "pano_id": "T71i1PO1xOozKl3OpQjK_A",
+      "coordinate": {
+        "lat": 6.201038738449599,
+        "lon": -75.56217594060456,
+        "heading": 3.554614051250803,
+        "roll": 0.0025161530374609125,
+        "pitch": -0.11773315862827746
+      },
+      "matrix_id": 4,
+      "address": "Cra. 30, Medellín, Antioquia"
+    },
+    {
+      "pano_id": "KKurJKuYZOfsT8TLtCMwDw",
+      "coordinate": {
+        "lat": 6.201134838388823,
+        "lon": -75.56226610442147,
+        "heading": 3.6341605424825985,
+        "roll": 0.022248486751982894,
+        "pitch": -0.01021894857679755,
+        "lat_old": 6.201160384499713,
+        "lon_old": -75.56223616826371
+      },
+      "matrix_id": 5,
+      "pano_id_old": "lfvVmuSdQU59d77P1NfWDw",
+      "address": "279 Tv. Inferior, Medellín, Antioquia"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      0.31289702687082266,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      3.454489580592076,
+      -1,
+      0.6004811736336328,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      3.7420736940653714,
+      -1,
+      0.7282643032675422,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      3.869856956857335,
+      -1,
+      0.5808721187902977,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      3.7224648389591177,
+      -1,
+      5.532573506492192
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      2.3909806829160343,
+      -1
+    ]
+  ]
+}

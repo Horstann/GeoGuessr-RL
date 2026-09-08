@@ -1,0 +1,7 @@
+model: "InternVL2_5-78B-MPO"
+temperature: 0.0
+max_tokens: null
+base_url: "http://0.0.0.0:18202/v1/"
+model_type: "open_source"
+model_path: "/path/to/your/model"
+input_graphs_folder: '/path/to/your/data

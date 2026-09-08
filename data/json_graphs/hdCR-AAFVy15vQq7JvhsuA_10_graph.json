@@ -1,0 +1,286 @@
+{
+  "center_pano_id": "hdCR-AAFVy15vQq7JvhsuA",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "hdCR-AAFVy15vQq7JvhsuA",
+      "coordinate": {
+        "lat": 42.87487122935492,
+        "lon": 74.57261853569798,
+        "heading": 4.793462528185536,
+        "roll": 0.010273519452306255,
+        "pitch": 0.06399536152044058
+      },
+      "matrix_id": 0,
+      "address": "29 Abdykerim Sydykov St, Bishkek, Bishkek City"
+    },
+    {
+      "pano_id": "g8zoh2t49hWMikNO9GcV0Q",
+      "coordinate": {
+        "lat": 42.87486060340549,
+        "lon": 74.57274984109982,
+        "heading": 4.787355899805984,
+        "roll": 0.006071188571404925,
+        "pitch": 0.05393353944795771
+      },
+      "matrix_id": 1,
+      "address": "29 Abdykerim Sydykov St, Bishkek, Bishkek City"
+    },
+    {
+      "pano_id": "-0EesKtE8LontqJdmEsMVA",
+      "coordinate": {
+        "lat": 42.87485735911704,
+        "lon": 74.57281759429065,
+        "heading": 4.753553993986263,
+        "roll": 0.02731423942542313,
+        "pitch": 0.06031860131947719,
+        "lat_old": 42.87485616991139,
+        "lon_old": 74.57286702371259
+      },
+      "matrix_id": 2,
+      "pano_id_old": "-cH-SJUwmoz9AgRRfGFxGg",
+      "address": "29 Abdykerim Sydykov St, Bishkek, Bishkek City"
+    },
+    {
+      "pano_id": "28oHPqzIPLU425CKcvg8Qg",
+      "coordinate": {
+        "lat": 42.87486620510964,
+        "lon": 74.57297902197082,
+        "heading": 4.5948535614673505,
+        "roll": 0.007886077198388332,
+        "pitch": 0.07425958383576947
+      },
+      "matrix_id": 3,
+      "address": "29 Abdykerim Sydykov St, Bishkek, Bishkek City"
+    },
+    {
+      "pano_id": "Jkk_MvvOMD_XbqHQeooZuQ",
+      "coordinate": {
+        "lat": 42.87485903856329,
+        "lon": 74.57310907572321,
+        "heading": 4.831675694034865,
+        "roll": 0.00026759170855446344,
+        "pitch": 0.06660845518202634
+      },
+      "matrix_id": 4,
+      "address": "29 Abdykerim Sydykov St, Bishkek, Bishkek City"
+    },
+    {
+      "pano_id": "UQ-BuhTDUuE_JdSnYLJtOw",
+      "coordinate": {
+        "lat": 42.8748445701142,
+        "lon": 74.57328373194886,
+        "heading": 4.803180935635453,
+        "roll": 6.264746645056315,
+        "pitch": 0.04424735624723051
+      },
+      "matrix_id": 5,
+      "address": "29 Abdykerim Sydykov St, Bishkek, Bishkek City"
+    },
+    {
+      "pano_id": "8xI2a4D9TJ7SH6UEtm5zaQ",
+      "coordinate": {
+        "lat": 42.874840449157,
+        "lon": 74.57340583031099,
+        "heading": 4.641528655364296,
+        "roll": 0.026413920368219018,
+        "pitch": 0.06644866551662158
+      },
+      "matrix_id": 6,
+      "address": "29 Abdykerim Sydykov St, Bishkek, Bishkek City"
+    },
+    {
+      "pano_id": "T3ghcZtcrW0_nxN9OrmmDw",
+      "coordinate": {
+        "lat": 42.8748354724754,
+        "lon": 74.57357503382845,
+        "heading": 4.871697678896576,
+        "roll": 0.12014869567124976,
+        "pitch": 0.06817066547746681
+      },
+      "matrix_id": 7,
+      "address": "29 Abdykerim Sydykov St, Bishkek, Bishkek City"
+    },
+    {
+      "pano_id": "u6nTdzhyu0rTC6XxN7Ca7Q",
+      "coordinate": {
+        "lat": 42.87481995466388,
+        "lon": 74.57366709906425,
+        "heading": 4.859001324715732,
+        "roll": 0.035932376435136276,
+        "pitch": 0.07269257985036685
+      },
+      "matrix_id": 8,
+      "address": "29 Abdykerim Sydykov St, Bishkek, Bishkek City"
+    },
+    {
+      "pano_id": "lNfy5E-jpAQ5l07Jz7Q70w",
+      "coordinate": {
+        "lat": 42.87480986555915,
+        "lon": 74.57377275056574,
+        "heading": 4.761398601293201,
+        "roll": 0.022057057484471235,
+        "pitch": 0.0652160214060784
+      },
+      "matrix_id": 9,
+      "address": "29 Abdykerim Sydykov St, Bishkek, Bishkek City"
+    },
+    {
+      "pano_id": "gzB8H8fiK5sOZmBbh8c8Pw",
+      "coordinate": {
+        "lat": 42.87480553654186,
+        "lon": 74.5738827817986,
+        "heading": 4.722645346374803,
+        "roll": 0.033637287094246605,
+        "pitch": 0.06418631017059927
+      },
+      "matrix_id": 10,
+      "address": "29 Abdykerim Sydykov St, Bishkek, Bishkek City"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      1.6529226221746511,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      4.794515542080554,
+      -1,
+      1.6360432522250046,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      4.777636710491851,
+      -1,
+      1.4961589071383905,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      4.63775347775705,
+      -1,
+      1.6532191651620314,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      4.7948116855937695,
+      -1,
+      1.6533461979460282,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      4.794938984693876,
+      -1,
+      1.6526303402450149,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.794223126992863,
+      -1,
+      1.6535948040337871,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.7951871913074715,
+      -1,
+      1.6531311476880044,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.794723801277797,
+      -1,
+      1.6531147692473003,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.79470728967904,
+      -1,
+      1.6533422032043932
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.794934723636132,
+      -1
+    ]
+  ]
+}

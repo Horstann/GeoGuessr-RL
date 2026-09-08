@@ -1,0 +1,428 @@
+{
+  "center_pano_id": "NHZDijVbAPiUjpPJXbdd0w",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "NHZDijVbAPiUjpPJXbdd0w",
+      "coordinate": {
+        "lat": 45.76852391147248,
+        "lon": 4.841166759468831,
+        "heading": 2.993213568191593,
+        "roll": 6.233768755256513,
+        "pitch": 0.009822537048539253,
+        "lat_old": 45.76850645178568,
+        "lon_old": 4.841188776008122
+      },
+      "matrix_id": 0,
+      "pano_id_old": "NV-LKAIy_G25Erdhq8BGiA",
+      "address": "Quai du Général Sarrail, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "EMstUrm2MM3EHVH47huBAg",
+      "coordinate": {
+        "lat": 45.76842522299036,
+        "lon": 4.84118459211361,
+        "heading": 3.0146070075443085,
+        "roll": 6.246328222957325,
+        "pitch": 0.028309801861705813,
+        "lat_old": 45.76841256236739,
+        "lon_old": 4.841202836208834
+      },
+      "matrix_id": 1,
+      "pano_id_old": "_22amv4TbIvOx6-waYyS4A",
+      "address": "102 Quai du Général Sarrail, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "fmW8LZa1UG18ORzkuLSeqg",
+      "coordinate": {
+        "lat": 45.76862669343293,
+        "lon": 4.841124153798093,
+        "heading": 2.4130841384502912,
+        "roll": 6.219900077563816,
+        "pitch": 0.0270187013652354,
+        "lat_old": 45.76860387872359,
+        "lon_old": 4.841173349864718
+      },
+      "matrix_id": 2,
+      "pano_id_old": "9C_zj2NBdOGxGa4K6nJT6w",
+      "address": "Quai de Serbie, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "apiDavtJboTrT5mjr_WxeQ",
+      "coordinate": {
+        "lat": 45.76833059993086,
+        "lon": 4.841200575063316,
+        "heading": 3.0300509450217863,
+        "roll": 6.250763451436744,
+        "pitch": 0.04979818290728267,
+        "lat_old": 45.76831960534314,
+        "lon_old": 4.841217136168919
+      },
+      "matrix_id": 3,
+      "pano_id_old": "pa7cJLwupQNx_NeyDl-5jQ",
+      "address": "102 Quai du Général Sarrail, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "SVADFH6-_Nle38oiGwFuUw",
+      "coordinate": {
+        "lat": 45.76865301221465,
+        "lon": 4.84116513471276,
+        "heading": 3.028037861553796,
+        "roll": 6.247106398627847,
+        "pitch": -0.002901247691532322
+      },
+      "matrix_id": 4,
+      "address": "Quai de Serbie, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "7gopVw1_yb-pMqf0lXzphw",
+      "coordinate": {
+        "lat": 45.7682353881154,
+        "lon": 4.841213346477772,
+        "heading": 3.0594804729638154,
+        "roll": 6.2452080974028386,
+        "pitch": 0.053591190089828024,
+        "lat_old": 45.76825484998864,
+        "lon_old": 4.841226224938481
+      },
+      "matrix_id": 5,
+      "pano_id_old": "TTRUnzKNz5-nkC5Jzj5s-g",
+      "address": "102 Quai du Général Sarrail, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "QfdH0r9VE3sGmtOFADr8Mw",
+      "coordinate": {
+        "lat": 45.76870240267527,
+        "lon": 4.841157700043897,
+        "heading": 3.0293172441414695,
+        "roll": 6.233147706090306,
+        "pitch": -0.029276795653513585
+      },
+      "matrix_id": 6,
+      "address": "Quai de Serbie, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "FQV0cV6NimLjC7UrSTBjtw",
+      "coordinate": {
+        "lat": 45.76878997969539,
+        "lon": 4.84110269117035,
+        "heading": 3.0098905492537775,
+        "roll": 6.2198047363967905,
+        "pitch": -0.03868933905223514
+      },
+      "matrix_id": 7,
+      "address": "Quai de Serbie, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "xSvO7Ft06_a441CWyNpuow",
+      "coordinate": {
+        "lat": 45.76890014430378,
+        "lon": 4.841122013766236,
+        "heading": 3.0572820334839554,
+        "roll": 6.226131874514601,
+        "pitch": -0.07620994986008901,
+        "lat_old": 45.76888054588477,
+        "lon_old": 4.841084955546144
+      },
+      "matrix_id": 8,
+      "pano_id_old": "xrQom3FUL9MZNji9MwWOSQ",
+      "address": "Quai de Serbie, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "XsLnYIr-mD1JKE41w1s4YA",
+      "coordinate": {
+        "lat": 45.76892070570251,
+        "lon": 4.841120912271966,
+        "heading": 3.028335602963666,
+        "roll": 6.226069556545093,
+        "pitch": -0.062249792583948145
+      },
+      "matrix_id": 9,
+      "address": "Quai de Serbie, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "q1o--295RrywFi2qftMyag",
+      "coordinate": {
+        "lat": 45.76898065689996,
+        "lon": 4.841110599392086,
+        "heading": 3.007213007093812,
+        "roll": 6.233166880850154,
+        "pitch": -0.06461467963193851,
+        "lat_old": 45.7690113713501,
+        "lon_old": 4.841104257940761
+      },
+      "matrix_id": 10,
+      "pano_id_old": "KAomi4oDmKfa0swNlZEgkA",
+      "address": "Quai de Serbie, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "vTSf-EuNVNaiv2ZF06IsoQ",
+      "coordinate": {
+        "lat": 45.7690978673083,
+        "lon": 4.841079936525253,
+        "heading": 2.9925214126242805,
+        "roll": 6.235936035751618,
+        "pitch": -0.055244879968712725
+      },
+      "matrix_id": 11,
+      "address": "Quai de Serbie, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "NBJhblJF3-8A5YM85WsyKw",
+      "coordinate": {
+        "lat": 45.76921843190127,
+        "lon": 4.841136151027995,
+        "heading": 4.201304931380891,
+        "roll": 0.05781267492463191,
+        "pitch": -0.04130243271382089,
+        "lat_old": 45.7691883119229,
+        "lon_old": 4.841094197847485
+      },
+      "matrix_id": 12,
+      "pano_id_old": "ljzb4sfXw5hglSC-zO9akQ",
+      "address": "2 Pl. Maréchal Lyautey, Lyon, Auvergne-Rhône-Alpes"
+    },
+    {
+      "pano_id": "oQGgc0B4CsKhqEm-5HbMng",
+      "coordinate": {
+        "lat": 45.76924957699988,
+        "lon": 4.841059704942712,
+        "heading": 3.014318853514361,
+        "roll": 6.229531665962196,
+        "pitch": -0.028934845769547413,
+        "lat_old": 45.76921529096312,
+        "lon_old": 4.841027118068722
+      },
+      "matrix_id": 13,
+      "pano_id_old": "xVt_12vgaYuCXHAIo4aICQ",
+      "address": "15 Quai de Serbie, Lyon, Auvergne-Rhône-Alpes"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      3.0162073578056168,
+      6.001707622276604,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      6.157800234405243,
+      -1,
+      -1,
+      3.0243071013818423,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      2.8601144358763246,
+      -1,
+      -1,
+      -1,
+      0.8266775114966611,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      6.165899954847593,
+      -1,
+      -1,
+      -1,
+      3.0482954562505635,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      3.968270677567535,
+      -1,
+      -1,
+      -1,
+      6.218453448459685,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      6.189888269557954,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      3.0768605285537816,
+      -1,
+      -1,
+      6.178082056862955,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.036489403273162,
+      -1,
+      0.12174417283441015,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.2633370680691915,
+      -1,
+      6.245834042166942,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.1042413747981508,
+      -1,
+      6.1637623357392295,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.0221695531762243,
+      -1,
+      6.102688123646699,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      2.9610950865850993,
+      -1,
+      0.3144489735932188,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.456042330185677,
+      -1,
+      5.241007593367495
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      2.099413983780795,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "NV-LKAIy_G25Erdhq8BGiA"
+}

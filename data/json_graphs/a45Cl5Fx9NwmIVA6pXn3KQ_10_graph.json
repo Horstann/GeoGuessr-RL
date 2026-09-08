@@ -1,0 +1,348 @@
+{
+  "center_pano_id": "a45Cl5Fx9NwmIVA6pXn3KQ",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "a45Cl5Fx9NwmIVA6pXn3KQ",
+      "coordinate": {
+        "lat": -33.92742311393719,
+        "lon": 18.4302116260024,
+        "heading": 0.09831518559315547,
+        "roll": 6.263679250091409,
+        "pitch": 0.03518967906376201,
+        "lat_old": -33.92746233382891,
+        "lon_old": 18.43027592014463
+      },
+      "matrix_id": 0,
+      "pano_id_old": "gk5412eVoVcooZtBhscR7A",
+      "address": "Tennant St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "yscsfdRwEbXyeHVeRKuu9Q",
+      "coordinate": {
+        "lat": -33.92754721568955,
+        "lon": 18.43026958128501,
+        "heading": 0.07779829242372589,
+        "roll": 6.270205060026541,
+        "pitch": 0.05502010917271004
+      },
+      "matrix_id": 1,
+      "address": "Tennant St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "JHDK0KgVN4TUbyebVNxj_w",
+      "coordinate": {
+        "lat": -33.92760443120187,
+        "lon": 18.43019650329746,
+        "heading": 0.08577659041738528,
+        "roll": 6.2606352569654495,
+        "pitch": 0.07533496828394347,
+        "lat_old": -33.9276362846145,
+        "lon_old": 18.43026007299578
+      },
+      "matrix_id": 2,
+      "pano_id_old": "2Era5jCVG4mk7Ugyter-5Q",
+      "address": "Tennant St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "-yAYX-Yfc6PQNXNxuIIzng",
+      "coordinate": {
+        "lat": -33.92732715247978,
+        "lon": 18.43022213039665,
+        "heading": 0.11421609654655636,
+        "roll": 0.010182081480754066,
+        "pitch": 0.0010816428767356826,
+        "lat_old": -33.92730132668667,
+        "lon_old": 18.430304807235
+      },
+      "matrix_id": 3,
+      "pano_id_old": "1d61A9RY4_wrBQpMKHkBbw",
+      "address": "Tennant St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "2cSKezbCwBOvubM4mHOGFg",
+      "coordinate": {
+        "lat": -33.92769738202347,
+        "lon": 18.43018953055348,
+        "heading": 0.09359774526197316,
+        "roll": 6.268578933864938,
+        "pitch": 0.08045636021822035,
+        "lat_old": -33.9277273849756,
+        "lon_old": 18.43024911582472
+      },
+      "matrix_id": 4,
+      "pano_id_old": "KbE8S8jLqkh_GNvCvTSQqQ",
+      "address": "Tennant St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "IMv0kxnqSC_bn2fAivE_mg",
+      "coordinate": {
+        "lat": -33.9277880245068,
+        "lon": 18.43018047504204,
+        "heading": 0.1268022874044333,
+        "roll": 6.267941373099973,
+        "pitch": 0.07465972378955388,
+        "lat_old": -33.92782076105011,
+        "lon_old": 18.43023299701172
+      },
+      "matrix_id": 5,
+      "pano_id_old": "YY2Xt6yUED_QZJIrz9GqAg",
+      "address": "Tennant St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "28YhMt3-IofViufG63R6zg",
+      "coordinate": {
+        "lat": -33.92791160963787,
+        "lon": 18.4302103582307,
+        "heading": 0.2547149964701319,
+        "roll": 6.259215792104438,
+        "pitch": 0.059385296515458916
+      },
+      "matrix_id": 6,
+      "address": "Tennant St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "pgOqpNRsZERMOKOgfG6D0w",
+      "coordinate": {
+        "lat": -33.92799878193874,
+        "lon": 18.43018065615227,
+        "heading": 0.3162355323238324,
+        "roll": 6.266347737503669,
+        "pitch": 0.06008970262378487
+      },
+      "matrix_id": 7,
+      "address": "Tennant St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "9eWf-6klz_qn4O2EgCxhzw",
+      "coordinate": {
+        "lat": -33.92805238537716,
+        "lon": 18.43011074761195,
+        "heading": 0.3328634779324465,
+        "roll": 6.249952785200923,
+        "pitch": 0.07904821379184096,
+        "lat_old": -33.92808462253035,
+        "lon_old": 18.43014307578232
+      },
+      "matrix_id": 8,
+      "pano_id_old": "AtyWcEU4leyga9BZgvN2mQ",
+      "address": "Tennant St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "HH560MMmMeYYZe9oEH5DGA",
+      "coordinate": {
+        "lat": -33.92813326288541,
+        "lon": 18.4300792344404,
+        "heading": 0.34410904181995594,
+        "roll": 6.263315994918723,
+        "pitch": 0.07844460833077449,
+        "lat_old": -33.92816900621233,
+        "lon_old": 18.4301026882086
+      },
+      "matrix_id": 9,
+      "pano_id_old": "Oxoxn3I3La8hNsztJzcJTQ",
+      "address": "Tennant St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "OtT1JqF4IKmCIspDZpCt0g",
+      "coordinate": {
+        "lat": -33.92822162291399,
+        "lon": 18.43004183519172,
+        "heading": 0.4017600545440417,
+        "roll": 6.267390098754326,
+        "pitch": 0.07201094376936107,
+        "lat_old": -33.92825321819783,
+        "lon_old": 18.43006021787276
+      },
+      "matrix_id": 10,
+      "pano_id_old": "39baJF6IsNEoMJbLuyxIUA",
+      "address": "Tennant St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "Z0-DErB_hDUg6dp_V4CKAA",
+      "coordinate": {
+        "lat": -33.92830588180448,
+        "lon": 18.42999746320703,
+        "heading": 0.4856156735776392,
+        "roll": 6.262434488597907,
+        "pitch": 0.07104275155506276,
+        "lat_old": -33.92833648366501,
+        "lon_old": 18.43001376311911
+      },
+      "matrix_id": 11,
+      "pano_id_old": "flzc3kUYo6l0275Tq-Cerw",
+      "address": "Tennant St, Cape Town, Western Cape"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      2.7719180644024877,
+      -1,
+      0.09057939561664245,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      5.913510153423929,
+      -1,
+      3.956006051568622,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0.8144141098698909,
+      -1,
+      -1,
+      3.2037559363497885,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      3.2321719468800847,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      0.062163350685767824,
+      -1,
+      -1,
+      3.2242977555526107,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      0.08270519017595028,
+      -1,
+      2.9435882416635324,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      6.085180604142654,
+      -1,
+      3.355880448593602,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.21428779500380876,
+      -1,
+      3.966415044766255,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.8248230721898737,
+      -1,
+      3.45428604071109,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.3126936941121618,
+      -1,
+      3.479331215047928,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.33773892577998105,
+      -1,
+      3.553542716250388
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.41195049492102326,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "gk5412eVoVcooZtBhscR7A"
+}

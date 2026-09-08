@@ -1,0 +1,69 @@
+{
+  "center_pano_id": "uWhclSisQXLOKefZ8Pf4Jg",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "uWhclSisQXLOKefZ8Pf4Jg",
+      "coordinate": {
+        "lat": 3.142378198510059,
+        "lon": 101.6943432181514,
+        "heading": 4.408068497356899,
+        "roll": 0.058198679318692874,
+        "pitch": 0.0004828311056313659,
+        "lat_old": 3.142365941550697,
+        "lon_old": 101.6943250640456
+      },
+      "matrix_id": 0,
+      "pano_id_old": "qT1uSNVGG6hUBxzGWPWhrw",
+      "address": "Kuala Lumpur, Federal Territory of Kuala Lumpur"
+    },
+    {
+      "pano_id": "8RfAaOmFKNBaD0o9CEivpA",
+      "coordinate": {
+        "lat": 3.142321267439766,
+        "lon": 101.694259136004,
+        "heading": 1.1141120035878742,
+        "roll": 0.10088761611384707,
+        "pitch": 0.012570253503228507,
+        "lat_old": 3.142311065667597,
+        "lon_old": 101.6942517527608
+      },
+      "matrix_id": 1,
+      "pano_id_old": "oJ9EUKdeVw6kYW_9iIFK_Q",
+      "address": "Kuala Lumpur, Federal Territory of Kuala Lumpur"
+    },
+    {
+      "pano_id": "deLNq3p8SAH3s9NRRxm1dA",
+      "coordinate": {
+        "lat": 3.142287560466385,
+        "lon": 101.6941727955225,
+        "heading": 1.9655740057244273,
+        "roll": 0.2602545046955512,
+        "pitch": -0.06239693223417502,
+        "lat_old": 3.142289116805204,
+        "lon_old": 101.6941613297899
+      },
+      "matrix_id": 2,
+      "pano_id_old": "PV3mQY15rqTDyt3E0Hx1Yg",
+      "address": "Kuala Lumpur, Federal Territory of Kuala Lumpur"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      4.116507081472038,
+      -1
+    ],
+    [
+      0.9749143474367322,
+      -1,
+      4.339679317208277
+    ],
+    [
+      -1,
+      1.1980865810153623,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "qT1uSNVGG6hUBxzGWPWhrw"
+}

@@ -1,0 +1,489 @@
+{
+  "center_pano_id": "qRjPnyguheb_Ao2Ag3V09w",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "qRjPnyguheb_Ao2Ag3V09w",
+      "coordinate": {
+        "lat": -1.285299149167734,
+        "lon": 36.8224741066986,
+        "heading": 4.2684639951182906,
+        "roll": 0.013036299411911268,
+        "pitch": 0.02159251064419895,
+        "lat_old": -1.285304407736584,
+        "lon_old": 36.82246449614174
+      },
+      "matrix_id": 0,
+      "pano_id_old": "z82RV0Z2ypKzVavcEbt81w",
+      "address": "4 Kaunda St, Nairobi, Nairobi County"
+    },
+    {
+      "pano_id": "gIKW95NU-bWpbgPXIqNmHQ",
+      "coordinate": {
+        "lat": -1.285337993750048,
+        "lon": 36.82239861861577,
+        "heading": 4.266678611923502,
+        "roll": 0.0015938556191825378,
+        "pitch": 0.02499043787903105,
+        "lat_old": -1.285348050552156,
+        "lon_old": 36.82237857606503
+      },
+      "matrix_id": 1,
+      "pano_id_old": "4xDjbcG6P8dvqGy_QKE3vA",
+      "address": "4 Kaunda St, Nairobi, Nairobi County"
+    },
+    {
+      "pano_id": "6FxT8qmdVFEVslWBDXyU8w",
+      "coordinate": {
+        "lat": -1.285255965502755,
+        "lon": 36.82256093021963,
+        "heading": 4.256571382954433,
+        "roll": 0.0136029795202854,
+        "pitch": 0.017248362274061697,
+        "lat_old": -1.28526079123794,
+        "lon_old": 36.82255238751253
+      },
+      "matrix_id": 2,
+      "pano_id_old": "8B_tx-iQgY4ZxtWVCrPakQ",
+      "address": "4 Kaunda St, Nairobi, Nairobi County"
+    },
+    {
+      "pano_id": "Nf00aE4Lzn_gxAmkWK6iZQ",
+      "coordinate": {
+        "lat": -1.285377444976951,
+        "lon": 36.82231877694687,
+        "heading": 4.273615081298723,
+        "roll": 0.0027913043914446346,
+        "pitch": 0.01722998646254015,
+        "lat_old": -1.285388491509175,
+        "lon_old": 36.82229627012335
+      },
+      "matrix_id": 3,
+      "pano_id_old": "L5wXkN-7eLL5_M9VB_qXFg",
+      "address": "4 Kaunda St, Nairobi, Nairobi County"
+    },
+    {
+      "pano_id": "ZX1OSRHOpLNUJPmPc5VXPQ",
+      "coordinate": {
+        "lat": -1.285212376748705,
+        "lon": 36.82264717864932,
+        "heading": 4.273896044793726,
+        "roll": 0.02439167812279177,
+        "pitch": 0.025343040407357544,
+        "lat_old": -1.285218142537538,
+        "lon_old": 36.82263559672319
+      },
+      "matrix_id": 4,
+      "pano_id_old": "yGDicM7AhcW-fyTgyjGJoA",
+      "address": "9 Kaunda St, Nairobi, Nairobi County"
+    },
+    {
+      "pano_id": "KGveYp8BNV8lIeHNLmwWPA",
+      "coordinate": {
+        "lat": -1.28544244227786,
+        "lon": 36.82219655002715,
+        "heading": 4.122328356622374,
+        "roll": 6.2724330605945005,
+        "pitch": 0.004301271476586978,
+        "lat_old": -1.285425356952019,
+        "lon_old": 36.82222571036576
+      },
+      "matrix_id": 5,
+      "pano_id_old": "PdUWh9Z7M4-c4pmboD5LOQ",
+      "address": "4 Kaunda St, Nairobi, Nairobi County"
+    },
+    {
+      "pano_id": "_kBCqePsIOZiONHVEGKuSg",
+      "coordinate": {
+        "lat": -1.285166145753865,
+        "lon": 36.82274254465282,
+        "heading": 4.259643605587948,
+        "roll": 0.019712832821469607,
+        "pitch": 0.022512233326657815,
+        "lat_old": -1.285177409876097,
+        "lon_old": 36.82272118793578
+      },
+      "matrix_id": 6,
+      "pano_id_old": "v9_ZxFvwwHrdmm_MhUIVmg",
+      "address": "32 Kaunda St, Nairobi, Nairobi County"
+    },
+    {
+      "pano_id": "vUwqXqK58gkHgvPUx5f3UQ",
+      "coordinate": {
+        "lat": -1.285519468116644,
+        "lon": 36.82215219343365,
+        "heading": 2.685334835631347,
+        "roll": 6.253487865231895,
+        "pitch": 0.028520191587822073,
+        "lat_old": -1.285484124875003,
+        "lon_old": 36.82216385757749
+      },
+      "matrix_id": 7,
+      "pano_id_old": "CPDtDhIAOES-NedLl2xOYg",
+      "address": "Wabera St, Nairobi, Nairobi County"
+    },
+    {
+      "pano_id": "H79GmAeDlguBmPv9drWycw",
+      "coordinate": {
+        "lat": -1.285125829576945,
+        "lon": 36.82282098946428,
+        "heading": 4.257580454691464,
+        "roll": 0.015856421599034352,
+        "pitch": 0.01980473060442876,
+        "lat_old": -1.285137137765409,
+        "lon_old": 36.82280053632251
+      },
+      "matrix_id": 8,
+      "pano_id_old": "MXigtfv9DcWqv3IWefHyVQ",
+      "address": "32 Kaunda St, Nairobi, Nairobi County"
+    },
+    {
+      "pano_id": "KxgRflp1T4qZfiugT4wGHA",
+      "coordinate": {
+        "lat": -1.285082948377587,
+        "lon": 36.82290395194902,
+        "heading": 4.257332248077869,
+        "roll": 6.2796704671729,
+        "pitch": 0.018643991843317723,
+        "lat_old": -1.285094434337587,
+        "lon_old": 36.82288349883026
+      },
+      "matrix_id": 9,
+      "pano_id_old": "cJITh-AKnKbuc6PS0Qu4Rw",
+      "address": "32 Kaunda St, Nairobi, Nairobi County"
+    },
+    {
+      "pano_id": "p4EuDf7irSzG_TofMmm_1A",
+      "coordinate": {
+        "lat": -1.285039801284889,
+        "lon": 36.82298863930014,
+        "heading": 4.257095226740852,
+        "roll": 0.02159235251900922,
+        "pitch": 0.018415093147625412,
+        "lat_old": -1.285051793075142,
+        "lon_old": 36.82296629696283
+      },
+      "matrix_id": 10,
+      "pano_id_old": "6hJJ74AjtipkmsUyjKd2jQ",
+      "address": "100 Kaunda St, Nairobi, Nairobi County"
+    },
+    {
+      "pano_id": "Alzod1jOLrOEriPLDAebGw",
+      "coordinate": {
+        "lat": -1.284997613667336,
+        "lon": 36.82307266942736,
+        "heading": 4.289859831315988,
+        "roll": 0.02902100319200068,
+        "pitch": 0.022446852721896372,
+        "lat_old": -1.285008771517873,
+        "lon_old": 36.82305057353808
+      },
+      "matrix_id": 11,
+      "pano_id_old": "SbyUVF2Nv4cmZbHcgScZPA",
+      "address": "100 Kaunda St, Nairobi, Nairobi County"
+    },
+    {
+      "pano_id": "C3AekyhAaKdvhi3SiIQLyg",
+      "coordinate": {
+        "lat": -1.284959394455581,
+        "lon": 36.82315333168823,
+        "heading": 4.26804055250497,
+        "roll": 0.02446987519029923,
+        "pitch": 0.01757539845592343,
+        "lat_old": -1.284969122907404,
+        "lon_old": 36.82313517858019
+      },
+      "matrix_id": 12,
+      "pano_id_old": "y710Niy0cCSNxOARmbPOSQ",
+      "address": "100 Kaunda St, Nairobi, Nairobi County"
+    },
+    {
+      "pano_id": "79Ter1hGLhuhsFNRc3mdYA",
+      "coordinate": {
+        "lat": -1.284921022390551,
+        "lon": 36.82322898328048,
+        "heading": 4.248174436037414,
+        "roll": 0.02008404002672382,
+        "pitch": 0.0186667618706379,
+        "lat_old": -1.284929139511483,
+        "lon_old": 36.82321501936593
+      },
+      "matrix_id": 13,
+      "pano_id_old": "V2F85Nkt2pdNDjZk_YWCgw",
+      "address": "629 Kaunda St, Nairobi, Nairobi County"
+    },
+    {
+      "pano_id": "GvScSWMpQVznB9K7Slxg_Q",
+      "coordinate": {
+        "lat": -1.284879539506058,
+        "lon": 36.82330989179223,
+        "heading": 4.273440111615104,
+        "roll": 0.029384123126038376,
+        "pitch": 0.022193852418338843,
+        "lat_old": -1.28488840780782,
+        "lon_old": 36.82329354581579
+      },
+      "matrix_id": 14,
+      "pano_id_old": "FTcHOAjDGkOKR8ke4JWA2w",
+      "address": "615 Kaunda St, Nairobi, Nairobi County"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      4.237043907936398,
+      1.1091522966667478,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      1.095451283899961,
+      -1,
+      -1,
+      4.253357851428634,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      4.2507449162667665,
+      -1,
+      -1,
+      -1,
+      1.102747880030929,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      1.1117652290978206,
+      -1,
+      -1,
+      -1,
+      4.223540796245912,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      4.244340499856378,
+      -1,
+      -1,
+      -1,
+      1.119304494756451,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      1.0819481905107953,
+      -1,
+      -1,
+      -1,
+      3.6639689690319472,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      4.2608971110131755,
+      -1,
+      -1,
+      -1,
+      1.0959542136870772,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.5223763328093645,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.237546836571131,
+      -1,
+      -1,
+      1.0936377661238215,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.235230387240644,
+      -1,
+      1.0994863273374749,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.2410789477798545,
+      -1,
+      1.1054064377919022,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.246999058491227,
+      -1,
+      1.128215721604417,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.269808343622387,
+      -1,
+      1.1012872846785982,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.242879908662546,
+      -1,
+      1.0969276521710958
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.238520274093743,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "z82RV0Z2ypKzVavcEbt81w"
+}

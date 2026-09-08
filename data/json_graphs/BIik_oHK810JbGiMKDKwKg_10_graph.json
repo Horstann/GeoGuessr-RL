@@ -1,0 +1,516 @@
+{
+  "center_pano_id": "BIik_oHK810JbGiMKDKwKg",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "BIik_oHK810JbGiMKDKwKg",
+      "coordinate": {
+        "lat": -22.57007828760839,
+        "lon": 17.08781533698092,
+        "heading": 5.995303452296419,
+        "roll": 6.261436868453563,
+        "pitch": 0.03495492141367153,
+        "lat_old": -22.57006285517341,
+        "lon_old": 17.08787941623681
+      },
+      "matrix_id": 0,
+      "pano_id_old": "Z0eu159j-7PjZQNJx6cloQ",
+      "address": "71 Robert Mugabe Ave, Windhoek, Khomas Region"
+    },
+    {
+      "pano_id": "0Ykaei2adtYYcGr2rgXEjQ",
+      "coordinate": {
+        "lat": -22.57019423858383,
+        "lon": 17.08785075631433,
+        "heading": 6.002557903105795,
+        "roll": 6.252148827835802,
+        "pitch": 0.03295488743502202,
+        "lat_old": -22.57018051659593,
+        "lon_old": 17.08791771959767
+      },
+      "matrix_id": 1,
+      "pano_id_old": "RWN9ngvDkEKoZmukJdZhHA",
+      "address": "71 Robert Mugabe Ave, Windhoek, Khomas Region"
+    },
+    {
+      "pano_id": "9uk3xax05WiIrO163BCiog",
+      "coordinate": {
+        "lat": -22.57002043322491,
+        "lon": 17.08785832685956,
+        "heading": 2.850126450195488,
+        "roll": 0.020679726744736497,
+        "pitch": 0.024230638020031444
+      },
+      "matrix_id": 2,
+      "address": "Robert Mugabe Ave, Windhoek, Khomas Region"
+    },
+    {
+      "pano_id": "MRfri_y2DZlvFBPG9-N7Ow",
+      "coordinate": {
+        "lat": -22.57032400681852,
+        "lon": 17.08796377376438,
+        "heading": 2.8463737899034576,
+        "roll": 0.02171474973823359,
+        "pitch": 0.04814635724116102,
+        "lat_old": -22.57028902413959,
+        "lon_old": 17.08795277844392
+      },
+      "matrix_id": 3,
+      "pano_id_old": "uVF8GmdyNjlQNC_HHiMbRg",
+      "address": "Robert Mugabe Ave, Windhoek, Khomas Region"
+    },
+    {
+      "pano_id": "JXhaCml_b0evXYH28xrHnA",
+      "coordinate": {
+        "lat": -22.5707796057317,
+        "lon": 17.08809995355374,
+        "heading": 2.9273349523063015,
+        "roll": 6.279387106832916,
+        "pitch": 0.041257158975289546
+      },
+      "matrix_id": 4,
+      "address": "Robert Mugabe Ave, Windhoek, Khomas Region"
+    },
+    {
+      "pano_id": "VaZWkqYLM-PyCgIfLDph9g",
+      "coordinate": {
+        "lat": -22.57041097691672,
+        "lon": 17.08799693997993,
+        "heading": 2.844650724678176,
+        "roll": 0.017239761095978582,
+        "pitch": 0.0380965193935835,
+        "lat_old": -22.57038439748202,
+        "lon_old": 17.08798315076475
+      },
+      "matrix_id": 5,
+      "pano_id_old": "yA3sa0uhxViEdt4ikZjxJg",
+      "address": "Robert Mugabe Ave, Windhoek, Khomas Region"
+    },
+    {
+      "pano_id": "Z2Lg9-obhx0d0tfaK8RWUQ",
+      "coordinate": {
+        "lat": -22.57050992932368,
+        "lon": 17.08802920494404,
+        "heading": 2.8250056505810965,
+        "roll": 0.02438002263183348,
+        "pitch": 0.04039123214685028,
+        "lat_old": -22.57048960921488,
+        "lon_old": 17.08801694786219
+      },
+      "matrix_id": 6,
+      "pano_id_old": "zhpmqY0yL_YOJ88pRvk3rg",
+      "address": "Robert Mugabe Ave, Windhoek, Khomas Region"
+    },
+    {
+      "pano_id": "z2NBMVwqtgSDbbiznEWDuQ",
+      "coordinate": {
+        "lat": -22.57061418110245,
+        "lon": 17.08806615644458,
+        "heading": 2.820815965554185,
+        "roll": 0.00885857572336335,
+        "pitch": 0.04649692842002044,
+        "lat_old": -22.57058774898917,
+        "lon_old": 17.08805101534123
+      },
+      "matrix_id": 7,
+      "pano_id_old": "Xax_XkP9B0dzsXIbAxrA5g",
+      "address": "Robert Mugabe Ave, Windhoek, Khomas Region"
+    },
+    {
+      "pano_id": "dC5n80lhSos8uihsRpaZOg",
+      "coordinate": {
+        "lat": -22.57071060757677,
+        "lon": 17.08810382895589,
+        "heading": 2.601462571840937,
+        "roll": 6.282439089442146,
+        "pitch": 0.035828438251217516,
+        "lat_old": -22.57068404076997,
+        "lon_old": 17.08808346056387
+      },
+      "matrix_id": 8,
+      "pano_id_old": "Buxp-bpm4gqKKsQ8tEhqMg",
+      "address": "Robert Mugabe Ave, Windhoek, Khomas Region"
+    },
+    {
+      "pano_id": "vJNQgSWIPESNkBFocIJ5dA",
+      "coordinate": {
+        "lat": -22.57076759129112,
+        "lon": 17.08813023576759,
+        "heading": 2.6837646358526364,
+        "roll": 0.003954435836347539,
+        "pitch": 0.04215424478848273
+      },
+      "matrix_id": 9,
+      "address": "Robert Mugabe Ave, Windhoek, Khomas Region"
+    },
+    {
+      "pano_id": "OQuVfA5sIiR1lm5SXqz0xw",
+      "coordinate": {
+        "lat": -22.57083924040961,
+        "lon": 17.08817151331525,
+        "heading": 2.616304368595948,
+        "roll": 6.278401737229586,
+        "pitch": 0.051262122558499226
+      },
+      "matrix_id": 10,
+      "address": "Windhoek, Khomas Region"
+    },
+    {
+      "pano_id": "7UTFZxuSGPuIcKUZ0TK4mg",
+      "coordinate": {
+        "lat": -22.5708595201589,
+        "lon": 17.08811788855493,
+        "heading": 2.992482796788475,
+        "roll": 3.835943503078939e-05,
+        "pitch": 0.04829149952057034
+      },
+      "matrix_id": 11,
+      "address": "Robert Mugabe Ave, Windhoek, Khomas Region"
+    },
+    {
+      "pano_id": "7pvpK6mikDfdpPSLuuOWHg",
+      "coordinate": {
+        "lat": -22.57089851644695,
+        "lon": 17.08821243036734,
+        "heading": 2.659130129453294,
+        "roll": 6.266067572956994,
+        "pitch": 0.04548133193831873
+      },
+      "matrix_id": 12,
+      "address": "Windhoek, Khomas Region"
+    },
+    {
+      "pano_id": "iaT7ye5j6-hhiwboBtHpXQ",
+      "coordinate": {
+        "lat": -22.57097774236423,
+        "lon": 17.08807913453393,
+        "heading": 6.008211261467815,
+        "roll": 6.271999497969036,
+        "pitch": 0.02319000782408298,
+        "lat_old": -22.57095998430079,
+        "lon_old": 17.08813708531649
+      },
+      "matrix_id": 13,
+      "pano_id_old": "K8SivyOHk-SljNioPQ7nlw",
+      "address": "Robert Mugabe Ave, Windhoek, Khomas Region"
+    },
+    {
+      "pano_id": "A1EOCV6yD35n1IIlIX9Buw",
+      "coordinate": {
+        "lat": -22.57098343743331,
+        "lon": 17.08825632157416,
+        "heading": 2.511236538321815,
+        "roll": 0.0073843855026932415,
+        "pitch": 0.03329590521260667
+      },
+      "matrix_id": 14,
+      "address": "Windhoek, Khomas Region"
+    },
+    {
+      "pano_id": "1ADD2ToWxPg8drUl8kIVOg",
+      "coordinate": {
+        "lat": -22.57107537415714,
+        "lon": 17.08811139950912,
+        "heading": 5.924750456065821,
+        "roll": 6.269487604428873,
+        "pitch": 0.02893417997927489,
+        "lat_old": -22.57105934964621,
+        "lon_old": 17.08816394276013
+      },
+      "matrix_id": 15,
+      "pano_id_old": "VK8QKNxCnsH19p4DsTSv5A",
+      "address": "Robert Mugabe Ave, Windhoek, Khomas Region"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      2.8666632835691725,
+      0.6013765543542972,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      6.00825569989049,
+      -1,
+      -1,
+      2.4642880228447743,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      2.8229313144080344,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      5.605879919344761,
+      -1,
+      -1,
+      -1,
+      2.803009420827649,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      5.944601852233558,
+      -1,
+      -1,
+      2.849134850231783,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.9907272876875455,
+      -1,
+      2.8252847264258474,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.966877132476076,
+      -1,
+      2.7953623473811984,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.936954748606623,
+      -1,
+      2.7372551871869146,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.878847663882277,
+      -1,
+      2.7665711025747965,
+      3.0938062225699565,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.9081637561645906,
+      -1,
+      -1,
+      2.7376395857566127,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      6.235399142475859,
+      -1,
+      -1,
+      -1,
+      3.4355229971926806,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.879232239346406,
+      -1,
+      -1,
+      -1,
+      2.655003028711998,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.29393060320994263,
+      -1,
+      -1,
+      -1,
+      2.8454059308320017
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.796595948617901,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.986998368283078,
+      -1,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "Z0eu159j-7PjZQNJx6cloQ"
+}

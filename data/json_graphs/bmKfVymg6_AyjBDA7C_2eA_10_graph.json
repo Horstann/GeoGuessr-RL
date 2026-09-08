@@ -1,0 +1,483 @@
+{
+  "center_pano_id": "bmKfVymg6_AyjBDA7C_2eA",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "bmKfVymg6_AyjBDA7C_2eA",
+      "coordinate": {
+        "lat": -31.88985782412428,
+        "lon": 115.7557017876615,
+        "heading": 0.08373870626174301,
+        "roll": 6.263313864389851,
+        "pitch": 0.00982812968682842,
+        "lat_old": -31.88981774537066,
+        "lon_old": 115.7557126222348
+      },
+      "matrix_id": 0,
+      "pano_id_old": "BHnhHXNzXxqSldlBeMfDbA",
+      "address": "The Esplanade, Scarborough, Western Australia"
+    },
+    {
+      "pano_id": "r-yolBzhAhO7euG9RxVEJg",
+      "coordinate": {
+        "lat": -31.88994927508664,
+        "lon": 115.7557057603385,
+        "heading": 6.149510066791931,
+        "roll": 6.255301477934239,
+        "pitch": -0.004652142950204917,
+        "lat_old": -31.88990800284012,
+        "lon_old": 115.7556985372895
+      },
+      "matrix_id": 1,
+      "pano_id_old": "2e5s9FDxmY54h9Bu977WMQ",
+      "address": "The Esplanade, Scarborough, Western Australia"
+    },
+    {
+      "pano_id": "hkSQgJuDnU1skPBieGwPWw",
+      "coordinate": {
+        "lat": -31.88977794857405,
+        "lon": 115.7558037229214,
+        "heading": 1.4772666419435319,
+        "roll": 0.024533175200459053,
+        "pitch": -0.10957483094492873
+      },
+      "matrix_id": 2,
+      "address": "The Esplanade, Scarborough, Western Australia"
+    },
+    {
+      "pano_id": "1hgnEoHMaxiqkHUsIEHiFA",
+      "coordinate": {
+        "lat": -31.88979856013653,
+        "lon": 115.7559183887574,
+        "heading": 1.9795963478120213,
+        "roll": 0.014217637099875688,
+        "pitch": -0.02834495558809486
+      },
+      "matrix_id": 3,
+      "address": "The Esplanade, Scarborough, Western Australia"
+    },
+    {
+      "pano_id": "TVvyg_12LG0_Th4UT4Xd8Q",
+      "coordinate": {
+        "lat": -31.89012592558256,
+        "lon": 115.755722012198,
+        "heading": 0.056613861282311134,
+        "roll": 6.251724852590264,
+        "pitch": -5.992112452678286e-05,
+        "lat_old": -31.8900821578272,
+        "lon_old": 115.7557244499768
+      },
+      "matrix_id": 4,
+      "pano_id_old": "4Bkv6DkKFJCfPWXCTQE0Ow",
+      "address": "The Esplanade, Scarborough, Western Australia"
+    },
+    {
+      "pano_id": "Q2DfCyP_hXYvhgJltWmLWw",
+      "coordinate": {
+        "lat": -31.88991102158685,
+        "lon": 115.7560363049133,
+        "heading": 2.8205214199376227,
+        "roll": 0.029999379916873938,
+        "pitch": -0.022280538311820922,
+        "lat_old": -31.88987019463794,
+        "lon_old": 115.756005697279
+      },
+      "matrix_id": 5,
+      "pano_id_old": "Ko92uNEV233JFYAa9qVBZw",
+      "address": "The Esplanade, Scarborough, Western Australia"
+    },
+    {
+      "pano_id": "5pl1sZiT4b1VQCkIDYjWjw",
+      "coordinate": {
+        "lat": -31.89000678382719,
+        "lon": 115.7560454240014,
+        "heading": 3.1142851324043392,
+        "roll": 0.022055388847600742,
+        "pitch": -0.0067662933815643206,
+        "lat_old": -31.88996047757484,
+        "lon_old": 115.7560416319054
+      },
+      "matrix_id": 6,
+      "pano_id_old": "-7v7d6FG-3f-wwlDzKg1Pw",
+      "address": "The Esplanade, Scarborough, Western Australia"
+    },
+    {
+      "pano_id": "TCn7JJzyize-imPr0QL-sQ",
+      "coordinate": {
+        "lat": -31.89022317546936,
+        "lon": 115.755722012198,
+        "heading": 6.2619119763920335,
+        "roll": 6.263254742213651,
+        "pitch": 0.028057334190366302,
+        "lat_old": -31.8902645475741,
+        "lon_old": 115.7557212898931
+      },
+      "matrix_id": 7,
+      "pano_id_old": "UApzgxf-ceIgfWdf53zIEA",
+      "address": "The Esplanade, Scarborough, Western Australia"
+    },
+    {
+      "pano_id": "l5xxvUSgYTnSOk2D3IZXGw",
+      "coordinate": {
+        "lat": -31.89040119608617,
+        "lon": 115.7557323050418,
+        "heading": 6.222554716538406,
+        "roll": 6.258856797989495,
+        "pitch": 0.013841912923741345,
+        "lat_old": -31.89035530305123,
+        "lon_old": 115.7557269780437
+      },
+      "matrix_id": 8,
+      "pano_id_old": "OkYkJB3LkhDRzgl4t69xtw",
+      "address": "The Esplanade, Scarborough, Western Australia"
+    },
+    {
+      "pano_id": "HzeDRFnm_YbKjzKvBjsLUg",
+      "coordinate": {
+        "lat": -31.89019466652806,
+        "lon": 115.756056168273,
+        "heading": 3.0823274656394966,
+        "roll": 0.0356727848078808,
+        "pitch": -0.015288142553708875,
+        "lat_old": -31.89014968375907,
+        "lon_old": 115.7560507509933
+      },
+      "matrix_id": 9,
+      "pano_id_old": "Fthkq7gVn23zoSgJA9uYhA",
+      "address": "The Esplanade, Scarborough, Western Australia"
+    },
+    {
+      "pano_id": "0YGKNIDflwDpyo37TyXGxQ",
+      "coordinate": {
+        "lat": -31.8904934955811,
+        "lon": 115.755738715497,
+        "heading": 6.224960083634966,
+        "roll": 6.25695210517787,
+        "pitch": 0.010773951347970063,
+        "lat_old": -31.89044750488978,
+        "lon_old": 115.7557338399396
+      },
+      "matrix_id": 10,
+      "pano_id_old": "KzctzPWFwQkCc8gt8GG3lg",
+      "address": "The Esplanade, Scarborough, Western Australia"
+    },
+    {
+      "pano_id": "f5BUQs162rSTemJKM45UdA",
+      "coordinate": {
+        "lat": -31.89058644278617,
+        "lon": 115.755745125952,
+        "heading": 6.248620672023665,
+        "roll": 6.259063991922303,
+        "pitch": 0.016903482912896436,
+        "lat_old": -31.89054075649186,
+        "lon_old": 115.7557403406828
+      },
+      "matrix_id": 11,
+      "pano_id_old": "VHfEBsSGQliM1h4Jo1JckA",
+      "address": "The Esplanade, Scarborough, Western Australia"
+    },
+    {
+      "pano_id": "uWMSGoJAwEM0w4hFk88Fcw",
+      "coordinate": {
+        "lat": -31.89028692692711,
+        "lon": 115.7560627592966,
+        "heading": 3.0877472647739177,
+        "roll": 0.030641235029096662,
+        "pitch": -0.0049628006913626605,
+        "lat_old": -31.89033146254253,
+        "lon_old": 115.7560627592966
+      },
+      "matrix_id": 12,
+      "pano_id_old": "6p8r4GjuthEqh8Hkf8RIaw",
+      "address": "The Esplanade, Scarborough, Western Australia"
+    },
+    {
+      "pano_id": "ln2czjHReO6qEe5LQD7wwg",
+      "coordinate": {
+        "lat": -31.89046765811915,
+        "lon": 115.7560702532,
+        "heading": 3.1090173997681614,
+        "roll": 0.042976541548125934,
+        "pitch": -0.013111141520623601,
+        "lat_old": -31.89042242145138,
+        "lon_old": 115.7560660096644
+      },
+      "matrix_id": 13,
+      "pano_id_old": "lsHb8b8A6t-Qt2jK6dos1Q",
+      "address": "The Esplanade, Scarborough, Western Australia"
+    },
+    {
+      "pano_id": "pkWADE8t0YKRP1p6lFzv0Q",
+      "coordinate": {
+        "lat": -31.89076704816145,
+        "lon": 115.7557520781355,
+        "heading": 6.238614110543803,
+        "roll": 6.259576916748252,
+        "pitch": 0.013697969066822562,
+        "lat_old": -31.89072049640443,
+        "lon_old": 115.7557479248831
+      },
+      "matrix_id": 14,
+      "pano_id_old": "luSXeyf0a6wrRE81i2htPQ",
+      "address": "The Esplanade, Scarborough, Western Australia"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      3.1047255710716932,
+      0.8254802639395088,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      6.246318188030426,
+      -1,
+      -1,
+      -1,
+      3.063637113361452,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      3.9670719776526364,
+      -1,
+      -1,
+      1.8691413421268226,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      5.010733862558561,
+      -1,
+      -1,
+      2.414192496304818,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      6.205229617102568,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.141592653589793,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      5.555784062667013,
+      -1,
+      -1,
+      3.060914905708055,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      6.2025074752181135,
+      -1,
+      -1,
+      -1,
+      3.0930762386625243,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      0.0,
+      -1,
+      -1,
+      -1,
+      3.092540841714721,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      6.234133400400195,
+      -1,
+      -1,
+      3.0826913445109163,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      6.234668793185648,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.0810104883789307,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      6.2242839389953195,
+      -1,
+      -1,
+      3.083100925223268,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      6.224693519707489,
+      -1,
+      -1,
+      -1,
+      3.108920877104461
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      6.22260308119419,
+      -1,
+      -1,
+      -1,
+      3.1064014744632327,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      6.247994058955631,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      6.250513466591664,
+      -1,
+      -1,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "BHnhHXNzXxqSldlBeMfDbA"
+}

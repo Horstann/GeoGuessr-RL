@@ -1,0 +1,184 @@
+{
+  "center_pano_id": "qUsLVn3Lk-AOclzpwJjFwg",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "qUsLVn3Lk-AOclzpwJjFwg",
+      "coordinate": {
+        "lat": -33.92545622137457,
+        "lon": 18.42126580224049,
+        "heading": 5.506355065641142,
+        "roll": 0.06473977330176657,
+        "pitch": -0.009663013699243508
+      },
+      "matrix_id": 0,
+      "address": "8 Spin St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "ga33uN9n-dhqd4--GlyYWw",
+      "coordinate": {
+        "lat": -33.925390859556,
+        "lon": 18.42119671049307,
+        "heading": 5.61178375424298,
+        "roll": 0.0666762992107961,
+        "pitch": 0.006762698114092714
+      },
+      "matrix_id": 1,
+      "address": "12 Spin St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "qrqbgEKGFmTbYNZb1VlKzg",
+      "coordinate": {
+        "lat": -33.92552167047715,
+        "lon": 18.4213423193296,
+        "heading": 5.497242261023108,
+        "roll": 0.04300692239049886,
+        "pitch": 0.003348925070774642
+      },
+      "matrix_id": 2,
+      "address": "8 Spin St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "Ta0ZxMlj3DJ7dwu8VTDzwg",
+      "coordinate": {
+        "lat": -33.92529805670387,
+        "lon": 18.42112490217795,
+        "heading": 5.701713910564993,
+        "roll": 0.06124257673730177,
+        "pitch": 0.0037987329788890254
+      },
+      "matrix_id": 3,
+      "address": "12 Spin St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "TA8bqMhRXcJl693YovKCkw",
+      "coordinate": {
+        "lat": -33.92558781654154,
+        "lon": 18.42142390739258,
+        "heading": 5.440676719469825,
+        "roll": 0.00709463357609262,
+        "pitch": -0.017840116668277305
+      },
+      "matrix_id": 4,
+      "address": "8 Spin St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "lyNRT4utXic3G5O_Go_IOA",
+      "coordinate": {
+        "lat": -33.92524236868849,
+        "lon": 18.42104530634564,
+        "heading": 5.747706702590662,
+        "roll": 0.023425021387309466,
+        "pitch": 0.018548251202129374
+      },
+      "matrix_id": 5,
+      "address": "12 Spin St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "hBv84xTGUmZ4XMiFeCzKhA",
+      "coordinate": {
+        "lat": -33.92565377570819,
+        "lon": 18.42152215719456,
+        "heading": 5.319262140108676,
+        "roll": 0.038320457951745546,
+        "pitch": -0.02983153210857709
+      },
+      "matrix_id": 6,
+      "address": "6 Spin St, Cape Town, Western Cape"
+    },
+    {
+      "pano_id": "6hGIfpt8hZmbbhuBbz-D5A",
+      "coordinate": {
+        "lat": -33.92572768359872,
+        "lon": 18.42160510359311,
+        "heading": 5.441691916477363,
+        "roll": 0.025200049462766307,
+        "pitch": -0.01021428804488991
+      },
+      "matrix_id": 7,
+      "address": "6 Spin St, Cape Town, Western Cape"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      5.47901984758035,
+      2.337281252762821,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      2.3374274603066656,
+      -1,
+      -1,
+      5.477939669442214,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      5.4788739063526135,
+      -1,
+      -1,
+      -1,
+      2.3363334337308603,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      2.3363472821685294,
+      -1,
+      -1,
+      -1,
+      5.478406255265195,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      5.4779263536367635,
+      -1,
+      -1,
+      -1,
+      2.336919861802897,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      2.3368136016754018,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      5.478512781708798,
+      -1,
+      -1,
+      2.336096412393844
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.477688799667527,
+      -1
+    ]
+  ]
+}

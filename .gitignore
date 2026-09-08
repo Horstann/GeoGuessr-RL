@@ -1,0 +1,6 @@
+conf/ai_keys/default.yaml
+data/*
+!data/json_graphs/
+!data/json_graphs/**
+__pycache__/
+outputs/*

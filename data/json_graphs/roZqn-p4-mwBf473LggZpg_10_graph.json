@@ -1,0 +1,258 @@
+{
+  "center_pano_id": "roZqn-p4-mwBf473LggZpg",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "roZqn-p4-mwBf473LggZpg",
+      "coordinate": {
+        "lat": 41.39223055732651,
+        "lon": 2.174456480505171,
+        "heading": 0.19481501078450164,
+        "roll": 0.026480070792983073,
+        "pitch": 0.006926216205023579,
+        "lat_old": 41.39222746177266,
+        "lon_old": 2.174503194709088
+      },
+      "matrix_id": 0,
+      "pano_id_old": "B50e1E8JReoguk4nAKwOsQ",
+      "address": "47 Carrer de Casp, Barcelona, Catalonia"
+    },
+    {
+      "pano_id": "WWSu4e5u8Y7FiZPW_Q6Yvg",
+      "coordinate": {
+        "lat": 41.39215275967207,
+        "lon": 2.174408791576532,
+        "heading": 0.7725716472183269,
+        "roll": 6.281104845736017,
+        "pitch": 0.01754956579334966
+      },
+      "matrix_id": 1,
+      "address": "47 Carrer de Casp, Barcelona, Catalonia"
+    },
+    {
+      "pano_id": "bkSLEzHgLKOon9OWnrgxqw",
+      "coordinate": {
+        "lat": 41.39208850665168,
+        "lon": 2.174323461512668,
+        "heading": 0.7879892194010136,
+        "roll": 6.267849760358474,
+        "pitch": 0.016688432654872538
+      },
+      "matrix_id": 2,
+      "address": "68 Carrer de Casp, Barcelona, Catalonia"
+    },
+    {
+      "pano_id": "9aTcNhqYqzR_nj_gCfJvmg",
+      "coordinate": {
+        "lat": 41.39202270972346,
+        "lon": 2.174234907373104,
+        "heading": 0.7861533027245403,
+        "roll": 6.2667536032537985,
+        "pitch": 0.012710335776566677
+      },
+      "matrix_id": 3,
+      "address": "45 Carrer de Casp, Barcelona, Catalonia"
+    },
+    {
+      "pano_id": "X0ZUFuEYJkFXAhBy5YJFHQ",
+      "coordinate": {
+        "lat": 41.3919307286577,
+        "lon": 2.174108637419474,
+        "heading": 0.7701488364166272,
+        "roll": 6.273352916435014,
+        "pitch": 0.012244682059966322,
+        "lat_old": 41.39195862192485,
+        "lon_old": 2.17414890279972
+      },
+      "matrix_id": 4,
+      "pano_id_old": "VVQd2z1hGnBC0akVDw1ZTg",
+      "address": "62 Carrer de Casp, Barcelona, Catalonia"
+    },
+    {
+      "pano_id": "yNYPVSUvNmCLccXETc2kKg",
+      "coordinate": {
+        "lat": 41.39186694359849,
+        "lon": 2.174026832074424,
+        "heading": 0.7786811384960504,
+        "roll": 6.275224586049123,
+        "pitch": 0.011907126391798778,
+        "lat_old": 41.3918940146832,
+        "lon_old": 2.174062073588898
+      },
+      "matrix_id": 5,
+      "pano_id_old": "ebVoYrq6dZXIzoUaSMEQFw",
+      "address": "60 Carrer de Casp, Barcelona, Catalonia"
+    },
+    {
+      "pano_id": "E1iBjYA_S3CWUGU_xIcp4w",
+      "coordinate": {
+        "lat": 41.39182940729311,
+        "lon": 2.173975244545535,
+        "heading": 0.7888400993692941,
+        "roll": 6.2713539477208,
+        "pitch": 0.011665045048710574
+      },
+      "matrix_id": 6,
+      "address": "41 Carrer de Casp, Barcelona, Catalonia"
+    },
+    {
+      "pano_id": "7-ukM23z6lGKaHLK6CxKGw",
+      "coordinate": {
+        "lat": 41.391761750477,
+        "lon": 2.173883991750394,
+        "heading": 0.7878372860608246,
+        "roll": 6.265664370367955,
+        "pitch": 0.009235176870122278
+      },
+      "matrix_id": 7,
+      "address": "56 Carrer de Casp, Barcelona, Catalonia"
+    },
+    {
+      "pano_id": "0I8KRCyJtp_8kZdRL_GL2Q",
+      "coordinate": {
+        "lat": 41.39169178002036,
+        "lon": 2.173789814860776,
+        "heading": 0.791426827736088,
+        "roll": 6.269695330993899,
+        "pitch": 0.006872553509058482
+      },
+      "matrix_id": 8,
+      "address": "39 Carrer de Casp, Barcelona, Catalonia"
+    },
+    {
+      "pano_id": "WUkLB-xcJBzmK8uCpE-rMA",
+      "coordinate": {
+        "lat": 41.39162070143816,
+        "lon": 2.173693613671364,
+        "heading": 0.7975531635077062,
+        "roll": 0.010443067106392628,
+        "pitch": 0.005330849554011611
+      },
+      "matrix_id": 9,
+      "address": "37 Carrer de Casp, Barcelona, Catalonia"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      3.57261888825658,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      0.4310256843308939,
+      -1,
+      3.9229028647139694,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      0.7813100779661221,
+      -1,
+      3.9231239070844466,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      0.7815312534946532,
+      -1,
+      3.941703823457499,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      0.8001097126849183,
+      -1,
+      3.9077031989155255,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      0.7661096012754548,
+      -1,
+      3.9422701221308247,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.8006768732115379,
+      -1,
+      3.9234386927252944,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.7818460391355008,
+      -1,
+      3.9232631904094575,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.7816706033986917,
+      -1,
+      3.9229883521849613
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.7813956320161409,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "B50e1E8JReoguk4nAKwOsQ"
+}

@@ -1,0 +1,243 @@
+{
+  "center_pano_id": "gcMiWR8QUhqk-kJNX89ugQ",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "gcMiWR8QUhqk-kJNX89ugQ",
+      "coordinate": {
+        "lat": 46.7807659288135,
+        "lon": -92.08879923557213,
+        "heading": 4.34355075678864,
+        "roll": 0.05623791864374364,
+        "pitch": -0.0559195918308843,
+        "lat_old": 46.7807582635807,
+        "lon_old": -92.08874958602671
+      },
+      "matrix_id": 0,
+      "pano_id_old": "NYDucSxZSzcuHmwWqG4aNA",
+      "address": "N Pier, Duluth, Minnesota"
+    },
+    {
+      "pano_id": "FSBb_MOuHC_RF4cV4OtrXw",
+      "coordinate": {
+        "lat": 46.78074126493863,
+        "lon": -92.08892457211897,
+        "heading": 4.427150046567316,
+        "roll": 0.06757707183762336,
+        "pitch": -0.07442097139782829,
+        "lat_old": 46.78072048320184,
+        "lon_old": -92.08898272431182
+      },
+      "matrix_id": 1,
+      "pano_id_old": "ayBlxxEpZnjzKxLTTaQN4w",
+      "address": "N Pier, Duluth, Minnesota"
+    },
+    {
+      "pano_id": "NqY03JOwMCQb2ZZP1zqZxA",
+      "coordinate": {
+        "lat": 46.7806997419488,
+        "lon": -92.08904270937732,
+        "heading": 4.383796447181918,
+        "roll": 0.02710251811876184,
+        "pitch": -0.022070281743759166,
+        "lat_old": 46.78068172298111,
+        "lon_old": -92.08909923359424
+      },
+      "matrix_id": 2,
+      "pano_id_old": "32kA2aFFpzv9NLMMg6URfw",
+      "address": "N Pier, Duluth, Minnesota"
+    },
+    {
+      "pano_id": "hHRoBVPIQ2IMaePHT8oUdw",
+      "coordinate": {
+        "lat": 46.78062595762933,
+        "lon": -92.08926931787512,
+        "heading": 4.42850985661991,
+        "roll": 6.265614302939461,
+        "pitch": -0.0168753865633961,
+        "lat_old": 46.78062135630753,
+        "lon_old": -92.0892015131184
+      },
+      "matrix_id": 3,
+      "pano_id_old": "tW-Wp1vgNhGjoky_rT_A-w",
+      "address": "N Pier, Duluth, Minnesota"
+    },
+    {
+      "pano_id": "Cij3bUyOYlMLy9gzSDZrTA",
+      "coordinate": {
+        "lat": 46.78056239121909,
+        "lon": -92.0893688173572,
+        "heading": 1.1575087461829334,
+        "roll": 0.05638717633927497,
+        "pitch": -0.14090945117274653,
+        "lat_old": 46.78059524119028,
+        "lon_old": -92.08935379483147
+      },
+      "matrix_id": 4,
+      "pano_id_old": "ZXdL1iw6-aUK423oJ6eyjg",
+      "address": "N Pier, Duluth, Minnesota"
+    },
+    {
+      "pano_id": "G3lonyENa2sQD--p15kT0A",
+      "coordinate": {
+        "lat": 46.78051173759446,
+        "lon": -92.08950156283449,
+        "heading": 1.1760242405036547,
+        "roll": 0.07210518638243625,
+        "pitch": -0.04862199781184917,
+        "lat_old": 46.78055948795037,
+        "lon_old": -92.08946742104824
+      },
+      "matrix_id": 5,
+      "pano_id_old": "5pWbX-UjCvh9RZo9GAMZqA",
+      "address": "N Pier, Duluth, Minnesota"
+    },
+    {
+      "pano_id": "4lMrApHkWnYiHAmdagT50g",
+      "coordinate": {
+        "lat": 46.78047078989864,
+        "lon": -92.0896164799486,
+        "heading": 1.0823671899731568,
+        "roll": 0.037726398258711324,
+        "pitch": -0.09299638684307646,
+        "lat_old": 46.78048455878698,
+        "lon_old": -92.089696014535
+      },
+      "matrix_id": 6,
+      "pano_id_old": "lMSFr2uqB666cNbiNJox4Q",
+      "address": "N Pier, Duluth, Minnesota"
+    },
+    {
+      "pano_id": "HdPzGmjHL-QUhfU9Um--uQ",
+      "coordinate": {
+        "lat": 46.78039330740392,
+        "lon": -92.08986358358703,
+        "heading": 1.1682402201115167,
+        "roll": 0.0505134330746723,
+        "pitch": -0.03467022949314206,
+        "lat_old": 46.78041305090225,
+        "lon_old": -92.08980161613604
+      },
+      "matrix_id": 7,
+      "pano_id_old": "Twk0EuXpOeP4F7FBkKarZg",
+      "address": "N Pier, Duluth, Minnesota"
+    },
+    {
+      "pano_id": "Vy5wy7Zokmzlt5BvfGpyuw",
+      "coordinate": {
+        "lat": 46.78035325331136,
+        "lon": -92.08998620403621,
+        "heading": 1.1742463141599178,
+        "roll": 0.012136867728304747,
+        "pitch": -0.0996725322217416,
+        "lat_old": 46.78040281326172,
+        "lon_old": -92.0899459892944
+      },
+      "matrix_id": 8,
+      "pano_id_old": "4AD9YekLghdB6sVXwUXT_Q",
+      "address": "N Pier, Duluth, Minnesota"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      4.432570108799745,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      1.2909758611028603,
+      -1,
+      4.238185427204341,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      1.0965912710702705,
+      -1,
+      4.268553860836409,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      1.1269583250316102,
+      -1,
+      3.961678583645819,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      0.8200846645134007,
+      -1,
+      4.204016696495435,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      1.06242235457018,
+      -1,
+      4.2326058503858235,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.0910117351794315,
+      -1,
+      4.282992905331012,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.1413971088817532,
+      -1,
+      4.26730737075432
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.1257131576019404,
+      -1
+    ]
+  ],
+  "center_pano_id_old": "NYDucSxZSzcuHmwWqG4aNA"
+}

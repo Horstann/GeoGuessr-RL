@@ -1,0 +1,452 @@
+{
+  "center_pano_id": "FIgyz2UrDcn6xQ56izZ1eg",
+  "max_steps": 10,
+  "nodes": [
+    {
+      "pano_id": "FIgyz2UrDcn6xQ56izZ1eg",
+      "coordinate": {
+        "lat": 48.14535768260198,
+        "lon": 17.10545427882887,
+        "heading": 3.4542016928782373,
+        "roll": 6.233244112521766,
+        "pitch": 0.015197728234700685
+      },
+      "matrix_id": 0,
+      "address": "Bratislava, Bratislava Region"
+    },
+    {
+      "pano_id": "snLtda47j4U6fTlD-5qFJw",
+      "coordinate": {
+        "lat": 48.14544747111945,
+        "lon": 17.10548085640416,
+        "heading": 3.432131011660315,
+        "roll": 6.227297806439838,
+        "pitch": -0.010870224621376427
+      },
+      "matrix_id": 1,
+      "address": "Bratislava, Bratislava Region"
+    },
+    {
+      "pano_id": "Y3gtD1KyxWeuseyoYHqRUA",
+      "coordinate": {
+        "lat": 48.14526981667738,
+        "lon": 17.10542533365547,
+        "heading": 3.328193160636703,
+        "roll": 6.249537332070871,
+        "pitch": -0.05156612239693177
+      },
+      "matrix_id": 2,
+      "address": "Bratislava, Bratislava Region"
+    },
+    {
+      "pano_id": "MPR3wHfcfdial_BMh6NWVA",
+      "coordinate": {
+        "lat": 48.14556904084716,
+        "lon": 17.10557815094752,
+        "heading": 0.23834824038542737,
+        "roll": 6.2042955514726055,
+        "pitch": 0.05622465693375288
+      },
+      "matrix_id": 3,
+      "address": "Bratislava, Bratislava Region"
+    },
+    {
+      "pano_id": "Lmq05t9HGH6oOYb63Y9fMw",
+      "coordinate": {
+        "lat": 48.14517015192455,
+        "lon": 17.10542099434642,
+        "heading": 1.5394963276612499,
+        "roll": 6.248790049068995,
+        "pitch": 0.018041185330578288,
+        "lat_old": 48.14519288689004,
+        "lon_old": 17.10539170765884
+      },
+      "matrix_id": 4,
+      "pano_id_old": "IIblphyHNp-2Jea7hnsofQ",
+      "address": "1 Kapucínska, Bratislava, Bratislava Region"
+    },
+    {
+      "pano_id": "YHwrLaCllc-GvyzoviLXaA",
+      "coordinate": {
+        "lat": 48.14548964130185,
+        "lon": 17.10545304078688,
+        "heading": 5.26424655830982,
+        "roll": 0.03861700510031507,
+        "pitch": -0.05080712148625919
+      },
+      "matrix_id": 5,
+      "address": "11 Župné námestie, Bratislava, Bratislava Region"
+    },
+    {
+      "pano_id": "RrdJwlOaPOK7YAFmYDPOwA",
+      "coordinate": {
+        "lat": 48.14543433265019,
+        "lon": 17.10558002118202,
+        "heading": 5.36498222443872,
+        "roll": 6.2086120029674055,
+        "pitch": 0.03359018451306042
+      },
+      "matrix_id": 6,
+      "address": "11 Župné námestie, Bratislava, Bratislava Region"
+    },
+    {
+      "pano_id": "M1_FxkrQKcvypUAkra8uUw",
+      "coordinate": {
+        "lat": 48.14522082928812,
+        "lon": 17.10554822155868,
+        "heading": 0.9469176850882636,
+        "roll": 6.260317808163512,
+        "pitch": 0.002535861989973451
+      },
+      "matrix_id": 7,
+      "address": "1 Kapucínska, Bratislava, Bratislava Region"
+    },
+    {
+      "pano_id": "Q57tFMYQgoPoUKGAW3fi-w",
+      "coordinate": {
+        "lat": 48.14538583539341,
+        "lon": 17.10570888419862,
+        "heading": 5.402489119966961,
+        "roll": 6.266791952773495,
+        "pitch": 0.004513525415466293
+      },
+      "matrix_id": 8,
+      "address": "11 Župné námestie, Bratislava, Bratislava Region"
+    },
+    {
+      "pano_id": "dNh6M9vnH6DiAPS3G1BQeg",
+      "coordinate": {
+        "lat": 48.14534802115877,
+        "lon": 17.10575718759211,
+        "heading": 0.6409467079748963,
+        "roll": 6.256525466771239,
+        "pitch": -0.055270845789340994
+      },
+      "matrix_id": 9,
+      "address": "Župné námestie, Bratislava, Bratislava Region"
+    },
+    {
+      "pano_id": "yDJs9MdIr8ckcVLGB2JlEQ",
+      "coordinate": {
+        "lat": 48.1453525782924,
+        "lon": 17.1057702391933,
+        "heading": 5.517018895278036,
+        "roll": 6.221902242071337,
+        "pitch": 0.10676919073653025,
+        "lat_old": 48.14533819301781,
+        "lon_old": 17.10574187277011
+      },
+      "matrix_id": 10,
+      "pano_id_old": "svmfRU-M6bYBTFA9Uf0X3A",
+      "address": "11 Župné námestie, Bratislava, Bratislava Region"
+    },
+    {
+      "pano_id": "SqpII4LZvy9W2sZjKPL8xg",
+      "coordinate": {
+        "lat": 48.14537721380759,
+        "lon": 17.10578004580727,
+        "heading": 4.003435524497421,
+        "roll": 6.235480635205215,
+        "pitch": 0.015278688331839093
+      },
+      "matrix_id": 11,
+      "address": "7 Župné námestie, Bratislava, Bratislava Region"
+    },
+    {
+      "pano_id": "wO48IGswBoDxjbuaXg_9qQ",
+      "coordinate": {
+        "lat": 48.14527820078498,
+        "lon": 17.10565157420031,
+        "heading": 0.9348229389976687,
+        "roll": 6.236167198134237,
+        "pitch": -0.07072716696588838,
+        "lat_old": 48.14527255443772,
+        "lon_old": 17.10564207348488
+      },
+      "matrix_id": 12,
+      "pano_id_old": "s_JreQ0ZRH6P595s4FyDrQ",
+      "address": "7 Župné námestie, Bratislava, Bratislava Region"
+    },
+    {
+      "pano_id": "C4OA-UnBzagWs34jmaDdvA",
+      "coordinate": {
+        "lat": 48.14543144648535,
+        "lon": 17.10585699348406,
+        "heading": 3.924778529069713,
+        "roll": 0.008737185511926177,
+        "pitch": -0.012459599159935716
+      },
+      "matrix_id": 13,
+      "address": "5 Župné námestie, Bratislava, Bratislava Region"
+    },
+    {
+      "pano_id": "qmulshaI4tnv-nB5L5Ftlg",
+      "coordinate": {
+        "lat": 48.14549508338353,
+        "lon": 17.10594743720875,
+        "heading": 0.7513197548775491,
+        "roll": 0.019019487154045892,
+        "pitch": -0.05466963717325561
+      },
+      "matrix_id": 14,
+      "address": "5 Župné námestie, Bratislava, Bratislava Region"
+    }
+  ],
+  "adjacency_matrix": [
+    [
+      -1,
+      0.16731299561568727,
+      3.3085651307706003,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      3.308905749074021,
+      -1,
+      -1,
+      0.16705568432011517,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      0.16697242724653658,
+      -1,
+      -1,
+      -1,
+      3.1706357252109587,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      3.3086482213966106,
+      -1,
+      -1,
+      -1,
+      2.469194812089388,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      0.029043015210058722,
+      -1,
+      -1,
+      -1,
+      -1,
+      1.0326109536088197,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      5.610787199363071,
+      -1,
+      -1,
+      2.4674685510707985,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.6090614709767,
+      -1,
+      -1,
+      2.4671814623052883,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      4.174205261108119,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.60877438221119,
+      -1,
+      -1,
+      2.468021955945318,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      5.60961487585122,
+      -1,
+      1.0886894099427984,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      4.230282233612814,
+      -1,
+      0.2596138698296301,
+      3.958246604602363,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.401206650895676,
+      -1,
+      -1,
+      0.700069549964928,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      0.8166524083612806,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.841662336712776,
+      -1,
+      -1,
+      0.7000552354740688
+    ],
+    [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      3.841647955642889,
+      -1
+    ]
+  ]
+}
