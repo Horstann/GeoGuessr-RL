@@ -6,9 +6,9 @@ This script processes batch result files and geocodes location descriptions to c
 """
 
 import json
-import os
 import time
 import argparse
+from threading import Lock
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -22,12 +22,58 @@ class BatchGeocoder:
     Processes files that contain location descriptions and converts them to coordinates.
     """
     
-    def __init__(self, google_api_key: Optional[str] = None):
+    def __init__(self, google_api_key: Optional[str] = None, use_google: Optional[bool] = True):
         self.google_api_key = google_api_key
         self.geocoding_cache = {}
+        self._cache_lock = Lock()
+        self.cache_path = Path(__file__).resolve().parent / 'data' / 'geocoding_cache.jsonl'
+        self.cache_path.parent.mkdir(parents=True, exist_ok=True)
+        if self.cache_path.exists():
+            with self.cache_path.open('r', encoding='utf-8') as f:
+                for line_number, line in enumerate(f, start=1):
+                    # Every append includes a newline; a missing one indicates
+                    # an incomplete write, even if the JSON itself is valid.
+                    if not line.endswith('\n'): raise ValueError(f"Incomplete cache record at {self.cache_path}:{line_number}")
+                    try:
+                        record = json.loads(line)
+                        cache_key = record['cache_key']
+                        if not isinstance(cache_key, str):
+                            raise ValueError(f"cache_key must be a string:{line_number}: {cache_key}")
+                        cache_data = {
+                            'coordinates': record['coordinates'],
+                            'formatted_address': record['formatted_address'],
+                        }
+                    except (ValueError, KeyError, TypeError) as e:
+                        raise ValueError(f"Invalid cache record at {self.cache_path}:{line_number}: {e}") from e
+                    if cache_key in self.geocoding_cache:
+                        raise ValueError(f"Duplicate cache key at {self.cache_path}:{line_number}: {cache_key!r}")
+                    self.geocoding_cache[cache_key] = cache_data
         self.last_request_time = 0
-        self.min_request_interval = 0.1  # 100ms between requests
+        self.use_google = use_google and google_api_key is not None
+        if self.use_google:
+            self.geocode_location = self.geocode_location_google
+            self.min_request_interval = 0.1  # 100ms between requests
+        else:
+            self.geocode_location = self.geocode_location_nominatim
+            self._nominatim_lock = Lock()
+            self.min_request_interval = 1.0
+            self.nominatim_geolocator = Nominatim(user_agent="geo_aot_batch_geocoder")
         
+    def update_cache(self, cache_key: str, result: Dict[str, Any]) -> None:
+        """Append each new successful result once across this instance's workers."""
+        with self._cache_lock:
+            # Two workers may both miss the cache before their requests finish.
+            if cache_key in self.geocoding_cache:
+                return
+            cache_data = {
+                "coordinates": result["coordinates"],
+                "formatted_address": result["formatted_address"],
+            }
+            record = json.dumps({'cache_key': cache_key, **cache_data}, ensure_ascii=False)
+            with self.cache_path.open('a', encoding='utf-8') as f:
+                f.write(record + '\n')
+            self.geocoding_cache[cache_key] = cache_data
+
     def geocode_location_google(self, location_description: str) -> Dict[str, Any]:
         """Geocode using Google Geocoding API"""
         result = {
@@ -50,15 +96,18 @@ class BatchGeocoder:
         if cache_key in self.geocoding_cache:
             cached_result = self.geocoding_cache[cache_key]
             result.update(cached_result)
-            result["cached"] = True
+            result.update({
+                "cached": True,
+                "success": True,
+            })
             print(f"   ✓ Using cached result for '{location_description}'")
             return result
         
         # Respect rate limits
-        current_time = time.time()
-        time_since_last = current_time - self.last_request_time
-        if time_since_last < self.min_request_interval:
-            time.sleep(self.min_request_interval - time_since_last)
+        remaining = self.min_request_interval - (
+            time.monotonic() - self.last_request_time
+        )
+        if remaining > 0: time.sleep(remaining)
         
         print(f"   → Google Geocoding: '{location_description}'...")
         
@@ -70,7 +119,7 @@ class BatchGeocoder:
         
         try:
             response = requests.get(base_url, params=params, timeout=10)
-            self.last_request_time = time.time()
+            self.last_request_time = time.monotonic()
             
             response.raise_for_status()
             data = response.json()
@@ -90,12 +139,7 @@ class BatchGeocoder:
                     print(f"   ✓ Found coordinates: ({lat}, {lon})")
                     
                     # Cache successful result
-                    cache_data = {
-                        "success": True,
-                        "coordinates": {"latitude": lat, "longitude": lon},
-                        "formatted_address": location_data.get('formatted_address')
-                    }
-                    self.geocoding_cache[cache_key] = cache_data
+                    self.update_cache(cache_key, result)
                 else:
                     result["error"] = f"Invalid coordinate ranges: lat={lat}, lon={lon}"
                     print(f"   ✗ Invalid coordinate ranges")
@@ -123,17 +167,35 @@ class BatchGeocoder:
             "success": False,
             "coordinates": None,
             "formatted_address": None,
-            "error": None
+            "error": None,
+            "cached": False
         }
+
+        cache_key = location_description.lower().strip()
+        if cache_key in self.geocoding_cache:
+            result.update(self.geocoding_cache[cache_key])
+            result.update({
+                "cached": True,
+                "success": True,
+            })
+            print(f"   ✓ Using cached result for '{location_description}'")
+            return result
         
         print(f"   → Nominatim Geocoding: '{location_description}'...")
-        geolocator = Nominatim(user_agent="geo_aot_batch_geocoder")
         
         try:
-            # Add delay to respect Nominatim usage policy
-            time.sleep(1)
-            
-            location = geolocator.geocode(location_description)
+            # Serialize calls and measure spacing with a clock unaffected by
+            # system time changes. Keep failures inside the rate limit too.
+            with self._nominatim_lock:
+                remaining = self.min_request_interval - (
+                    time.monotonic() - self.last_request_time
+                )
+                if remaining > 0: time.sleep(remaining)
+                try:
+                    location = self.nominatim_geolocator.geocode(location_description)
+                finally:
+                    # Wait a full interval after completion, including failures.
+                    self.last_request_time = time.monotonic()
             if location:
                 lat, lon = location.latitude, location.longitude
                 print(f"   ✓ Found coordinates: ({lat}, {lon})")
@@ -145,6 +207,7 @@ class BatchGeocoder:
                         "coordinates": {"latitude": lat, "longitude": lon},
                         "formatted_address": location.address
                     })
+                    self.update_cache(cache_key, result)
                 else:
                     result["error"] = f"Invalid coordinate ranges: lat={lat}, lon={lon}"
                     print(f"   ✗ Invalid coordinate ranges")
@@ -157,7 +220,7 @@ class BatchGeocoder:
         
         return result
     
-    def geocode_single_file(self, result_file_path: str, use_google: bool = True) -> Dict[str, Any]:
+    def geocode_single_file(self, result_file_path: str) -> Dict[str, Any]:
         """Process a single result file and geocode location descriptions"""
         try:
             with open(result_file_path, 'r') as f:
@@ -171,20 +234,17 @@ class BatchGeocoder:
                 return {
                     'file_name': file_name,
                     'input_file': result_file_path,
-                    'needs_geocoding': False,
+                    'needs_geocoding': needs_geocoding,
                     'geocoded': False,
-                    'error': 'No geocoding needed' if not needs_geocoding else 'No location description found'
+                    'error': 'No location description found' if needs_geocoding else None
                 }
             
             print(f"Processing: {file_name}")
             print(f"Location description: '{location_description}'")
             
             # Try geocoding
-            if use_google and self.google_api_key:
-                geocoding_result = self.geocode_location_google(location_description)
-            else:
-                geocoding_result = self.geocode_location_nominatim(location_description)
-            
+            geocoding_result = self.geocode_location(location_description)
+
             if geocoding_result["success"]:
                 # Update the original data with geocoded coordinates
                 coords = geocoding_result["coordinates"]
@@ -192,10 +252,12 @@ class BatchGeocoder:
                 data['final_result']['geocoded_coordinates'] = coords
                 data['final_result']['geocoding_method'] = geocoding_result["method"]
                 data['final_result']['geocoding_timestamp'] = geocoding_result["timestamp"]
+                data['final_result']['needs_geocoding'] = False
                 
                 # Calculate distance error if ground truth available
-                if 'ground_truth' in data and data['ground_truth']['gt_coords']:
-                    gt_coords = data['ground_truth']['gt_coords'] 
+                ground_truth = data.get('ground_truth') or {}
+                gt_coords = ground_truth.get('gt_coords')
+                if gt_coords:
                     gt_point = (gt_coords['latitude'], gt_coords['longitude'])
                     pred_point = (coords['latitude'], coords['longitude'])
                     distance_km = round(geodesic(gt_point, pred_point).kilometers, 2)
@@ -212,7 +274,7 @@ class BatchGeocoder:
                     'needs_geocoding': True,
                     'geocoded': True,
                     'coordinates': coords,
-                    'distance_error': data.get('ground_truth', {}).get('distance_km'),
+                    'distance_error': ground_truth.get('distance_km'),
                     'geocoding_method': geocoding_result["method"],
                     'formatted_address': geocoding_result.get("formatted_address"),
                     'error': None
@@ -240,8 +302,7 @@ class BatchGeocoder:
                 'error': str(e)
             }
     
-    def process_batch_folder(self, batch_folder: str, use_google: bool = True, 
-                           max_workers: int = 3) -> Dict[str, Any]:
+    def process_batch_folder(self, batch_folder: str, max_workers: int = 3) -> Dict[str, Any]:
         """Process all result files in a batch folder"""
         batch_path = Path(batch_folder)
         if not batch_path.exists():
@@ -252,19 +313,19 @@ class BatchGeocoder:
             str(f) for f in batch_path.glob("*_results.json")
             if f.name != "batch_summary.json"
         ]
-        
         if not result_files:
             raise ValueError(f"No result files found in: {batch_folder}")
-        
         print(f"Found {len(result_files)} result files for geocoding")
-        
+
+        if not self.use_google: max_workers = 1
+
         start_time = time.time()
         results = []
-        
+
         # Process files with limited concurrency to respect API limits
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
             future_to_file = {
-                executor.submit(self.geocode_single_file, file_path, use_google): file_path
+                executor.submit(self.geocode_single_file, file_path): file_path
                 for file_path in result_files
             }
             
@@ -294,7 +355,11 @@ class BatchGeocoder:
         total_time = time.time() - start_time
         needed_geocoding = sum(1 for r in results if r.get('needs_geocoding', False))
         successfully_geocoded = sum(1 for r in results if r.get('geocoded', False))
-        failed_geocoding = needed_geocoding - successfully_geocoded
+        # Include processing errors even when the file's geocoding need is unknown.
+        failed_results = [
+            r for r in results if r.get('error') and not r.get('geocoded')
+        ]
+        failed_geocoding = len(failed_results)
         
         # Calculate average distance for geocoded results
         geocoded_distances = [
@@ -310,7 +375,7 @@ class BatchGeocoder:
                 'total_files': len(result_files),
                 'processing_time': total_time,
                 'max_workers': max_workers,
-                'use_google_api': use_google and self.google_api_key is not None,
+                'use_google_api': self.use_google,
                 'timestamp': time.strftime('%Y-%m-%d %H:%M:%S')
             },
             'statistics': {
@@ -321,7 +386,7 @@ class BatchGeocoder:
                 'avg_distance_error_km': avg_distance
             },
             'individual_results': results,
-            'failed_geocoding': [r for r in results if r.get('needs_geocoding', False) and not r.get('geocoded', False)]
+            'failed_geocoding': failed_results
         }
         
         # Save geocoding summary
@@ -358,15 +423,18 @@ def main():
     use_google = not args.use_nominatim and args.google_api_key is not None
     
     if not use_google and not args.use_nominatim:
-        print("Warning: No geocoding method specified. Using Nominatim as fallback.")
+        print("NOTE: Using Nominatim & setting max_workers=1 to respect Nominatim usage policy.")
         use_google = False
+        args.max_workers = 1
     
-    geocoder = BatchGeocoder(google_api_key=args.google_api_key)
+    geocoder = BatchGeocoder(
+        google_api_key=args.google_api_key,
+        use_google=use_google,   
+    )
     
     try:
         result = geocoder.process_batch_folder(
             args.batch_folder, 
-            use_google=use_google,
             max_workers=args.max_workers
         )
         
