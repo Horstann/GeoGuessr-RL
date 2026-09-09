@@ -253,7 +253,7 @@ WARNING: Using "FAIL TO PREDICT" results in severe punishment. When uncertain, s
         except Exception as e:
             error_msg = f"AI Error: {e}"
             self._add_to_history("system", error_msg)
-            return error_msg
+            raise RuntimeError(error_msg) from e
     
     def get_final_location_guess(self, 
                                composite_image, 
@@ -346,7 +346,7 @@ Remember: Keep location_description concise and focused for best geocoding accur
         except Exception as e:
             error_msg = f"Final guess AI Error: {e}"
             self._add_to_history("system", error_msg)
-            return error_msg
+            raise RuntimeError(error_msg) from e
     
     def parse_action_response(self, response: str) -> Dict[str, Any]:
         """
@@ -355,6 +355,9 @@ Remember: Keep location_description concise and focused for best geocoding accur
         Returns:
             Dictionary with action type and parameters
         """
+        # Older saved responses may contain inference errors as plain text.
+        if response.strip().lower().startswith(('ai error:', 'final guess ai error:')):
+            return {'type': 'unknown', 'response': response}
         try:
             # Extract JSON from markdown code blocks if present
             json_text = response.strip()
@@ -439,11 +442,15 @@ Remember: Keep location_description concise and focused for best geocoding accur
             if any(phrase in response_clean for phrase in early_guess_phrases):
                 return {'type': 'guess', 'response': response}
             
-            # Parse move command by color
+            # Require a movement command, not a color embedded in arbitrary text.
             colors = ['red', 'blue', 'green', 'yellow', 'purple', 'cyan', 'orange', 'pink', 'white', 'black']
-            for color in colors:
-                if color in response_clean:
-                    return {'type': 'move', 'color': color}
+            move_match = re.search(
+                r'\b(?:move\s+to|go\s+to|take|follow)\s+(?:the\s+)?('
+                + '|'.join(colors) + r')\b',
+                response_clean,
+            )
+            if move_match:
+                return {'type': 'move', 'color': move_match.group(1)}
             
             # Parse rotation
             rotate_match = re.search(r'rotate\s+([-+]?\d+)', response_clean)
