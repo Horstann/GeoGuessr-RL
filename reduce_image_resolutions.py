@@ -4,7 +4,6 @@
 Choose a maximum pixel count directly or through a zoom-level pixel budget.
 Smaller images are copied unchanged. Larger images retain their aspect ratio
 within whole-pixel rounding, with a minimum of one pixel per side.
-Requires Pillow (pip install Pillow).
 """
 
 import argparse
@@ -64,8 +63,8 @@ def main():
     parser.add_argument("--input-folder", type=Path, default="data/pano_images_test")
     parser.add_argument("--output-folder", type=Path, default="data/pano_images_resized")
     parser.add_argument(
-        "--multiprocess", type=parse_bool, nargs="?", const=True, default=False,
-        help="Use multiple processes (flag alone or true/false; default: false)",
+        "--num_processes", type=int, default=1,
+        help="Max workers for multiprocessing",
     )
     budget = parser.add_mutually_exclusive_group(required=True)
     budget.add_argument(
@@ -103,9 +102,13 @@ def main():
         return 0
 
     failures = 0
-    if args.multiprocess:
-        with ProcessPoolExecutor() as executor:
-            for error in executor.map(resize_image, tasks):
+    if args.num_processes!=1:
+        with ProcessPoolExecutor(max_workers=args.num_processes) as executor:
+            for error in tqdm(
+                executor.map(resize_image, tasks),
+                total=len(tasks),
+                desc="Resizing images",
+            ):
                 if error:
                     print(error, file=sys.stderr)
                     failures += 1
