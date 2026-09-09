@@ -4,3 +4,4 @@ data/*
 !data/json_graphs/**
 __pycache__/
 outputs/*
+models/*

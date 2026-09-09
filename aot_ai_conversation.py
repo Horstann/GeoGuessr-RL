@@ -8,6 +8,7 @@ import time
 from typing import List, Dict, Any, Optional, Tuple
 from PIL import Image
 import io
+from types import SimpleNamespace
 from geopy.geocoders import Nominatim
 
 class GeoAoTAI:
@@ -19,20 +20,24 @@ class GeoAoTAI:
     
     def __init__(self,
                  ai_config=None,
-                 ai_keys=None):
+                 ai_keys=None,
+                 vlm=None):
         """Initialize the GeoAoT (Action of Thought) AI conversation system."""
         # Create unified client with direct config
-        self.client = get_openai_client(ai_config=ai_config, ai_keys=ai_keys)
+        self.vlm = vlm
+        self.client = vlm if vlm is not None else get_openai_client(ai_config=ai_config, ai_keys=ai_keys)
         
         # Set parameters from config
         self.model = ai_config.model
         self.max_tokens = ai_config.max_tokens
         self.temperature = ai_config.temperature
         self.final_temp = self.temperature
-        self.base_url = ai_config.base_url
+        self.num_beams = getattr(ai_config, 'num_beams', None)
+        self.final_num_beams = self.num_beams
+        self.base_url = getattr(ai_config, 'base_url', None) if vlm is None else None
         
         # Google API key
-        self.google_api_key = ai_keys.google_api_key
+        self.google_api_key = getattr(ai_keys, 'google_api_key', None)
         self.conversation_history = []
         self.step_count = 0
 
@@ -48,6 +53,31 @@ class GeoAoTAI:
         self.last_request_time = 0
         self.min_request_interval = 0.1  # 100ms between requests to respect rate limits
         
+    def _create_completion(self, *, model, messages, max_tokens, temperature, **kwargs):
+        """Use the shared VLM directly, preserving response parsing and usage tracking."""
+        if self.vlm is None:
+            return self.client.chat.completions.create(
+                model=model, messages=messages,
+                max_tokens=max_tokens, temperature=temperature, **kwargs
+            )
+        kwargs 
+        result = self.vlm.generate(
+            messages, max_tokens=max_tokens, temperature=temperature, **kwargs
+        )
+        if isinstance(result, str):
+            text = result
+            usage = None
+        else:
+            text = result.text
+            usage = SimpleNamespace(
+                prompt_tokens=result.input_tokens,
+                completion_tokens=result.output_tokens,
+            )
+        return SimpleNamespace(
+            choices=[SimpleNamespace(message=SimpleNamespace(content=text))],
+            usage=usage,
+        )
+
     def _add_to_history(self, role: str, content: str, image_path: str = None, step_info: Dict = None):
         """Add message to conversation history with optional image and step context."""
         message = {
@@ -188,25 +218,22 @@ WARNING: Using "FAIL TO PREDICT" results in severe punishment. When uncertain, s
                             "role": msg["role"],
                             "content": msg["content"]
                         })
-            
-            response = self.client.chat.completions.create(
+
+            response = self._create_completion(
                 model=self.model,
                 messages=messages,
                 max_tokens=self.max_tokens,
-                temperature=self.temperature
+                temperature=self.temperature,
+                num_beams=self.num_beams,
             )
-
             ai_response = response.choices[0].message.content
-
             # Track token usage
             if hasattr(response, 'usage') and response.usage:
                 input_tokens = response.usage.prompt_tokens or 0
                 output_tokens = response.usage.completion_tokens or 0
-
                 # Accumulate totals (backward compatibility)
                 self.total_input_tokens += input_tokens
                 self.total_output_tokens += output_tokens
-
                 # Record per-call breakdown
                 self._call_counter += 1
                 self.token_call_records.append({
@@ -281,11 +308,12 @@ Remember: Keep location_description concise and focused for best geocoding accur
                             "content": msg["content"]
                         })
             
-            response = self.client.chat.completions.create(
+            response = self._create_completion(
                 model=self.model,
                 messages=messages,
                 max_tokens=self.max_tokens,
-                temperature=self.final_temp  # Lower temperature for final prediction
+                temperature=self.final_temp,  # Lower temperature for final prediction
+                num_beams=self.final_num_beams,
             )
 
             ai_response = response.choices[0].message.content
@@ -459,7 +487,8 @@ Remember: Keep location_description concise and focused for best geocoding accur
                 pass
 
         return None
-    
+
+    # TODO: switch from google to Nominatim at 1 request per second max
     def geocode_location_google(self, location_description: str) -> Dict[str, Any]:
         """
         Converts a location description to coordinates using Google Geocoding API.

@@ -1,16 +1,19 @@
 import hydra
 from omegaconf import DictConfig
 from geo_aot_geoguess import GeoAoTGuesser
+from model_loaders.factory import load_vlm
 import json
 import os
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
+
+from contextlib import ExitStack
 from typing import List, Dict, Any
 
 def process_single_file(json_file_path: str, pano_folder: str, output_dir: Path, 
                        ai_config: DictConfig, ai_keys: DictConfig, 
-                       max_steps: int, debug: bool) -> Dict[str, Any]:
+                       max_steps: int, debug: bool, vlm=None) -> Dict[str, Any]:
     """Process a single JSON file"""
     try:
         start_time = time.time()
@@ -22,6 +25,7 @@ def process_single_file(json_file_path: str, pano_folder: str, output_dir: Path,
             pano_folder,
             ai_config=ai_config,
             ai_keys=ai_keys,
+            vlm=vlm,
             max_steps=max_steps,
             debug=debug
         )
@@ -80,6 +84,7 @@ def process_single_file(json_file_path: str, pano_folder: str, output_dir: Path,
             'error': error_msg
         }
 
+
 def get_json_files(input_folder: str) -> List[str]:
     """Get all JSON files from input folder"""
     input_path = Path(input_folder)
@@ -108,7 +113,7 @@ def main(cfg: DictConfig) -> None:
     
     # Create output directory
     output_dir = Path(cfg.output_folder)
-    output_dir.mkdir(exist_ok=True)
+    output_dir.mkdir(parents=True, exist_ok=True)
     
     # Get all JSON files to process
     try:
@@ -121,9 +126,16 @@ def main(cfg: DictConfig) -> None:
     # Process files concurrently
     start_time = time.time()
     results = []
-    
-    # Use ThreadPoolExecutor for concurrent processing
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+
+    # Load once before workers start; unload only after all workers have stopped.
+    with ExitStack() as stack:
+        # ExitStack registers cleanup operations and guarantees they run when the block exits regardless of any exceptions
+        vlm = load_vlm(cfg.ai_config)
+        if vlm is not None:
+            # Guarantees vlm is unloaded when stack closes
+            stack.callback(vlm.unload)
+        # Guarantees ThreadPoolExecutor exits when stack closes
+        executor = stack.enter_context(ThreadPoolExecutor(max_workers=max_workers))
         print(f"Starting batch processing with {max_workers} concurrent workers...")
         
         # Submit all tasks
@@ -131,7 +143,7 @@ def main(cfg: DictConfig) -> None:
             executor.submit(
                 process_single_file, 
                 json_file, pano_folder, output_dir,
-                cfg.ai_config, cfg.ai_keys, max_steps, debug
+                cfg.ai_config, cfg.ai_keys, max_steps, debug, vlm
             ): json_file 
             for json_file in json_files
         }

@@ -9,7 +9,7 @@ import numpy as np
 from aot_ai_conversation import GeoAoTAI
 
 class GeoAoTGuesser:
-    def __init__(self, json_file, pano_folder, ai_config=None, ai_keys=None, debug=False, max_steps=10):
+    def __init__(self, json_file, pano_folder, ai_config=None, ai_keys=None, debug=False, max_steps=10, vlm=None):
         self.json_file = json_file
         self.pano_folder = pano_folder
         self.graph_data = None
@@ -38,11 +38,12 @@ class GeoAoTGuesser:
             }
         
         # AI conversation system setup
-        if ai_config and ai_keys:
+        if ai_config and (ai_keys or vlm is not None):
             try:
                 self.ai_conversation = GeoAoTAI(
                     ai_config=ai_config,
-                    ai_keys=ai_keys
+                    ai_keys=ai_keys,
+                    vlm=vlm,
                 )
             except Exception as e:
                 self.ai_conversation = None
