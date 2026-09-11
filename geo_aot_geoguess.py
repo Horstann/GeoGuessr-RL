@@ -7,6 +7,7 @@ import argparse
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
 from aot_ai_conversation import GeoAoTAI
+import random
 
 class GeoAoTGuesser:
     def __init__(self, json_file, pano_folder, ai_config=None, ai_keys=None, debug=False, max_steps=10, vlm=None):
@@ -15,7 +16,7 @@ class GeoAoTGuesser:
         self.graph_data = None
         self.nodes = {}
         self.current_node_id = None
-        self.original_node_id = None
+        self.start_node_id = None
         self.current_rotation = 0  # Current manual rotation in degrees
         self.action_history = []
         self.debug = debug
@@ -183,8 +184,9 @@ class GeoAoTGuesser:
             self.nodes[node['pano_id']] = node
         
         # Set starting position
-        self.current_node_id = self.graph_data.get('center_pano_id')
-        self.original_node_id = self.current_node_id
+        self.current_node_id = random.choice(list(self.nodes.keys())) 
+        # self.current_node_id = self.graph_data.get('center_pano_id')
+        self.start_node_id = self.current_node_id
         
     def get_ground_truth_from_json(self):
         """Extract ground truth coordinates from the center pano in JSON file"""
@@ -206,11 +208,11 @@ class GeoAoTGuesser:
     
     def get_current_location_info(self):
         """Get information about current location relative to original"""
-        if not self.current_node_id or not self.original_node_id:
+        if not self.current_node_id or not self.start_node_id:
             return "Unknown location"
         
         current = self.nodes[self.current_node_id]['coordinate']
-        original = self.nodes[self.original_node_id]['coordinate']
+        original = self.nodes[self.start_node_id]['coordinate']
         
         # Calculate relative distance
         from geopy.distance import geodesic
@@ -255,21 +257,25 @@ class GeoAoTGuesser:
             return Image.fromarray(rolled_img_np)
         return image
     
-    def create_orientation_header(self, width=800, height=60):
+    def create_orientation_header(self, width=800, height=None):
         """Create header showing pano's natural orientation"""
+        scale = width / 800
+        height = max(1, round(60 * scale)) if height is None else height
+        y_scale = height / 60
+        stroke = lambda value: max(1, round(value * scale))
         img = Image.new('RGB', (width, height), (100, 149, 237))
         draw = ImageDraw.Draw(img)
         
         # Dark background bar
-        draw.rounded_rectangle([10, 10, width-10, height-10], radius=20, fill=(60, 60, 60))
+        draw.rounded_rectangle([10 * scale, 10 * y_scale, width-10 * scale, height-10 * y_scale], radius=20 * scale, fill=(60, 60, 60))
         
         # Load fonts
         try:
-            font_large = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 24)
-            font_small = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 16)
-        except:
-            font_large = ImageFont.load_default()
-            font_small = ImageFont.load_default()
+            font_large = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", stroke(24))
+            font_small = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", stroke(16))
+        except OSError:
+            font_large = ImageFont.load_default(size=stroke(24))
+            font_small = ImageFont.load_default(size=stroke(16))
         
         center_x = width // 2
         
@@ -291,16 +297,16 @@ class GeoAoTGuesser:
             x_pos = center_x + (normalized_angle * width * 0.8) / 360
             
             # Only draw if visible
-            if 40 < x_pos < width - 40:
+            if 40 * scale < x_pos < width - 40 * scale:
                 if angle_deg % 90 == 0:  # Major directions
-                    draw.line([(x_pos, 22), (x_pos, 32)], fill='white', width=3)
-                    draw.text((x_pos, 42), label, fill='white', anchor='mm', font=font_large)
+                    draw.line([(x_pos, 22 * y_scale), (x_pos, 32 * y_scale)], fill='white', width=stroke(3))
+                    draw.text((x_pos, 42 * y_scale), label, fill='white', anchor='mm', font=font_large)
                 else:  # Secondary directions
-                    draw.line([(x_pos, 24), (x_pos, 30)], fill='lightgray', width=2)
-                    draw.text((x_pos, 42), label, fill='lightgray', anchor='mm', font=font_small)
+                    draw.line([(x_pos, 24 * y_scale), (x_pos, 30 * y_scale)], fill='lightgray', width=stroke(2))
+                    draw.text((x_pos, 42 * y_scale), label, fill='lightgray', anchor='mm', font=font_small)
         
         # Center indicator pointing to where pano is facing
-        triangle_points = [(center_x, 15), (center_x-8, 25), (center_x+8, 25)]
+        triangle_points = [(center_x, 15 * y_scale), (center_x-8 * scale, 25 * y_scale), (center_x+8 * scale, 25 * y_scale)]
         draw.polygon(triangle_points, fill='red')
         
         return img
@@ -353,11 +359,11 @@ class GeoAoTGuesser:
         right_y = body_y + head_size * math.cos(perpendicular_angle)
         
         # Draw arrow shaft (thick line)
-        draw.line([(center_x, center_y), (body_x, body_y)], fill=color_hex, width=8)
+        draw.line([(center_x, center_y), (body_x, body_y)], fill=color_hex, width=max(1, round(size * 0.2)))
         
         # Draw arrow head (triangle)
         arrow_head = [(tip_x, tip_y), (left_x, left_y), (right_x, right_y)]
-        draw.polygon(arrow_head, fill=color_hex, outline='black', width=2)
+        draw.polygon(arrow_head, fill=color_hex, outline='black', width=max(1, round(size * 0.05)))
         
     def draw_arrows_on_panorama(self, pano_image, available_moves):
         """Draw Google Maps style arrows on ellipse near center"""
@@ -390,7 +396,7 @@ class GeoAoTGuesser:
             arrow_center_y = ellipse_center_y - ellipse_radius_y * math.cos(angle_for_ellipse)
             
             # Draw Google Maps style arrow
-            self.draw_google_maps_arrow(draw, arrow_center_x, arrow_center_y, adjusted_direction, color_hex)
+            self.draw_google_maps_arrow(draw, arrow_center_x, arrow_center_y, adjusted_direction, color_hex, size=width * 40 / 800)
         
         return img
     
@@ -413,7 +419,7 @@ class GeoAoTGuesser:
         pano_with_arrows = self.draw_arrows_on_panorama(pano_image, available_moves)
         
         # Create orientation header
-        header = self.create_orientation_header(pano_with_arrows.width, 60)
+        header = self.create_orientation_header(pano_with_arrows.width)
         
         # Combine header and panorama
         total_height = header.height + pano_with_arrows.height
@@ -468,10 +474,6 @@ class GeoAoTGuesser:
                     if color == move_color:
                         return {'type': 'move', 'target_id': move['target_id'], 'color': color}
         
-        # Parse back to original command
-        if 'back' in response or 'original' in response or 'start' in response:
-            return {'type': 'back'}
-        
         return {'type': 'unknown', 'response': response}
     
     def execute_action(self, action):
@@ -497,13 +499,6 @@ class GeoAoTGuesser:
                 return f"Moved to {action['color']} arrow location. {self.get_current_location_info()}"
             else:
                 return "Error: Invalid move target"
-        
-        elif action['type'] == 'back':
-            self.current_node_id = self.original_node_id
-            self.current_rotation = 0
-            self.step_count += 1
-            self.action_history.append("Returned to original location")
-            return "Returned to original starting location"
         
         elif action['type'] == 'guess':
             # AI has made an early guess - trigger final location processing
@@ -622,8 +617,9 @@ class GeoAoTGuesser:
                 "max_steps": self.max_steps,
                 "steps_taken": self.step_count,
                 "action_history": self.action_history,
-                "starting_node": self.original_node_id,
-                "final_node": self.current_node_id,
+                "json_graph": self.json_file,
+                "start_node": self.start_node_id,
+                "end_node": self.current_node_id,
                 "final_rotation": self.current_rotation,
                 "exploration_complete": self.step_count >= self.max_steps - 1 or len(available_moves) == 0  
             },
@@ -683,6 +679,7 @@ class GeoAoTGuesser:
                 "current_node": self.current_node_id,
                 "current_heading": self.get_current_pano_heading(),
                 "current_rotation": self.current_rotation,
+                "current_pitch": self.current_pitch,
                 "available_moves": [
                     {
                         "color": self.arrow_colors.get(i, ("unknown", ""))[0],
@@ -776,6 +773,7 @@ class GeoAoTGuesser:
                 "current_node": self.current_node_id,
                 "current_heading": self.get_current_pano_heading(),
                 "current_rotation": self.current_rotation,
+                "current_pitch": self.current_pitch,
                 "available_moves": [
                     {
                         "color": self.arrow_colors.get(i, ("unknown", ""))[0],
