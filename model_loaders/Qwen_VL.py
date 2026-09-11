@@ -1,7 +1,6 @@
-"""Standalone local Qwen2.5-VL backend (7B, 32B, or 72B).
-
+"""
 Example after importing this file with importlib (its filename contains dots):
-    backend = Qwen2_5_VL(size="7B")
+    backend = Qwen2_5_VL(model_name)
     backend.load()  # Download if needed, then load into CPU RAM once.
     result = backend.generate([{"role": "user", "content": "Hello!"}])
     print(result.text)
@@ -11,25 +10,21 @@ instance loads another copy. This module does not wire itself into ai_client.py.
 """
 
 from threading import RLock
+from time import perf_counter
 import torch
 from model_loaders.factory import MODELS_DIR, GenerationResult
 
 
 class Qwen2_5_VL:
     """Own one model/processor pair; keep conversation state in the caller."""
-
-    SUPPORTED_SIZES = ("7B", "32B", "72B")
     MODELS_DIR = MODELS_DIR
 
-    def __init__(self, size="7B", dtype="auto"):
-        size = str(size).upper()
-        if size not in self.SUPPORTED_SIZES:
-            raise ValueError(f"size must be one of {self.SUPPORTED_SIZES}, got {size!r}")
-        self.repo_id = f"Qwen/Qwen2.5-VL-{size}-Instruct"
+    def __init__(self, model_name, dtype="auto"):
+        self.repo_id = f"Qwen/{model_name}"
         self.model_path = self.MODELS_DIR / self.repo_id.split("/")[-1]
         self.device = (
             "cuda" if torch.cuda.is_available() else 
-            # "mps" if torch.backends.mps.is_available() else 
+            "mps" if torch.backends.mps.is_available() else 
             "cpu"
         )
         self.dtype = dtype
@@ -119,19 +114,32 @@ class Qwen2_5_VL:
         Returns a backend result, not an OpenAI chat-completion response.
         """
         from qwen_vl_utils import process_vision_info
+        from transformers import StoppingCriteria, StoppingCriteriaList
 
+        started = perf_counter()
+        def report(message):
+            print(f"[VLM +{perf_counter() - started:.2f}s] {message}", flush=True)
+
+        report("Waiting for inference lock")
         max_tokens = 512 if max_tokens is None else max_tokens
         with self._lock:
+            report("Inference lock acquired")
             if not self.is_loaded:
                 raise RuntimeError("Call load() before generate().")
+            report(f"Preparing messages; device={self.model.device}, dtype={self.model.dtype}")
             messages = self.prepare_messages(messages)
             text = self.processor.apply_chat_template(
                 messages, tokenize=False, add_generation_prompt=True,
             )
+            report("Chat template ready; processing images")
             images, _ = process_vision_info(messages)
+            report(f"Images ready: {[image.size for image in (images or [])]}; tokenizing")
             inputs = self.processor(
                 text=[text], images=images, padding=True, return_tensors="pt",
-            ).to(self.model.device)
+            )
+            report("Processor ready; transferring inputs to model device")
+            inputs = inputs.to(self.model.device)
+            input_tokens = inputs["input_ids"].shape[1]
             options = {
                 "max_new_tokens": max_tokens, 
                 "num_beams": num_beams,
@@ -140,13 +148,25 @@ class Qwen2_5_VL:
                 options["temperature"] = temperature
             else:
                 options["do_sample"] = False
+            class GenerationProgress(StoppingCriteria):
+                def __call__(self, input_ids, scores, **kwargs):
+                    count = input_ids.shape[1] - input_tokens
+                    if count == 1 or count % 10 == 0:
+                        report(f"Generated {count}/{max_tokens} tokens")
+                    return False
+
+            options["stopping_criteria"] = StoppingCriteriaList([GenerationProgress()])
+            report(f"Starting model.generate: {input_tokens} input tokens, max_new_tokens={max_tokens}")
             with torch.inference_mode(): # disables gradient tracking and additional bookkeeping, reducing memory use and execution overhead.
                 output = self.model.generate(**inputs, **options)
-            input_tokens = inputs["input_ids"].shape[1]
+            report("model.generate returned; decoding")
             generated = output[0, input_tokens:]
             answer = self.processor.decode(
                 generated, skip_special_tokens=True, clean_up_tokenization_spaces=False,
             )
+            report(f"Finished: {len(generated)} output tokens")
+            print("=== AI Response ===")
+            print(answer)
             return GenerationResult(answer, input_tokens, len(generated))
 
     def unload(self):
@@ -157,3 +177,33 @@ class Qwen2_5_VL:
         with self._lock:
             self.model = None
             self.processor = None
+
+
+class Qwen3_VL(Qwen2_5_VL):
+    def load(self, *, local_files_only=False):
+        """Load once into RAM (default) or the configured device; return self.
+
+        local_files_only=True skips downloading and fails if local files are
+        missing or incomplete. Loading larger variants requires enough memory.
+        """
+        with self._lock:
+            if self.is_loaded:
+                return self
+            from transformers import AutoProcessor, Qwen3VLForConditionalGeneration
+
+            if not local_files_only:
+                self.download()
+            processor = AutoProcessor.from_pretrained(
+                str(self.model_path), local_files_only=True,
+            )
+            model = Qwen3VLForConditionalGeneration.from_pretrained(
+                str(self.model_path),
+                device_map=self.device,
+                dtype=self.dtype,
+                local_files_only=True,
+            )
+            model.eval() # .eval() for inference mode (vs .train() for training mode)
+            # affects layers like Dropout, BatchNorm etc
+            self.processor = processor
+            self.model = model
+        return self
