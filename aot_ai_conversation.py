@@ -48,8 +48,8 @@ class GeoAoTAI:
         self._call_counter = 0         # Sequential call counter
 
         # Google Geocoding API configuration (already set above)
-        self.geocoding_log_file = "geocoding_results.json"
         self.geocoding_cache = {}
+        self.geolocator = Nominatim(user_agent="geo_aot_geoguess")
         self.last_request_time = 0
         self.min_request_interval = 0.1  # 100ms between requests to respect rate limits
         
@@ -60,7 +60,6 @@ class GeoAoTAI:
                 model=model, messages=messages,
                 max_tokens=max_tokens, temperature=temperature, **kwargs
             )
-        kwargs 
         result = self.vlm.generate(
             messages, max_tokens=max_tokens, temperature=temperature, **kwargs
         )
@@ -142,42 +141,58 @@ class GeoAoTAI:
         
         # For the first step, set up the system prompt
         if current_step == 1:
-            system_prompt = """IMPORTANT: Always respond in this unified JSON format:
+            system_prompt = """You are a visual geolocation agent. Your objective is to identify the current location as accurately and precisely as possible. Your final prediction will be geocoded and scored by geographic distance from the ground-truth location.
+
+## Output Format
+
+IMPORTANT: Always respond in this unified JSON format:
 {
-  "observations": "One or two short sentence describe you see in the image",
-  "confidence": "low" | "medium" | "high",
+  "analysis": "Concise geographically relevant evidence and inference",
   "action": "continue" | "guess",
   "next_move": {
-    "type": "rotate_degrees" | "move_to_color" | "back_to_original",
-    "details": "45" | "red" | null
-  },
+    "type": "rotate_degrees" | "move_to_color",
+    "details": "45" | "red"
+  } | null,
   "final_guess": {
-    "method": "detailed_description" | "coordinates",
-    "location_description": "[Address] [Street Name], [City], [State], [Country]",
-    "coordinates": {"latitude": 34.0522, "longitude": -118.2437}
-  }
+    "confidence": "low" | "medium" | "high",
+    "method": "location_description" | "coordinates",
+    "location_description": "[Address] [Street Name], [City], [State], [Country]" | null,
+    "coordinates": {"latitude": 34.0522, "longitude": -118.2437} | null
+  } | null
 }
 
-Actions:
-- If action = "continue": Provide next_move (rotate_degrees/move_to_color/back_to_original)
-- If action = "guess": Provide final_guess with location
+## Action Rules
 
-When making final_guess:
-- method "detailed_description": MUST use EXACT format "[Address] [Street Name], [City], [State], [Country]" OR reduced specificity like "[City], [State], [Country]" OR "[State], [Country]" OR "[Country]". NO descriptive text, NO explanations, ONLY location names in this format. If absolutely no geographical clues available, use EXACTLY "FAIL TO PREDICT". Set coordinates to null.
-- method "coordinates": Set coordinates to {"latitude": X, "longitude": Y}, set location_description to null.
+Choose "continue" when another observation is likely to materially improve the location estimate's accuracy or precision.
+For "action": "continue", 
+- "next_move" MUST be non-null
+- "final_guess" MUST be null
 
-CRITICAL: location_description must be ONLY location names in the specified format. NO descriptive phrases like "suburban area" or "appears to be". 
+Choose "guess" when you have enough evidence to make the best available location prediction, or when further exploration is unlikely to materially improve it.
+For "action": "guess",
+- "final_guess" MUST be non-null
+- "next_move" MUST be null
 
-WARNING: Using "FAIL TO PREDICT" results in severe punishment. When uncertain, strongly consider using coordinates method instead."""
-            
+## Final Guess Rules
+
+For "method": "location_description",
+- "location_description" MUST use EXACT format "[Address] [Street Name], [City], [State], [Country]" OR reduced precision like "[City], [State], [Country]" OR "[State], [Country]" OR "[Country]". NO descriptive text, NO explanations, ONLY location names in this format. If absolutely no geographical clues available, use EXACTLY "FAIL TO PREDICT"
+- "coordinates" MUST be null
+
+For "method": "coordinates":
+- "coordinates" MUST be non-null
+- "location_description" MUST be null
+
+WARNING: Using "FAIL TO PREDICT" results in severe punishment. When uncertain, strongly consider using "coordinates" method instead."""
+
             self._add_to_history("system", system_prompt)
         
         # Create simple, natural prompt
         if current_step == 1:
-            user_text = f"Here's the starting panorama view (total continue step expect guess {current_step}/{max_steps - 1}). Analyze the image and respond in JSON format."
+            user_text = f"Here's a panoramic view of the location. Analyze the image and respond in JSON format."
         else:
-            user_text = f"Here's your current view after your last action (total continue step except guess {current_step}/{max_steps - 1}). Analyze this new view and respond in JSON format."
-        user_text += f" Aviable move action is {[color['color'] for color in available_moves]}"
+            user_text = f"Here's the new panoramic view of the location after your last action. Analyze the image, update your beliefs, and respond in JSON format."
+        user_text += f' Available "next_move" colors are {[color['color'] for color in available_moves]}. ({max_steps-current_step} "next_move" actions remaining)'
         
         # Add current request to conversation
         self._add_to_history("user", user_text, image_path=composite_image, 
@@ -269,11 +284,8 @@ WARNING: Using "FAIL TO PREDICT" results in severe punishment. When uncertain, s
         # Final guess using unified format
         user_text = f"""Provide your location guess using the same JSON format.
 
-Set action = "guess" and provide your final_guess:
-- Use method "detailed_description" with ONE clear sentence containing street names, city, state, country
-- OR use method "coordinates" with direct latitude/longitude values
-
-Remember: Keep location_description concise and focused for best geocoding accuracy.
+Set action = "guess" and provide your "final_guess".
+Remember: Keep "location_description" concise and focused for best geocoding accuracy.
 """
         
         # Add to conversation history naturally
@@ -426,40 +438,10 @@ Remember: Keep location_description concise and focused for best geocoding accur
                             
                 return {'type': 'unknown', 'response': response}
                 
-        except (json.JSONDecodeError, KeyError, TypeError) as e:
-            # Fallback to text-based parsing for backwards compatibility
-            response_clean = response.lower().strip()
-            
-            # Parse early guess/stop commands - focus on INTENT, not content
-            early_guess_phrases = [
-                'guess location', 'make a guess', 'my guess', 'location guess', 'final guess',
-                'i\'m confident', 'i\'m ready to guess', 'ready to guess', 'confident enough',
-                'stop exploring', 'finish exploring', 'done exploring', 'no need to explore',
-                'i know where this is', 'i can tell this is', 'clearly this is',
-                'obviously this is', 'definitely this is', 'this must be'
-            ]
-            
-            if any(phrase in response_clean for phrase in early_guess_phrases):
-                return {'type': 'guess', 'response': response}
-            
-            # Require a movement command, not a color embedded in arbitrary text.
-            colors = ['red', 'blue', 'green', 'yellow', 'purple', 'cyan', 'orange', 'pink', 'white', 'black']
-            move_match = re.search(
-                r'\b(?:move\s+to|go\s+to|take|follow)\s+(?:the\s+)?('
-                + '|'.join(colors) + r')\b',
-                response_clean,
-            )
-            if move_match:
-                return {'type': 'move', 'color': move_match.group(1)}
-            
-            # Parse rotation
-            rotate_match = re.search(r'rotate\s+([-+]?\d+)', response_clean)
-            if rotate_match:
-                degrees = int(rotate_match.group(1))
-                return {'type': 'rotate', 'degrees': degrees}
-            
+        except (json.JSONDecodeError, KeyError, TypeError):
+            # Reject malformed output; prose may mention actions without choosing one.
             return {'type': 'unknown', 'response': response}
-    
+
     def parse_coordinates_from_response(self, response: str) -> Optional[Tuple[float, float]]:
         """
         Parse coordinates from AI response text.
@@ -495,7 +477,6 @@ Remember: Keep location_description concise and focused for best geocoding accur
 
         return None
 
-    # TODO: switch from google to Nominatim at 1 request per second max
     def geocode_location_google(self, location_description: str) -> Dict[str, Any]:
         """
         Converts a location description to coordinates using Google Geocoding API.
@@ -640,15 +621,15 @@ Remember: Keep location_description concise and focused for best geocoding accur
                         print(f"   ✓ Unified JSON direct coordinates: ({lat}, {lon})")
                         return parsing_result
             
-            # Handle detailed_description method OR coordinates method with location_description
-            if (method == 'detailed_description' and final_guess.get('location_description')) or \
+            # Handle location_description method OR coordinates method with location_description
+            if (method == 'location_description' and final_guess.get('location_description')) or \
                (method == 'coordinates' and final_guess.get('location_description') and not final_guess.get('coordinates')):
                 location_desc = final_guess['location_description'].strip()
                 print(f"   → Unified JSON location description: '{location_desc}'")
                 print(f"   ! Saving description for later geocoding processing")
                 
                 parsing_result["parsing_attempts"].append({
-                    "method": "unified_json_detailed_description",
+                    "method": "unified_json_location_description",
                     "success": True,
                     "description": location_desc,
                     "note": "Description saved for batch geocoding"
@@ -660,8 +641,9 @@ Remember: Keep location_description concise and focused for best geocoding accur
                     "location_description": location_desc,
                     "method_used": "unified_json_location_description", 
                     "success": True,
-                    "needs_geocoding": True
                 })
+                if location_desc.lower() != "fail to predict":
+                    parsing_result["needs_geocoding"] = True
                 return parsing_result
                         
         except (json.JSONDecodeError, KeyError, TypeError):
@@ -706,10 +688,9 @@ Remember: Keep location_description concise and focused for best geocoding accur
             Tuple of (latitude, longitude) or None if geocoding fails
         """
         print(f"Geocoding location: '{location_description}'...")
-        geolocator = Nominatim(user_agent="geo_aot_geoguess")
         
         try:
-            location = geolocator.geocode(location_description)
+            location = self.geolocator.geocode(location_description)
             if location:
                 lat, lon = location.latitude, location.longitude
                 print(f"   ✓ Found coordinates: ({lat}, {lon})")

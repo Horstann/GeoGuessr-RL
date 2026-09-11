@@ -428,7 +428,6 @@ class GeoAoTGuesser:
         if not self.ai_conversation:
             # Fallback to basic parsing if AI conversation not available
             return self._basic_parse_action(ai_response, available_moves)
-        
         parsed_action = self.ai_conversation.parse_action_response(ai_response)
         
         # If it's a move action, find the matching move from available_moves
