@@ -132,7 +132,8 @@ class GeoAoTAI:
                               current_rotation: int,
                               available_moves: List[Dict],
                               location_info: str,
-                              max_steps: int) -> str:
+                              max_steps: int,
+                              current_pitch: int = 0) -> str:
         """
         Get AI decision for next navigation action in GeoAoT (Action of Thought) exploration.
         Natural conversation approach - AI sees the image and makes decisions naturally.
@@ -150,7 +151,7 @@ IMPORTANT: Always respond in this unified JSON format:
   "analysis": "Concise geographically relevant evidence and inference",
   "action": "continue" | "guess",
   "next_move": {
-    "type": "rotate_degrees" | "move_to_color",
+    "type": "rotate_degrees" | "tilt_degrees" | "move_to_color",
     "details": "45" | "red"
   } | null,
   "final_guess": {
@@ -163,7 +164,7 @@ IMPORTANT: Always respond in this unified JSON format:
 
 ## Action Rules
 
-Choose "continue" when another observation is likely to materially improve the location estimate's accuracy or precision.
+Choose "continue" when moving or rotating/tilting to inspect unseen scenery is likely to materially improve the location estimate's accuracy or precision.
 For "action": "continue", 
 - "next_move" MUST be non-null
 - "final_guess" MUST be null
@@ -183,16 +184,17 @@ For "method": "coordinates":
 - "coordinates" MUST be non-null
 - "location_description" MUST be null
 
-WARNING: Using "FAIL TO PREDICT" results in severe punishment. When uncertain, strongly consider using "coordinates" method instead."""
+WARNING: Using "FAIL TO PREDICT" results in severe punishment. When uncertain, prefer the best-supported approximate prediction."""
 
             self._add_to_history("system", system_prompt)
         
         # Create simple, natural prompt
         if current_step == 1:
-            user_text = f"Here's a panoramic view of the location. Analyze the image and respond in JSON format."
+            user_text = f"Here's a 90° × 90° view of the location. Analyze the image and respond in JSON format."
         else:
-            user_text = f"Here's the new panoramic view of the location after your last action. Analyze the image, update your beliefs, and respond in JSON format."
+            user_text = f"Here's the new 90° × 90° view of the location after your last action. Analyze the image, update your beliefs, and respond in JSON format."
         user_text += f' Available "next_move" colors are {[color['color'] for color in available_moves]}. ({max_steps-current_step} "next_move" actions remaining)'
+        user_text += f" Current yaw offset: {current_rotation} degrees; pitch: {current_pitch} degrees."
         
         # Add current request to conversation
         self._add_to_history("user", user_text, image_path=composite_image, 
@@ -201,6 +203,7 @@ WARNING: Using "FAIL TO PREDICT" results in severe punishment. When uncertain, s
                                "current_node": current_node,
                                "current_heading": current_heading,
                                "current_rotation": current_rotation,
+                               "current_pitch": current_pitch,
                                "available_moves": len(available_moves),
                                "max_steps": max_steps
                            })
@@ -276,7 +279,8 @@ WARNING: Using "FAIL TO PREDICT" results in severe punishment. When uncertain, s
                                current_node: str,
                                current_heading: float,
                                current_rotation: int,
-                               location_info: str) -> str:
+                               location_info: str,
+                               current_pitch: int = 0) -> str:
         """
         Get final location coordinates guess after GeoAoT (Action of Thought) exploration.
         Natural conversation - AI has context from exploration and makes final guess.
@@ -388,10 +392,13 @@ Remember: Keep "location_description" concise and focused for best geocoding acc
                 move_type = next_move.get('type', '').lower()
                 move_details = next_move.get('details')
                 
-                if move_type == 'rotate_degrees':
+                if move_type in ('rotate_degrees', 'tilt_degrees'):
                     try:
                         degrees = int(move_details) if move_details else 0
-                        return {'type': 'rotate', 'degrees': degrees}
+                        action = {'type': 'rotate', 'degrees': degrees}
+                        if move_type == 'tilt_degrees':
+                            action['axis'] = 'vertical'
+                        return action
                     except (ValueError, TypeError):
                         return {'type': 'unknown', 'response': response}
                         
@@ -402,9 +409,6 @@ Remember: Keep "location_description" concise and focused for best geocoding acc
                         return {'type': 'move', 'color': color}
                     else:
                         return {'type': 'unknown', 'response': response}
-                        
-                elif move_type == 'back_to_original':
-                    return {'type': 'back'}
                     
                 else:
                     return {'type': 'unknown', 'response': response}
@@ -433,8 +437,6 @@ Remember: Keep "location_description" concise and focused for best geocoding acc
                         colors = ['red', 'blue', 'green', 'yellow', 'purple', 'cyan', 'orange', 'pink', 'white', 'black']
                         if color in colors:
                             return {'type': 'move', 'color': color}
-                    elif action == 'back_to_original':
-                        return {'type': 'back'}
                             
                 return {'type': 'unknown', 'response': response}
                 

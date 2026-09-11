@@ -18,6 +18,7 @@ class GeoAoTGuesser:
         self.current_node_id = None
         self.start_node_id = None
         self.current_rotation = 0  # Current manual rotation in degrees
+        self.current_pitch = 0  # Positive angles look upward; limited to +/-60.
         self.action_history = []
         self.debug = debug
         self.action_counter = 0
@@ -133,7 +134,7 @@ class GeoAoTGuesser:
         # Prepare action text
         action_text = f"AI Action: {chosen_action.get('type', 'unknown').upper()}"
         if chosen_action['type'] == 'rotate':
-            action_text += f" {chosen_action.get('degrees', 0)}°"
+            action_text += f" {chosen_action.get('axis', 'horizontal')} {chosen_action.get('degrees', 0)}°"
         elif chosen_action['type'] == 'move':
             action_text += f" to {chosen_action.get('color', 'unknown').upper()}"
         
@@ -256,6 +257,25 @@ class GeoAoTGuesser:
             rolled_img_np = np.roll(img_np, shift=shift, axis=1)
             return Image.fromarray(rolled_img_np)
         return image
+
+    def create_viewport(self, image):
+        """Crop a 90x60-degree angular window assuming a full 360x180 panorama.
+
+        Zero yaw/pitch centers the window on the source image. Horizontal
+        coordinates wrap at the panorama seam; vertical coordinates do not.
+        This is an angular crop, not a perspective projection.
+        """
+        width, height = image.size
+        view_width = max(1, round(width / 4))
+        view_height = max(1, round(height / 3))
+        center_x = width / 2 + self.current_rotation * width / 360
+        pitch = max(-60, min(60, self.current_pitch))
+        center_y = height / 2 - pitch * height / 180
+        left = round(center_x - view_width / 2)
+        top = max(0, min(height - view_height, round(center_y - view_height / 2)))
+        columns = (np.arange(view_width) + left) % width
+        pixels = np.asarray(image.convert('RGB'))
+        return Image.fromarray(pixels[top:top + view_height, columns])
     
     def create_orientation_header(self, width=800, height=None):
         """Create header showing pano's natural orientation"""
@@ -294,7 +314,7 @@ class GeoAoTGuesser:
             
             # Normalize to -180 to +180
             normalized_angle = ((relative_angle + 180) % 360) - 180
-            x_pos = center_x + (normalized_angle * width * 0.8) / 360
+            x_pos = center_x + normalized_angle * width / 90
             
             # Only draw if visible
             if 40 * scale < x_pos < width - 40 * scale:
@@ -408,15 +428,13 @@ class GeoAoTGuesser:
             print(f"Panorama not found: {pano_path}")
             return None
         
-        pano_image = Image.open(pano_path)
-        
-        # Apply current rotation
-        if self.current_rotation != 0:
-            pano_image = self.roll_panorama(pano_image, self.current_rotation)
+        with Image.open(pano_path) as pano_image:
+            viewport = self.create_viewport(pano_image)
         
         # Get available moves and draw arrows
         available_moves = self.get_available_moves()
-        pano_with_arrows = self.draw_arrows_on_panorama(pano_image, available_moves)
+        pano_with_arrows = self.draw_arrows_on_panorama(viewport, available_moves)
+        viewport.close()
         
         # Create orientation header
         header = self.create_orientation_header(pano_with_arrows.width)
@@ -426,6 +444,8 @@ class GeoAoTGuesser:
         composite = Image.new('RGB', (pano_with_arrows.width, total_height))
         composite.paste(header, (0, 0))
         composite.paste(pano_with_arrows, (0, header.height))
+        header.close()
+        pano_with_arrows.close()
         
         return composite, available_moves
     
@@ -449,6 +469,15 @@ class GeoAoTGuesser:
     def _basic_parse_action(self, ai_response, available_moves):
         """Basic action parsing fallback"""
         response = ai_response.lower().strip()
+
+        directional_rotation = re.search(
+            r'\b(?:rotate|look|tilt)\s+(left|right|up|down)\s+(\d+)', response
+        )
+        if directional_rotation:
+            direction, magnitude = directional_rotation.groups()
+            degrees = int(magnitude) * (-1 if direction in ('left', 'down') else 1)
+            return {'type': 'rotate', 'degrees': degrees,
+                    'axis': 'vertical' if direction in ('up', 'down') else 'horizontal'}
         
         # Parse rotation command (handle both positive and negative numbers)
         rotate_match = re.search(r'rotate\s+([-+]?\d+)\s*degrees?', response)
@@ -484,16 +513,23 @@ class GeoAoTGuesser:
         
         if action['type'] == 'rotate':
             degrees = action['degrees']
-            self.current_rotation = (self.current_rotation + degrees) % 360
+            axis = action.get('axis', 'horizontal')
+            if axis == 'vertical':
+                self.current_pitch = max(-60, min(60, self.current_pitch + degrees))
+            else:
+                self.current_rotation = (self.current_rotation + degrees) % 360
             self.step_count += 1
-            self.action_history.append(f"Rotated {degrees} degrees")
-            return f"Rotated view by {degrees} degrees. Current heading: {self.current_rotation}°"
+            result = (f"Rotated {axis} by {degrees} degrees. "
+                      f"Yaw: {self.current_rotation}°, pitch: {self.current_pitch}°")
+            self.action_history.append(result)
+            return result
         
         elif action['type'] == 'move':
             target_id = action['target_id']
             if target_id in self.nodes:
                 self.current_node_id = target_id
                 self.current_rotation = 0  # Reset rotation at new location
+                self.current_pitch = 0
                 self.step_count += 1
                 self.action_history.append(f"Moved to {action['color']} arrow")
                 return f"Moved to {action['color']} arrow location. {self.get_current_location_info()}"
@@ -534,6 +570,7 @@ class GeoAoTGuesser:
             current_node=self.current_node_id,
             current_heading=self.get_current_pano_heading(),
             current_rotation=self.current_rotation,
+            current_pitch=self.current_pitch,
             available_moves=move_data,
             location_info=self.get_current_location_info(),
             max_steps=self.max_steps
@@ -550,6 +587,7 @@ class GeoAoTGuesser:
             current_node=self.current_node_id,
             current_heading=self.get_current_pano_heading(),
             current_rotation=self.current_rotation,
+            current_pitch=self.current_pitch,
             location_info=self.get_current_location_info()
         )
         
@@ -621,6 +659,7 @@ class GeoAoTGuesser:
                 "start_node": self.start_node_id,
                 "end_node": self.current_node_id,
                 "final_rotation": self.current_rotation,
+                "final_pitch": self.current_pitch,
                 "exploration_complete": self.step_count >= self.max_steps - 1 or len(available_moves) == 0  
             },
             "final_result": {
@@ -702,7 +741,7 @@ class GeoAoTGuesser:
             if interactive:
                 # Interactive mode - wait for user input
                 print("\\nAvailable actions:")
-                print("1. ROTATE X DEGREES")
+                print("1. ROTATE LEFT/RIGHT/UP/DOWN X DEGREES")
                 print("2. MOVE TO COLOR:", [move["color"] for move in current_step_info["available_moves"]])
                 print("3. BACK TO ORIGINAL")
                 print("4. FINISH - Get final location guess")
